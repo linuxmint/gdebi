@@ -248,13 +248,11 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
         self.statusbar_main.push(self.context, "")
 
         # set window title
-        self.window_main.set_title(_("Package Installer - %s") %
-                                   self._deb.pkgname)
+        self.window_main.set_title(_("Package Installer"))
 
         # set name and ungrey some widgets
-        self.label_name.set_markup(self._deb.pkgname)
+        self.label_name.set_markup("<b><big>%s</big></b>" % self._deb.pkgname)
         self.notebook_details.set_sensitive(True)
-        self.hbox_main.set_sensitive(True)
 
         # set description
         buf = self.textview_description.get_buffer()
@@ -320,11 +318,11 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
         # and the file content textview
         font_desc = Pango.FontDescription('monospace')
         self.textview_file_content.modify_font(font_desc)
-        self.textview_lintian_output.modify_font(font_desc)
+        # self.textview_lintian_output.modify_font(font_desc)
 
         # run lintian async
-        if self._options and self._options.non_interactive is False:
-            self._run_lintian(filename)
+        # if self._options and self._options.non_interactive is False:
+        #     self._run_lintian(filename)
 
         # check the deps
         if not self._deb.check():
@@ -334,6 +332,8 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
                 #glib.markup_escape_text(self._deb._failure_string) +
                 self._deb._failure_string +
                 "</span>")
+            self.infobar1.set_message_type(Gtk.MessageType.ERROR)
+            self.infobar1.show()
             self.button_install.set_label(_("_Install Package"))
 
             self.button_install.set_sensitive(False)
@@ -347,27 +347,31 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
                 "<span foreground=\"red\" weight=\"bold\">"+
                 _("Error: no longer provides ") + ", ".join(provides) +
                 "</span>")
+            self.infobar1.set_message_type(Gtk.MessageType.ERROR)
+            self.infobar1.show()
             return
 
         # set version_info_{msg,title} strings
         self.compareDebWithCache()
         self.get_changes()
 
-        version_status = self._deb.compare_to_version_in_cache(use_installed=False)
-        if (version_status in (DebPackage.VERSION_SAME, DebPackage.VERSION_OUTDATED)):
-            if (self._deb.pkgname in self._cache
-                and self._cache[self._deb.pkgname].candidate.downloadable
-                and not self._deb.downloaded):
-                self.button_download.show()
-                self.button_download.set_sensitive(True)
+        # version_status = self._deb.compare_to_version_in_cache(use_installed=False)
+        # if (version_status in (DebPackage.VERSION_SAME, DebPackage.VERSION_OUTDATED)):
+        #     if (self._deb.pkgname in self._cache
+        #         and self._cache[self._deb.pkgname].candidate.downloadable
+        #         and not self._deb.downloaded):
+        #         self.button_download.show()
+        #         self.button_download.set_sensitive(True)
 
         if self._deb.compare_to_version_in_cache() == DebPackage.VERSION_SAME:
             self.label_status.set_text(_("Same version is already installed"))
+            self.infobar1.set_message_type(Gtk.MessageType.INFO)
+            self.infobar1.show()
             self.button_install.set_label(_("_Reinstall Package"))
             self.button_install.grab_default()
             self.button_install.set_sensitive(True)
-            self.button_remove.show()
-            self.button_remove.set_sensitive(True)
+            # self.button_remove.show()
+            # self.button_remove.set_sensitive(True)
             self.button_details.hide()
             return
 
@@ -389,13 +393,15 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
             self.button_details.show()
 
         self.label_status.set_markup(self.deps)
+        self.infobar1.set_message_type(Gtk.MessageType.WARNING)
+        self.infobar1.show()
         #img = Gtk.Image()
         #img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
         #self.button_install.set_image(img)
         self.button_install.set_label(_("_Install Package"))
         self.button_install.set_sensitive(True)
         self.button_install.grab_default()
-        self.button_remove.hide()
+        # self.button_remove.hide()
 
     def _run_lintian(self, filename):
         buf = self.textview_lintian_output.get_buffer()

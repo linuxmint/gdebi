@@ -6,18 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-08-03 15:11+0200\n"
+"Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
+"POT-Creation-Date: 2016-12-08 16:02+0000\n"
 "PO-Revision-Date: 2012-10-08 21:01+0000\n"
 "Last-Translator: spacy01 <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-03-12 19:04+0000\n"
 "X-Generator: Launchpad (build 16963)\n"
 
-#: ../gdebi:51
+#: ../gdebi:50
 #, c-format
 msgid ""
 "usage: %prog [options] filename\n"
@@ -26,57 +27,57 @@ msgstr ""
 "употреба: %prog [опции] именафайл\n"
 "за графична версия, изпълнете gdebi-gtk\n"
 
-#: ../gdebi:57 ../gdebi-gtk:57
+#: ../gdebi:56 ../gdebi-gtk:54
 msgid "Run non-interactive (dangerous!)"
 msgstr "Изпълняване в не интерактивен режим (опасно!)"
 
-#: ../gdebi:61
+#: ../gdebi:60
 msgid "Set an APT configuration option"
 msgstr "Задаване на опции за конфигурация на APT"
 
-#: ../gdebi:65
+#: ../gdebi:64
 msgid "Do not show progress information"
 msgstr "Да не се показва информация за напредък"
 
-#: ../gdebi:69
+#: ../gdebi:68
 msgid "Simulate only and print a apt-get install compatible line to stderr"
 msgstr ""
 "Само симулиране и отпечатване на apt-get install съвместим ред в stderr"
 
-#: ../gdebi:71
+#: ../gdebi:70
 msgid "Use alternative root dir"
 msgstr "Използване на алтернативна root директория"
 
-#: ../gdebi:79
+#: ../gdebi:78
 #, c-format
 msgid "gdebi error, file not found: %s\n"
 msgstr "gdebi грешка, файла не е намерен: %s\n"
 
-#: ../gdebi:98 ../gdebi:107
+#: ../gdebi:97 ../gdebi:106
 msgid "Need to be root to install packages"
 msgstr "Трябва да сте root, за да инсталирате пакети"
 
-#: ../gdebi:109 ../GDebi/GDebiCli.py:154
+#: ../gdebi:108 ../GDebi/GDebiCli.py:154
 msgid "Do you want to install the software package? [y/N]:"
 msgstr "Искате ли да инсталирате пакета? [д/Н]:"
 
-#: ../gdebi-gtk:60
+#: ../gdebi-gtk:57
 msgid "Auto close when the install is finished"
 msgstr "Автоматично затваряне след като инсталацията завърши"
 
-#: ../gdebi-gtk:62
+#: ../gdebi-gtk:59
 msgid "Use alternative datadir"
 msgstr "Използване на друга директория за данни"
 
-#: ../gdebi-gtk:65
+#: ../gdebi-gtk:62
 msgid "Remove package"
 msgstr "Премахване на пакет"
 
-#: ../gdebi-gtk:84
+#: ../gdebi-gtk:81
 msgid "Software index is broken"
 msgstr "Софтуерния индекс е счупен"
 
-#: ../gdebi-gtk:85
+#: ../gdebi-gtk:82
 msgid ""
 "This is a major failure of your software management system. Please check for "
 "broken packages with synaptic, check the file permissions and correctness of "
@@ -88,131 +89,93 @@ msgstr ""
 "коректността на файла '/etc/apt/sources.list' и презаредете информацията за "
 "софтуера с: 'sudo apt-get update' and 'sudo apt-get install -f'."
 
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "Инсталиране и преглед на пакети"
-
-#: ../data/gdebi.ui.h:2
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL, вижте /usr/share/common-licenses/GPL"
-
-#: ../data/gdebi.ui.h:3
-msgid "Terminal"
-msgstr "Терминал"
-
-#: ../data/gdebi.ui.h:4
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "Автоматично затваряне след успешно прилагане на промените"
-
-#: ../data/gdebi.ui.h:5 ../GDebi/GDebiKDE.py:157 ../GDebi/GDebiKDE.py:159
-#: ../GDebi/GDebiKDE.py:321
-msgid "Details"
-msgstr "Подробности"
-
-#: ../data/gdebi.ui.h:6 ../GDebi/GDebiKDE.py:320
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>За да го инсталирате, необходими са следните промени:</b>"
-
-#: ../data/gdebi.ui.h:7 ../data/gdebi.desktop.in.h:2
+#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2
 msgid "Package Installer"
 msgstr "Инсталатор на пакети"
 
-#: ../data/gdebi.ui.h:8
-msgid "_File"
-msgstr "_Файл"
-
-#: ../data/gdebi.ui.h:9
-msgid "_Open…"
-msgstr "_Отваряне…"
-
-#: ../data/gdebi.ui.h:10
-msgid "_Refresh"
-msgstr "_Обновяване"
-
-#: ../data/gdebi.ui.h:11
-msgid "_Edit"
-msgstr "_Редактиране"
-
-#: ../data/gdebi.ui.h:12
-msgid "_Help"
-msgstr "_Помощ"
-
-#. first, we load all the default descriptions -- pyuic doesn't use
-#. gettext as default (FIXME, copy code from language-selector)
-#: ../data/gdebi.ui.h:13 ../GDebi/GDebiKDE.py:155
-msgid "Package:"
-msgstr "Пакет:"
-
-#: ../data/gdebi.ui.h:14
+#: ../data/gdebi.ui.h:2
 msgid "<b><big>   </big></b>"
 msgstr "<b><big>   </big></b>"
 
-#: ../data/gdebi.ui.h:15
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "_Подробности"
 
-#: ../data/gdebi.ui.h:16 ../GDebi/GDebiKDE.py:156
-msgid "Status:"
-msgstr "Състояние:"
+#: ../data/gdebi.ui.h:4 ../GDebi/GDebiKDE.py:155
+msgid "Description"
+msgstr "Описание"
 
-#: ../data/gdebi.ui.h:17
-msgid "Description:"
-msgstr "Описание:"
+#: ../data/gdebi.ui.h:5 ../GDebi/GDebiKDE.py:161
+msgid "<b>Version:</b>"
+msgstr "<b>Версия:</b>"
+
+#: ../data/gdebi.ui.h:6 ../GDebi/GDebiKDE.py:162
+msgid "<b>Maintainer:</b>"
+msgstr "<b>Създател:</b>"
+
+#: ../data/gdebi.ui.h:7 ../GDebi/GDebiKDE.py:163
+msgid "<b>Priority:</b>"
+msgstr "<b>Приоритет:</b>"
+
+#: ../data/gdebi.ui.h:8 ../GDebi/GDebiKDE.py:164
+msgid "<b>Section:</b>"
+msgstr "<b>Секция:</b>"
+
+#: ../data/gdebi.ui.h:9 ../GDebi/GDebiKDE.py:165
+msgid "<b>Size:</b>"
+msgstr "<b>Големина:</b>"
+
+#: ../data/gdebi.ui.h:10
+msgid "  "
+msgstr "  "
+
+#: ../data/gdebi.ui.h:11 ../GDebi/GDebiKDE.py:154 ../GDebi/GDebiKDE.py:156
+#: ../GDebi/GDebiKDE.py:318
+msgid "Details"
+msgstr "Подробности"
+
+#: ../data/gdebi.ui.h:12
+msgid "Included files"
+msgstr "Файлове в пакета"
+
+#: ../data/gdebi.ui.h:13
+msgid "Lintian output"
+msgstr ""
 
 #. img = Gtk.Image()
 #. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
 #. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:18 ../GDebi/GDebiGtk.py:337 ../GDebi/GDebiGtk.py:395
+#: ../data/gdebi.ui.h:14 ../GDebi/GDebiGtk.py:336 ../GDebi/GDebiGtk.py:394
 msgid "_Install Package"
 msgstr "_Инсталиране"
 
-#: ../data/gdebi.ui.h:19
-msgid "_Remove Package"
-msgstr "_Премахване на пакет"
+#: ../data/gdebi.ui.h:15 ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "Инсталиране и преглед на пакети"
 
-#: ../data/gdebi.ui.h:20
-msgid "_Download Package"
-msgstr "_Сваляне на пакет"
+#: ../data/gdebi.ui.h:16
+msgid "GPL, see /usr/share/common-licenses/GPL"
+msgstr "GPL, вижте /usr/share/common-licenses/GPL"
 
-#: ../data/gdebi.ui.h:21 ../GDebi/GDebiKDE.py:158
-msgid "Description"
-msgstr "Описание"
+#: ../data/gdebi.ui.h:17
+msgid "Terminal"
+msgstr "Терминал"
 
-#: ../data/gdebi.ui.h:22 ../GDebi/GDebiKDE.py:164
-msgid "<b>Version:</b>"
-msgstr "<b>Версия:</b>"
+#: ../data/gdebi.ui.h:18
+msgid "Automatically close after the changes have been successfully applied"
+msgstr "Автоматично затваряне след успешно прилагане на промените"
 
-#: ../data/gdebi.ui.h:23 ../GDebi/GDebiKDE.py:165
-msgid "<b>Maintainer:</b>"
-msgstr "<b>Създател:</b>"
-
-#: ../data/gdebi.ui.h:24 ../GDebi/GDebiKDE.py:166
-msgid "<b>Priority:</b>"
-msgstr "<b>Приоритет:</b>"
-
-#: ../data/gdebi.ui.h:25 ../GDebi/GDebiKDE.py:167
-msgid "<b>Section:</b>"
-msgstr "<b>Секция:</b>"
-
-#: ../data/gdebi.ui.h:26 ../GDebi/GDebiKDE.py:168
-msgid "<b>Size:</b>"
-msgstr "<b>Големина:</b>"
-
-#: ../data/gdebi.ui.h:27
-msgid "  "
-msgstr "  "
-
-#: ../data/gdebi.ui.h:28
-msgid "Included files"
-msgstr "Файлове в пакета"
-
-#: ../data/gdebi.ui.h:29
-msgid "Lintian output"
-msgstr ""
+#: ../data/gdebi.ui.h:19 ../GDebi/GDebiKDE.py:317
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>За да го инсталирате, необходими са следните промени:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "Инсталатор на пакет"
+
+#: ../data/gdebi.desktop.in.h:4
+msgid "package;apt;dpkg;install"
+msgstr ""
 
 #. Translators: it's for missing entries in the deb package,
 #. e.g. a missing "Maintainer" field
@@ -220,6 +183,10 @@ msgstr "Инсталатор на пакет"
 #, python-format
 msgid "%s is not available"
 msgstr "%s не е достъпен"
+
+#: ../GDebi/DebPackage.py:52
+msgid "Click packages can currently only be inspected with this tool"
+msgstr ""
 
 #: ../GDebi/GDebiGtk.py:95
 msgid "Copy selected text"
@@ -256,118 +223,118 @@ msgstr "Неуспешно изтегляне на пакет: файл '%s' '%s
 
 #. set window title
 #. set name
-#: ../GDebi/GDebiGtk.py:251 ../GDebi/GDebiKDE.py:208
+#: ../GDebi/GDebiGtk.py:251 ../GDebi/GDebiKDE.py:205
 #, python-format
 msgid "Package Installer - %s"
 msgstr "Инсталатор на пакет - %s"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:307
 msgid "Package control data"
 msgstr "Управляващи данни на пакет"
 
-#: ../GDebi/GDebiGtk.py:311
+#: ../GDebi/GDebiGtk.py:310
 msgid "Upstream data"
 msgstr "Обединени данни"
 
-#: ../GDebi/GDebiGtk.py:317
+#: ../GDebi/GDebiGtk.py:316
 msgid "Error reading filelist"
 msgstr "Грешка при четене на списъка с файлове"
 
-#: ../GDebi/GDebiGtk.py:333
+#: ../GDebi/GDebiGtk.py:332
 msgid "Error: "
 msgstr "Грешка: "
 
-#: ../GDebi/GDebiGtk.py:348
+#: ../GDebi/GDebiGtk.py:347
 msgid "Error: no longer provides "
 msgstr "Грешка: Вече не се поддържа "
 
-#: ../GDebi/GDebiGtk.py:365
+#: ../GDebi/GDebiGtk.py:364
 msgid "Same version is already installed"
 msgstr "Същата версия вече е инсталирана"
 
-#: ../GDebi/GDebiGtk.py:366
+#: ../GDebi/GDebiGtk.py:365
 msgid "_Reinstall Package"
 msgstr "_Преинсталиране"
 
-#: ../GDebi/GDebiGtk.py:404
+#: ../GDebi/GDebiGtk.py:403
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:407
+#: ../GDebi/GDebiGtk.py:406
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:424
+#: ../GDebi/GDebiGtk.py:428
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:453
+#: ../GDebi/GDebiGtk.py:459
 msgid "Selection is a directory"
 msgstr "Избора е папка"
 
-#: ../GDebi/GDebiGtk.py:458 ../GDebi/GDebiGtk.py:464
+#: ../GDebi/GDebiGtk.py:464 ../GDebi/GDebiGtk.py:470
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "Грешка при четене на съдържанието на файла '%s'"
 
-#: ../GDebi/GDebiGtk.py:469
+#: ../GDebi/GDebiGtk.py:475
 msgid "File content can not be extracted"
 msgstr "Съдържанието на файла не може да се извлече"
 
-#: ../GDebi/GDebiGtk.py:480
+#: ../GDebi/GDebiGtk.py:486
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>Ще се премахнат: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:482 ../GDebi/GDebiKDE.py:314
+#: ../GDebi/GDebiGtk.py:488 ../GDebi/GDebiKDE.py:311
 #, python-format
 msgid "To be installed: %s"
 msgstr "Ще се инсталира: %s"
 
-#: ../GDebi/GDebiGtk.py:497
+#: ../GDebi/GDebiGtk.py:503
 msgid "Open Software Package"
 msgstr "Отваряне на пакет"
 
-#: ../GDebi/GDebiGtk.py:502
+#: ../GDebi/GDebiGtk.py:508
 msgid "Software packages"
 msgstr "Пакети"
 
-#: ../GDebi/GDebiGtk.py:551
+#: ../GDebi/GDebiGtk.py:557
 msgid "Dependency problems"
 msgstr "Проблем със зависимостите"
 
-#: ../GDebi/GDebiGtk.py:552
+#: ../GDebi/GDebiGtk.py:558
 #, python-format
 msgid "One or more packages are required by %s, it cannot be removed."
 msgstr ""
 "Един или повече пакети зависят от '%s' , той не може да бъде премахнат."
 
-#: ../GDebi/GDebiGtk.py:560
+#: ../GDebi/GDebiGtk.py:566
 msgid "File not found"
 msgstr "Файлът не е намерен"
 
-#: ../GDebi/GDebiGtk.py:561
+#: ../GDebi/GDebiGtk.py:567
 msgid "You tried to install a file that does not (or no longer) exist. "
 msgstr "Пробвахте да инсталирате файл (или вече не), който не съществува "
 
-#: ../GDebi/GDebiGtk.py:572
+#: ../GDebi/GDebiGtk.py:578
 msgid "Installing package file..."
 msgstr "Инсталиране на пакет..."
 
-#: ../GDebi/GDebiGtk.py:574
+#: ../GDebi/GDebiGtk.py:580
 msgid "Removing package..."
 msgstr "Премахване на пакет..."
 
-#: ../GDebi/GDebiGtk.py:577
+#: ../GDebi/GDebiGtk.py:583
 msgid "Install unauthenticated software?"
 msgstr "Инсталиране на софтуер без удостоверена автентичност?"
 
-#: ../GDebi/GDebiGtk.py:578
+#: ../GDebi/GDebiGtk.py:584
 msgid ""
 "Malicious software can damage your data and take control of your system.\n"
 "\n"
@@ -378,11 +345,11 @@ msgstr ""
 "вашата система.\n"
 "Пакетите отдолу не са идентифицирани и могат да се окажат злонамерен софтуер."
 
-#: ../GDebi/GDebiGtk.py:606
+#: ../GDebi/GDebiGtk.py:612
 msgid "You need to grant administrative rights to install software"
 msgstr "Трябва да се издават административни права за инсталиране на софтуер"
 
-#: ../GDebi/GDebiGtk.py:607
+#: ../GDebi/GDebiGtk.py:613
 msgid ""
 "\n"
 "It is a possible security risk to install packages files manually.\n"
@@ -392,36 +359,39 @@ msgstr ""
 "Има възможен риск за сигурността при ръчно инсталиране на пакети.\n"
 "Инсталирайте софтуер само от доверени източници.\n"
 
-#: ../GDebi/GDebiGtk.py:612
+#: ../GDebi/GDebiGtk.py:618
 msgid "You need to grant administrative rights to remove software"
 msgstr "Имате нужда от администраторски права, за да премахвате софтуер"
 
-#: ../GDebi/GDebiGtk.py:613
+#: ../GDebi/GDebiGtk.py:619
 msgid "It is a possible risk to remove packages."
 msgstr "Има възможен риск при премахването на пакети."
 
-#: ../GDebi/GDebiGtk.py:635 ../GDebi/GDebiGtk.py:699
+#: ../GDebi/GDebiGtk.py:641 ../GDebi/GDebiGtk.py:706
 msgid "Failed to install package file"
 msgstr "Неуспешен опит за инсталиране на пакет"
 
-#: ../GDebi/GDebiGtk.py:637
+#: ../GDebi/GDebiGtk.py:643
 msgid "Failed to remove package"
 msgstr "Неуспешно деинсталиране на пакет"
 
 #. errMsg = "%s" % msg
-#: ../GDebi/GDebiGtk.py:683 ../GDebi/GDebiKDE.py:369
+#: ../GDebi/GDebiGtk.py:688 ../GDebi/GDebiKDE.py:366
 msgid "Could not download all required files"
 msgstr "Не могат да се изтеглят всички необходими файлове"
 
-#: ../GDebi/GDebiGtk.py:684 ../GDebi/GDebiKDE.py:370
-msgid "Please check your internet connection or installation medium."
+#: ../GDebi/GDebiGtk.py:689
+#, fuzzy
+msgid ""
+"Please check your internet connection or installation medium, and make sure "
+"your APT cache is up-to-date."
 msgstr "Моля, проверете връзката си с интернет или инсталационния носител."
 
-#: ../GDebi/GDebiGtk.py:688 ../GDebi/GDebiKDE.py:375
+#: ../GDebi/GDebiGtk.py:695 ../GDebi/GDebiKDE.py:373
 msgid "Could not install all dependencies"
 msgstr "Не могат да се инсталират всички зависимости"
 
-#: ../GDebi/GDebiGtk.py:689 ../GDebi/GDebiKDE.py:376
+#: ../GDebi/GDebiGtk.py:696 ../GDebi/GDebiKDE.py:374
 msgid ""
 "Usually this is related to an error of the software distributor. See the "
 "terminal window for more details."
@@ -429,12 +399,12 @@ msgstr ""
 "Обикновено това е свързано с грешка в софтуера дистрибутор. Вижте прозореца "
 "на терминала за повече подробности."
 
-#: ../GDebi/GDebiGtk.py:705
+#: ../GDebi/GDebiGtk.py:712
 #, python-format
 msgid "Installing %s"
 msgstr "Инсталиране на %s"
 
-#: ../GDebi/GDebiGtk.py:708
+#: ../GDebi/GDebiGtk.py:715
 #, python-format
 msgid "Removing %s"
 msgstr "Премахване на %s"
@@ -443,88 +413,88 @@ msgstr "Премахване на %s"
 #. show the button
 #. self.button_deb_install_close.set_sensitive(True)
 #. self.button_deb_install_close.grab_default()
-#: ../GDebi/GDebiGtk.py:730 ../GDebi/GDebiKDE.py:395
+#: ../GDebi/GDebiGtk.py:737 ../GDebi/GDebiKDE.py:393
 msgid "Installation finished"
 msgstr "Инсталирането завърши"
 
-#: ../GDebi/GDebiGtk.py:732
+#: ../GDebi/GDebiGtk.py:739
 msgid "Removal finished"
 msgstr "Премахването завърши"
 
-#: ../GDebi/GDebiGtk.py:735
+#: ../GDebi/GDebiGtk.py:742
 #, python-format
 msgid "Package '%s' was installed"
 msgstr "Пакетът '%s' беше инсталиран"
 
-#: ../GDebi/GDebiGtk.py:737
+#: ../GDebi/GDebiGtk.py:744
 #, python-format
 msgid "Package '%s' was removed"
 msgstr "Пакета '%s'  беше премахнат"
 
-#: ../GDebi/GDebiGtk.py:740 ../GDebi/GDebiKDE.py:399
+#: ../GDebi/GDebiGtk.py:747 ../GDebi/GDebiKDE.py:397
 #, python-format
 msgid "Failed to install package '%s'"
 msgstr "Неуспешен опит за инсталиране на пакета '%s'"
 
-#: ../GDebi/GDebiGtk.py:743
+#: ../GDebi/GDebiGtk.py:750
 #, python-format
 msgid "Failed to remove package '%s'"
 msgstr "Неуспех при премахването на '%s'"
 
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:754
 msgid "Installation complete"
 msgstr "Инсталирането завърши"
 
-#: ../GDebi/GDebiGtk.py:749
+#: ../GDebi/GDebiGtk.py:756
 msgid "Removal complete"
 msgstr "Премахването завършено"
 
-#: ../GDebi/GDebiGtk.py:757 ../GDebi/GDebiKDE.py:409
+#: ../GDebi/GDebiGtk.py:764 ../GDebi/GDebiKDE.py:407
 msgid "Failed to completely install all dependencies"
 msgstr "Неуспешен опит да инсталирате всички зависимости"
 
-#: ../GDebi/GDebiGtk.py:759
+#: ../GDebi/GDebiGtk.py:766
 msgid "Failed to completely remove package"
 msgstr "Неуспешно завършване на премахването"
 
-#: ../GDebi/GDebiGtk.py:760 ../GDebi/GDebiKDE.py:410
+#: ../GDebi/GDebiGtk.py:767 ../GDebi/GDebiKDE.py:408
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "За да поправите това, изпълнете 'sudo apt-get install -f' в прозореца на "
 "терминал."
 
 #. ui
-#: ../GDebi/GDebiGtk.py:879 ../GDebi/KDEAptDialogs.py:70
+#: ../GDebi/GDebiGtk.py:885 ../GDebi/KDEAptDialogs.py:69
 #, python-format
 msgid "Installing '%s'..."
 msgstr "Инсталиране на '%s'..."
 
-#: ../GDebi/GDebiGtk.py:882
+#: ../GDebi/GDebiGtk.py:888
 #, python-format
 msgid "Removing '%s'..."
 msgstr "Премахване на '%s' ..."
 
-#: ../GDebi/GDebiGtk.py:986 ../GDebi/KDEAptDialogs.py:136
+#: ../GDebi/GDebiGtk.py:998 ../GDebi/KDEAptDialogs.py:135
 msgid "Installing dependencies..."
 msgstr "Инсталиране на зависимости..."
 
-#: ../GDebi/GDebiGtk.py:1031 ../GDebi/KDEAptDialogs.py:199
-#: ../GDebi/KDEAptDialogs.py:209 ../GDebi/KDEAptDialogs.py:211
+#: ../GDebi/GDebiGtk.py:1043 ../GDebi/KDEAptDialogs.py:198
+#: ../GDebi/KDEAptDialogs.py:208 ../GDebi/KDEAptDialogs.py:210
 msgid "Downloading additional package files..."
 msgstr "Изтегляне на допълнителни пакети..."
 
-#: ../GDebi/GDebiGtk.py:1040 ../GDebi/KDEAptDialogs.py:209
+#: ../GDebi/GDebiGtk.py:1052 ../GDebi/KDEAptDialogs.py:208
 #, python-format
 msgid "File %s of %s at %sB/s"
 msgstr "Файл %s от %s с %sB/с"
 
-#: ../GDebi/GDebiGtk.py:1042 ../GDebi/KDEAptDialogs.py:211
+#: ../GDebi/GDebiGtk.py:1054 ../GDebi/KDEAptDialogs.py:210
 #, python-format
 msgid "File %s of %s"
 msgstr "Файл %s от %s"
 
 #. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1049 ../GDebi/KDEAptDialogs.py:217
+#: ../GDebi/GDebiGtk.py:1061 ../GDebi/KDEAptDialogs.py:216
 #, python-format
 msgid "Please insert '%s' into the drive '%s'"
 msgstr "Моля, поставете '%s' в устройство '%s'"
@@ -559,7 +529,7 @@ msgstr ""
 msgid "This package is uninstallable\n"
 msgstr "Този пакет не може да се деинсталира\n"
 
-#: ../GDebi/GDebiCli.py:98 ../GDebi/GDebiKDE.py:244
+#: ../GDebi/GDebiCli.py:98 ../GDebi/GDebiKDE.py:241
 msgid "No description is available"
 msgstr "Няма налично описание"
 
@@ -580,23 +550,33 @@ msgstr "Изисква инсталирането на следните паке
 msgid "Error during install: '%s'"
 msgstr "Грешка при инсталирането на: '%s'"
 
-#: ../GDebi/GDebiKDE.py:160
+#. first, we load all the default descriptions -- pyuic doesn't use
+#. gettext as default (FIXME, copy code from language-selector)
+#: ../GDebi/GDebiKDE.py:152
+msgid "Package:"
+msgstr "Пакет:"
+
+#: ../GDebi/GDebiKDE.py:153
+msgid "Status:"
+msgstr "Състояние:"
+
+#: ../GDebi/GDebiKDE.py:157
 msgid "Included Files"
 msgstr "Включени файлове"
 
-#: ../GDebi/GDebiKDE.py:162 ../GDebi/GDebiKDE.py:302
+#: ../GDebi/GDebiKDE.py:159 ../GDebi/GDebiKDE.py:299
 msgid "&Install Package"
 msgstr "&Инсталиране"
 
-#: ../GDebi/GDebiKDE.py:163
+#: ../GDebi/GDebiKDE.py:160
 msgid "&Download Package"
 msgstr "&Сваляне на пакет"
 
-#: ../GDebi/GDebiKDE.py:188
+#: ../GDebi/GDebiKDE.py:185
 msgid "The package file does not exist"
 msgstr "Файла на пакета не съществува"
 
-#: ../GDebi/GDebiKDE.py:189
+#: ../GDebi/GDebiKDE.py:186
 msgid ""
 "A nonexistent file has been selected for installation. Please select an "
 "existing .deb package file."
@@ -605,33 +585,40 @@ msgstr ""
 "пакетен файл."
 
 #. self.textLabel1_3_2.setText(_("Same version is already installed"))
-#: ../GDebi/GDebiKDE.py:270
+#: ../GDebi/GDebiKDE.py:267
 msgid "&Reinstall Package"
 msgstr "&Преинсталиране"
 
-#: ../GDebi/GDebiKDE.py:305
+#: ../GDebi/GDebiKDE.py:302
 msgid "Re&install Package"
 msgstr "Пр&еинсталиране"
 
-#: ../GDebi/GDebiKDE.py:316
+#: ../GDebi/GDebiKDE.py:313
 #, python-format
 msgid "To be removed: %s"
 msgstr "Ще се премахнат: %s"
 
-#: ../GDebi/GDebiKDE.py:397
+#: ../GDebi/GDebiKDE.py:367
+#, fuzzy
+msgid ""
+"Please check your internet connection or installation medium, or make sure "
+"your APT cache is up-to-date."
+msgstr "Моля, проверете връзката си с интернет или инсталационния носител."
+
+#: ../GDebi/GDebiKDE.py:395
 #, python-format
 msgid "<b>Package '%s' was installed</b>"
 msgstr ""
 
-#: ../GDebi/GDebiKDE.py:423
+#: ../GDebi/GDebiKDE.py:421
 msgid "Installing"
 msgstr ""
 
-#: ../GDebi/GDebiCommon.py:75
+#: ../GDebi/GDebiCommon.py:78
 msgid "Broken dependencies"
 msgstr "Счупени зависимости"
 
-#: ../GDebi/GDebiCommon.py:76
+#: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
 "this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
@@ -641,24 +628,24 @@ msgstr ""
 "работи, докато това не се поправи. За да го поправите, изпълнете 'gksudo "
 "synaptic' или 'sudo apt-get install -f' в терминал."
 
-#: ../GDebi/GDebiCommon.py:94
+#: ../GDebi/GDebiCommon.py:100
 #, python-format
 msgid "'%s' is not a Debian package"
 msgstr "'%s' не е Debian пакет"
 
-#: ../GDebi/GDebiCommon.py:95
+#: ../GDebi/GDebiCommon.py:101
 #, python-format
 msgid ""
 "The MIME type of this file is '%s' and can not be installed on this system."
 msgstr ""
 "MIME типът на този файл е '%s' и не може да се инсталира на тази система."
 
-#: ../GDebi/GDebiCommon.py:99
+#: ../GDebi/GDebiCommon.py:105
 #, python-format
 msgid "Could not open '%s'"
 msgstr "Не може да се отвори '%s'"
 
-#: ../GDebi/GDebiCommon.py:100
+#: ../GDebi/GDebiCommon.py:106
 msgid ""
 "The package might be corrupted or you are not allowed to open the file. "
 "Check the permissions of the file."
@@ -666,19 +653,19 @@ msgstr ""
 "Пакетът може да бъде повреден или не ви е позволено да отворите файла. "
 "Проверете правата на файла."
 
-#: ../GDebi/GDebiCommon.py:122
+#: ../GDebi/GDebiCommon.py:128
 msgid "Same version is available in a software channel"
 msgstr "Същата версия се предлага в софтуерния канал"
 
-#: ../GDebi/GDebiCommon.py:123
+#: ../GDebi/GDebiCommon.py:129
 msgid "You are recommended to install the software from the channel instead."
 msgstr "Препоръчано ви е да инсталирате софтуера от софтуерния канал."
 
-#: ../GDebi/GDebiCommon.py:127
+#: ../GDebi/GDebiCommon.py:133
 msgid "An older version is available in a software channel"
 msgstr "Достъпна е по-стара версия в софтуерния канал"
 
-#: ../GDebi/GDebiCommon.py:128
+#: ../GDebi/GDebiCommon.py:134
 msgid ""
 "Generally you are recommended to install the version from the software "
 "channel, since it is usually better supported."
@@ -686,11 +673,11 @@ msgstr ""
 "Обикновено се препоръчва да инсталирате версията от софтуерния канал, тъй "
 "като тя обикновено се поддържа по-добре."
 
-#: ../GDebi/GDebiCommon.py:133
+#: ../GDebi/GDebiCommon.py:139
 msgid "A later version is available in a software channel"
 msgstr "Достъпна е по-нова версия в софтуерния канал"
 
-#: ../GDebi/GDebiCommon.py:135
+#: ../GDebi/GDebiCommon.py:141
 msgid ""
 "You are strongly advised to install the version from the software channel, "
 "since it is usually better supported."
@@ -698,27 +685,27 @@ msgstr ""
 "Силно ви се препоръчва да инсталирате версията от софтуерния канал, тъй като "
 "тя обикновено се поддържа по-добре."
 
-#: ../GDebi/GDebiCommon.py:177
+#: ../GDebi/GDebiCommon.py:183
 msgid "All dependencies are satisfied"
 msgstr "Всички зависимости са изпълнени"
 
 #. FIXME: use ngettext here
-#: ../GDebi/GDebiCommon.py:180
+#: ../GDebi/GDebiCommon.py:186
 #, python-format
 msgid "Requires the <b>removal</b> of %s packages\n"
 msgstr "Изисква <b>премахването</b> на %s пакета\n"
 
-#: ../GDebi/GDebiCommon.py:182
+#: ../GDebi/GDebiCommon.py:188
 #, python-format
 msgid "Requires the installation of %s packages"
 msgstr "Изисква инсталирането на %s пакета"
 
-#: ../GDebi/GDebiCommon.py:190 ../GDebi/GDebiCommon.py:208
+#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 "Позволено е да се изпълнява само един софтуер за управление едновременно"
 
-#: ../GDebi/GDebiCommon.py:192 ../GDebi/GDebiCommon.py:210
+#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
 msgid ""
 "Please close the other application e.g. 'Update Manager', 'aptitude' or "
 "'Synaptic' first."
@@ -727,9 +714,33 @@ msgstr ""
 "или 'Synaptic'."
 
 #. change = QMessageBox.question(None, _("Media Change"), msg, QMessageBox.Ok, QMessageBox.Cancel)
-#: ../GDebi/KDEAptDialogs.py:219
+#: ../GDebi/KDEAptDialogs.py:218
 msgid "Media Change"
 msgstr "Смяна на носител"
+
+#~ msgid "_Download Package"
+#~ msgstr "_Сваляне на пакет"
+
+#~ msgid "_Remove Package"
+#~ msgstr "_Премахване на пакет"
+
+#~ msgid "_File"
+#~ msgstr "_Файл"
+
+#~ msgid "_Open…"
+#~ msgstr "_Отваряне…"
+
+#~ msgid "_Refresh"
+#~ msgstr "_Обновяване"
+
+#~ msgid "_Edit"
+#~ msgstr "_Редактиране"
+
+#~ msgid "_Help"
+#~ msgstr "_Помощ"
+
+#~ msgid "Description:"
+#~ msgstr "Описание:"
 
 #~ msgid "gdebi"
 #~ msgstr "gdebi"
