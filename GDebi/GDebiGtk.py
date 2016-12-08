@@ -326,12 +326,9 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
 
         # check the deps
         if not self._deb.check():
-            self.label_status.set_markup(
-                "<span foreground=\"red\" weight=\"bold\">"+
-                _("Error: ") +
+            self.label_status.set_markup(_("Error: ") + 
                 #glib.markup_escape_text(self._deb._failure_string) +
-                self._deb._failure_string +
-                "</span>")
+                self._deb._failure_string)
             self.infobar1.set_message_type(Gtk.MessageType.ERROR)
             self.infobar1.show()
             self.button_install.set_label(_("_Install Package"))
@@ -343,10 +340,7 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
         # check provides
         provides = self.compareProvides()
         if provides:
-            self.label_status.set_markup(
-                "<span foreground=\"red\" weight=\"bold\">"+
-                _("Error: no longer provides ") + ", ".join(provides) +
-                "</span>")
+            self.label_status.set_markup(_("Error: no longer provides ") + ", ".join(provides))
             self.infobar1.set_message_type(Gtk.MessageType.ERROR)
             self.infobar1.show()
             return
