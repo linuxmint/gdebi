@@ -712,32 +712,32 @@ msgstr "Prvo zatvorite preostale aplikacije, npr. 'aptitude' ili 'Synaptic'."
 msgid "Media Change"
 msgstr "Promjena medija"
 
-#~ msgid "_File"
-#~ msgstr "_Datoteka"
+msgid "_File"
+msgstr "_Datoteka"
 
-#~ msgid "_Open…"
-#~ msgstr "_Otvori..."
+msgid "_Open…"
+msgstr "_Otvori..."
 
-#~ msgid "_Refresh"
-#~ msgstr "_Osvježi"
+msgid "_Refresh"
+msgstr "_Osvježi"
 
-#~ msgid "_Edit"
-#~ msgstr "_Uredi"
+msgid "_Edit"
+msgstr "_Uredi"
 
-#~ msgid "_Help"
-#~ msgstr "_Pomoć"
+msgid "_Help"
+msgstr "_Pomoć"
 
-#~ msgid "<b><big>   </big></b>"
-#~ msgstr "<b><big> </big></b>"
+msgid "<b><big>   </big></b>"
+msgstr "<b><big> </big></b>"
 
-#~ msgid "Description:"
-#~ msgstr "Opis:"
+msgid "Description:"
+msgstr "Opis:"
 
-#~ msgid "_Remove Package"
-#~ msgstr "_Ukloni paket"
+msgid "_Remove Package"
+msgstr "_Ukloni paket"
 
-#~ msgid "_Download Package"
-#~ msgstr "_Preuzmi paket"
+msgid "_Download Package"
+msgstr "_Preuzmi paket"
 
-#~ msgid "Lintian output"
-#~ msgstr "Lintian izlaz"
+msgid "Lintian output"
+msgstr "Lintian izlaz"
