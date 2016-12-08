@@ -1,0 +1,6 @@
+usr/share/gdebi/gdebi-kde
+usr/share/gdebi/GDebiKDEInstallDialog.ui
+usr/share/gdebi/GDebiKDEDialog.ui
+usr/share/gdebi/GDebi/KDEAptDialogs.py
+usr/share/gdebi/GDebi/GDebiKDE.py
+usr/share/applications/kde4/*.desktop

@@ -1,0 +1,12 @@
+[encoding: UTF-8]
+gdebi
+gdebi-gtk
+[type: gettext/glade] data/gdebi.ui
+data/gdebi.desktop.in
+gdebi-gtk
+GDebi/DebPackage.py
+GDebi/GDebiGtk.py
+GDebi/GDebiCli.py
+GDebi/GDebiKDE.py
+GDebi/GDebiCommon.py
+GDebi/KDEAptDialogs.py

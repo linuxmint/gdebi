@@ -1,0 +1,771 @@
+# Indonesian translation for gdebi
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the gdebi package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gdebi\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-08-03 15:11+0200\n"
+"PO-Revision-Date: 2013-09-11 10:55+0000\n"
+"Last-Translator: Iwan <iwan.nts@gmail.com>\n"
+"Language-Team: Indonesian <id@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-03-12 19:04+0000\n"
+"X-Generator: Launchpad (build 16963)\n"
+
+#: ../gdebi-gtk:84
+msgid "Software index is broken"
+msgstr "Indeks perangkat lunak rusak"
+
+#: ../data/gdebi.ui.h:7 ../data/gdebi.desktop.in.h:2
+msgid "Package Installer"
+msgstr "Pemasang Paket"
+
+#: ../data/gdebi.ui.h:8
+msgid "_File"
+msgstr "_Berkas"
+
+#: ../gdebi:51
+#, c-format
+msgid ""
+"usage: %prog [options] filename\n"
+"For a graphical version run gdebi-gtk\n"
+msgstr ""
+
+#: ../gdebi:57 ../gdebi-gtk:57
+msgid "Run non-interactive (dangerous!)"
+msgstr "Jalankan non-interaktif (berbahaya!)"
+
+#: ../gdebi:61
+msgid "Set an APT configuration option"
+msgstr "Modifikasi opsi konfigurasi APT"
+
+#: ../gdebi:65
+msgid "Do not show progress information"
+msgstr "Jangan tampilkan informasi kemajuan"
+
+#: ../gdebi:69
+msgid "Simulate only and print a apt-get install compatible line to stderr"
+msgstr ""
+
+#: ../gdebi:71
+msgid "Use alternative root dir"
+msgstr "Gunakan direktori root alternatif"
+
+#: ../gdebi:79
+#, c-format
+msgid "gdebi error, file not found: %s\n"
+msgstr "kesalahan gdebi, berkas tidak ditemukan: %s\n"
+
+#: ../gdebi:98 ../gdebi:107
+msgid "Need to be root to install packages"
+msgstr "Gagal menginstal paket '%s'"
+
+#: ../gdebi:109 ../GDebi/GDebiCli.py:154
+msgid "Do you want to install the software package? [y/N]:"
+msgstr "Apakah Anda ingin memasang paket perangkat lunak? [y/N]:"
+
+#: ../gdebi-gtk:60
+msgid "Auto close when the install is finished"
+msgstr ""
+
+#: ../gdebi-gtk:62
+msgid "Use alternative datadir"
+msgstr ""
+
+#: ../gdebi-gtk:65
+msgid "Remove package"
+msgstr ""
+
+#: ../gdebi-gtk:85
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Ini adalah kegagalan utama dari sistem manajemen piranti lunak anda. Mohon "
+"periksa paket-paket yang rusak dengan synaptic, periksa ijin-ijin berkas dan "
+"kebenaran dari berkas '/etc/apt/sources.list' dan muat ulang informasi "
+"piranti lunak dengan : 'sudo apt-get update' dan 'sudo apt-get install -f'"
+
+#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "Pasang dan tinjau paket-paket piranti lunak"
+
+#: ../data/gdebi.ui.h:2
+msgid "GPL, see /usr/share/common-licenses/GPL"
+msgstr "GPL, lihat /usr/share/common-licenses/GPL"
+
+#: ../data/gdebi.ui.h:3
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../data/gdebi.ui.h:4
+msgid "Automatically close after the changes have been successfully applied"
+msgstr ""
+"Menutup secara otomatis setelah perubahan-perubahan telah berhasil diterapkan"
+
+#: ../data/gdebi.ui.h:5 ../GDebi/GDebiKDE.py:157 ../GDebi/GDebiKDE.py:159
+#: ../GDebi/GDebiKDE.py:321
+msgid "Details"
+msgstr "Rincian"
+
+#: ../data/gdebi.ui.h:6 ../GDebi/GDebiKDE.py:320
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>Untuk memasang dibutuhkan perubahan-perubahan berikut ini:</b>"
+
+#: ../data/gdebi.ui.h:9
+msgid "_Open…"
+msgstr ""
+
+#: ../data/gdebi.ui.h:10
+msgid "_Refresh"
+msgstr ""
+
+#: ../data/gdebi.ui.h:11
+msgid "_Edit"
+msgstr ""
+
+#: ../data/gdebi.ui.h:12
+msgid "_Help"
+msgstr "_Bantuan"
+
+#. first, we load all the default descriptions -- pyuic doesn't use
+#. gettext as default (FIXME, copy code from language-selector)
+#: ../data/gdebi.ui.h:13 ../GDebi/GDebiKDE.py:155
+msgid "Package:"
+msgstr "Paket:"
+
+#: ../data/gdebi.ui.h:14
+msgid "<b><big>   </big></b>"
+msgstr "<b><big>   </big></b>"
+
+#: ../data/gdebi.ui.h:15
+msgid "_Details"
+msgstr "_Rincian"
+
+#: ../data/gdebi.ui.h:16 ../GDebi/GDebiKDE.py:156
+msgid "Status:"
+msgstr "Status:"
+
+#: ../data/gdebi.ui.h:17
+msgid "Description:"
+msgstr "Gambaran:"
+
+#. img = Gtk.Image()
+#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
+#. self.button_install.set_image(img)
+#: ../data/gdebi.ui.h:18 ../GDebi/GDebiGtk.py:337 ../GDebi/GDebiGtk.py:395
+msgid "_Install Package"
+msgstr "_Instal Paket"
+
+#: ../data/gdebi.ui.h:19
+msgid "_Remove Package"
+msgstr ""
+
+#: ../data/gdebi.ui.h:20
+msgid "_Download Package"
+msgstr ""
+
+#: ../data/gdebi.ui.h:21 ../GDebi/GDebiKDE.py:158
+msgid "Description"
+msgstr "Deskripsi"
+
+#: ../data/gdebi.ui.h:22 ../GDebi/GDebiKDE.py:164
+msgid "<b>Version:</b>"
+msgstr "<b>Versi:</b>"
+
+#: ../data/gdebi.ui.h:23 ../GDebi/GDebiKDE.py:165
+msgid "<b>Maintainer:</b>"
+msgstr "<b>Pengelola:</b>"
+
+#: ../data/gdebi.ui.h:24 ../GDebi/GDebiKDE.py:166
+msgid "<b>Priority:</b>"
+msgstr "<b>Prioritas:</b>"
+
+#: ../data/gdebi.ui.h:25 ../GDebi/GDebiKDE.py:167
+msgid "<b>Section:</b>"
+msgstr "<b>Bagian:</b>"
+
+#: ../data/gdebi.ui.h:26 ../GDebi/GDebiKDE.py:168
+msgid "<b>Size:</b>"
+msgstr "<b>Ukuran:</b>"
+
+#: ../data/gdebi.ui.h:27
+msgid "  "
+msgstr "  "
+
+#: ../data/gdebi.ui.h:28
+msgid "Included files"
+msgstr ""
+
+#: ../data/gdebi.ui.h:29
+msgid "Lintian output"
+msgstr ""
+
+#: ../data/gdebi.desktop.in.h:1
+msgid "GDebi Package Installer"
+msgstr "Pemasang Paket GDebi"
+
+#. Translators: it's for missing entries in the deb package,
+#. e.g. a missing "Maintainer" field
+#: ../GDebi/DebPackage.py:38
+#, python-format
+msgid "%s is not available"
+msgstr "%s tidak tersedia"
+
+#: ../GDebi/GDebiGtk.py:95
+msgid "Copy selected text"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:106
+msgid "Loading..."
+msgstr "Memuat..."
+
+#: ../GDebi/GDebiGtk.py:181
+msgid "Can not download as root"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:182
+msgid ""
+"Remote packages can not be downloaded when running as root. Please try again "
+"as a normal user."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:195
+msgid "Downloading package"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:202
+msgid "Download failed"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:203
+#, python-format
+msgid "Downloading the package failed: file '%s' '%s'"
+msgstr ""
+
+#. set window title
+#. set name
+#: ../GDebi/GDebiGtk.py:251 ../GDebi/GDebiKDE.py:208
+#, python-format
+msgid "Package Installer - %s"
+msgstr "Pemasang Paket - %s"
+
+#: ../GDebi/GDebiGtk.py:308
+msgid "Package control data"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:311
+msgid "Upstream data"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:317
+msgid "Error reading filelist"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:333
+msgid "Error: "
+msgstr "Kesalahan: "
+
+#: ../GDebi/GDebiGtk.py:348
+msgid "Error: no longer provides "
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:365
+msgid "Same version is already installed"
+msgstr "Versi yang sama telah terpasang"
+
+#: ../GDebi/GDebiGtk.py:366
+msgid "_Reinstall Package"
+msgstr "_Pasang Ulang Paket"
+
+#: ../GDebi/GDebiGtk.py:404
+msgid ""
+"No lintian available.\n"
+"Please install using sudo apt-get install lintian"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:407
+msgid "Running lintian..."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:424
+#, python-format
+msgid ""
+"\n"
+"Lintian finished with exit status %s"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:453
+msgid "Selection is a directory"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:458 ../GDebi/GDebiGtk.py:464
+#, python-format
+msgid "Error reading file content '%s'"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:469
+msgid "File content can not be extracted"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:480
+#, python-format
+msgid "<b>To be removed: %s</b>"
+msgstr "<b>Akan dihapus: %s</b>"
+
+#: ../GDebi/GDebiGtk.py:482 ../GDebi/GDebiKDE.py:314
+#, python-format
+msgid "To be installed: %s"
+msgstr "Akan dipasang: %s"
+
+#: ../GDebi/GDebiGtk.py:497
+msgid "Open Software Package"
+msgstr "Buka Paket Perangkat Lunak"
+
+#: ../GDebi/GDebiGtk.py:502
+msgid "Software packages"
+msgstr "Paket-paket perangkat lunak"
+
+#: ../GDebi/GDebiGtk.py:551
+msgid "Dependency problems"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:552
+#, python-format
+msgid "One or more packages are required by %s, it cannot be removed."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:560
+msgid "File not found"
+msgstr "Berkas tidak ditemukan"
+
+#: ../GDebi/GDebiGtk.py:561
+msgid "You tried to install a file that does not (or no longer) exist. "
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:572
+msgid "Installing package file..."
+msgstr "Memasang berkas paket..."
+
+#: ../GDebi/GDebiGtk.py:574
+msgid "Removing package..."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:577
+msgid "Install unauthenticated software?"
+msgstr "Pasang perangkat lunak yang belum terotentifikasi?"
+
+#: ../GDebi/GDebiGtk.py:578
+msgid ""
+"Malicious software can damage your data and take control of your system.\n"
+"\n"
+"The packages below are not authenticated and could therefore be of malicious "
+"nature."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:606
+msgid "You need to grant administrative rights to install software"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:607
+msgid ""
+"\n"
+"It is a possible security risk to install packages files manually.\n"
+"Install software from trustworthy software distributors only.\n"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:612
+msgid "You need to grant administrative rights to remove software"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:613
+msgid "It is a possible risk to remove packages."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:635 ../GDebi/GDebiGtk.py:699
+msgid "Failed to install package file"
+msgstr "Gagal menginstal berkas paket"
+
+#: ../GDebi/GDebiGtk.py:637
+msgid "Failed to remove package"
+msgstr ""
+
+#. errMsg = "%s" % msg
+#: ../GDebi/GDebiGtk.py:683 ../GDebi/GDebiKDE.py:369
+msgid "Could not download all required files"
+msgstr "Tidak dapat mengunduh semua berkas yang dibutuhkan"
+
+#: ../GDebi/GDebiGtk.py:684 ../GDebi/GDebiKDE.py:370
+msgid "Please check your internet connection or installation medium."
+msgstr "Silakan periksa koneksi internet atau medium instalasi anda."
+
+#: ../GDebi/GDebiGtk.py:688 ../GDebi/GDebiKDE.py:375
+msgid "Could not install all dependencies"
+msgstr "Tidak dapat memasang semua dependensi"
+
+#: ../GDebi/GDebiGtk.py:689 ../GDebi/GDebiKDE.py:376
+msgid ""
+"Usually this is related to an error of the software distributor. See the "
+"terminal window for more details."
+msgstr ""
+"Biasanya hal ini berhubungan ke kesalahan dari distributor perangkat lunak. "
+"Lihat jendela terminal untuk perincian lebih lanjut."
+
+#: ../GDebi/GDebiGtk.py:705
+#, python-format
+msgid "Installing %s"
+msgstr "Memasang %s"
+
+#: ../GDebi/GDebiGtk.py:708
+#, python-format
+msgid "Removing %s"
+msgstr ""
+
+#. self.label_action.set_markup("<b><big>"+_("Package installed")+"</big></b>")
+#. show the button
+#. self.button_deb_install_close.set_sensitive(True)
+#. self.button_deb_install_close.grab_default()
+#: ../GDebi/GDebiGtk.py:730 ../GDebi/GDebiKDE.py:395
+msgid "Installation finished"
+msgstr "Instalasi selesai"
+
+#: ../GDebi/GDebiGtk.py:732
+msgid "Removal finished"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:735
+#, python-format
+msgid "Package '%s' was installed"
+msgstr "Paket '%s' telah diinstal"
+
+#: ../GDebi/GDebiGtk.py:737
+#, python-format
+msgid "Package '%s' was removed"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:740 ../GDebi/GDebiKDE.py:399
+#, python-format
+msgid "Failed to install package '%s'"
+msgstr "Gagal menginstal paket '%s'"
+
+#: ../GDebi/GDebiGtk.py:743
+#, python-format
+msgid "Failed to remove package '%s'"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:747
+msgid "Installation complete"
+msgstr "Instalasi selesai"
+
+#: ../GDebi/GDebiGtk.py:749
+msgid "Removal complete"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:757 ../GDebi/GDebiKDE.py:409
+msgid "Failed to completely install all dependencies"
+msgstr "Gagal meyelesaikan instalasi semua ketergantungan"
+
+#: ../GDebi/GDebiGtk.py:759
+msgid "Failed to completely remove package"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:760 ../GDebi/GDebiKDE.py:410
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"Untuk memperbaiki ini jalankan  'sudo apt-get install -f' di dalam jendela "
+"terminal."
+
+#. ui
+#: ../GDebi/GDebiGtk.py:879 ../GDebi/KDEAptDialogs.py:70
+#, python-format
+msgid "Installing '%s'..."
+msgstr "Memasang '%s'..."
+
+#: ../GDebi/GDebiGtk.py:882
+#, python-format
+msgid "Removing '%s'..."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:986 ../GDebi/KDEAptDialogs.py:136
+msgid "Installing dependencies..."
+msgstr "Menginstal ketergantungan..."
+
+#: ../GDebi/GDebiGtk.py:1031 ../GDebi/KDEAptDialogs.py:199
+#: ../GDebi/KDEAptDialogs.py:209 ../GDebi/KDEAptDialogs.py:211
+msgid "Downloading additional package files..."
+msgstr "Mengunduh berkas paket tambahan..."
+
+#: ../GDebi/GDebiGtk.py:1040 ../GDebi/KDEAptDialogs.py:209
+#, python-format
+msgid "File %s of %s at %sB/s"
+msgstr "Berkas %s dari %s di %s/s"
+
+#: ../GDebi/GDebiGtk.py:1042 ../GDebi/KDEAptDialogs.py:211
+#, python-format
+msgid "File %s of %s"
+msgstr "Berkas %s dari %s di %s/s"
+
+#. print "mediaChange %s %s" % (medium, drive)
+#: ../GDebi/GDebiGtk.py:1049 ../GDebi/KDEAptDialogs.py:217
+#, python-format
+msgid "Please insert '%s' into the drive '%s'"
+msgstr "Silakan masukan '%s' ke dalam penggerak '%s'"
+
+#: ../GDebi/GDebiCli.py:59
+msgid "Configuration items must be specified with a =<value>\n"
+msgstr ""
+
+#: ../GDebi/GDebiCli.py:65
+#, python-format
+msgid "Couldn't set APT option %s to %s\n"
+msgstr ""
+
+#: ../GDebi/GDebiCli.py:78
+#, python-format
+msgid "Unknown package type '%s', exiting\n"
+msgstr ""
+
+#: ../GDebi/GDebiCli.py:82
+msgid "Failed to open the software package\n"
+msgstr "Gagal membuka paket perangkat lunak\n"
+
+#: ../GDebi/GDebiCli.py:83
+msgid ""
+"The package might be corrupted or you are not allowed to open the file. "
+"Check the permissions of the file.\n"
+msgstr ""
+"Paket mungkin rusak atau anda tidak diizinkan untuk membuka berkas. Periksa "
+"hak izin dari berkas.\n"
+
+#: ../GDebi/GDebiCli.py:89
+msgid "This package is uninstallable\n"
+msgstr "Paket ini tidak dapat diunistal\n"
+
+#: ../GDebi/GDebiCli.py:98 ../GDebi/GDebiKDE.py:244
+msgid "No description is available"
+msgstr "Deskripsi tidak tersedia"
+
+#: ../GDebi/GDebiCli.py:108
+msgid "The following packages are UNAUTHENTICATED: "
+msgstr "Paket berikut belum DIOTENTIFIKASI: "
+
+#: ../GDebi/GDebiCli.py:112
+msgid "Requires the REMOVAL of the following packages: "
+msgstr "Membutuhkan PENGHAPUSAN dari paket berikut: "
+
+#: ../GDebi/GDebiCli.py:117
+msgid "Requires the installation of the following packages: "
+msgstr "Membutuhkan instalasi dari paket berikut: "
+
+#: ../GDebi/GDebiCli.py:132
+#, python-format
+msgid "Error during install: '%s'"
+msgstr ""
+
+#: ../GDebi/GDebiKDE.py:160
+msgid "Included Files"
+msgstr "Berkas-Berkas yang Disertakan"
+
+#: ../GDebi/GDebiKDE.py:162 ../GDebi/GDebiKDE.py:302
+msgid "&Install Package"
+msgstr "&Pasang Paket"
+
+#: ../GDebi/GDebiKDE.py:163
+msgid "&Download Package"
+msgstr ""
+
+#: ../GDebi/GDebiKDE.py:188
+msgid "The package file does not exist"
+msgstr ""
+
+#: ../GDebi/GDebiKDE.py:189
+msgid ""
+"A nonexistent file has been selected for installation. Please select an "
+"existing .deb package file."
+msgstr ""
+
+#. self.textLabel1_3_2.setText(_("Same version is already installed"))
+#: ../GDebi/GDebiKDE.py:270
+msgid "&Reinstall Package"
+msgstr ""
+
+#: ../GDebi/GDebiKDE.py:305
+msgid "Re&install Package"
+msgstr "_Instal-Ulang Paket"
+
+#: ../GDebi/GDebiKDE.py:316
+#, python-format
+msgid "To be removed: %s"
+msgstr ""
+
+#: ../GDebi/GDebiKDE.py:397
+#, python-format
+msgid "<b>Package '%s' was installed</b>"
+msgstr ""
+
+#: ../GDebi/GDebiKDE.py:423
+msgid "Installing"
+msgstr ""
+
+#: ../GDebi/GDebiCommon.py:75
+msgid "Broken dependencies"
+msgstr "Menginstal ketergantungan..."
+
+#: ../GDebi/GDebiCommon.py:76
+msgid ""
+"Your system has broken dependencies. This application can not continue until "
+"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"in a terminal window."
+msgstr ""
+
+#: ../GDebi/GDebiCommon.py:94
+#, python-format
+msgid "'%s' is not a Debian package"
+msgstr ""
+
+#: ../GDebi/GDebiCommon.py:95
+#, python-format
+msgid ""
+"The MIME type of this file is '%s' and can not be installed on this system."
+msgstr ""
+
+#: ../GDebi/GDebiCommon.py:99
+#, python-format
+msgid "Could not open '%s'"
+msgstr "Tidak dapat membuka '%s'"
+
+#: ../GDebi/GDebiCommon.py:100
+msgid ""
+"The package might be corrupted or you are not allowed to open the file. "
+"Check the permissions of the file."
+msgstr ""
+"Paket mungkin rusak atau anda tidak diizinkan untuk membuka berkas. Periksa "
+"hak izin dari berkas."
+
+#: ../GDebi/GDebiCommon.py:122
+msgid "Same version is available in a software channel"
+msgstr "Versi yang sama tersedia di dalam kanal perangkat lunak"
+
+#: ../GDebi/GDebiCommon.py:123
+msgid "You are recommended to install the software from the channel instead."
+msgstr "Anda dianjurkan untuk menginstal perangkat lunak dari kanal"
+
+#: ../GDebi/GDebiCommon.py:127
+msgid "An older version is available in a software channel"
+msgstr "Versi lama tersedia di dalam kanal perangkat lunak"
+
+#: ../GDebi/GDebiCommon.py:128
+msgid ""
+"Generally you are recommended to install the version from the software "
+"channel, since it is usually better supported."
+msgstr ""
+"Umumnya anda dianjurkan untuk menginstal versi dari kanal perangkat lunak, "
+"karena hal ini biasanya disokong dengan baik."
+
+#: ../GDebi/GDebiCommon.py:133
+msgid "A later version is available in a software channel"
+msgstr "Versi baru tersedia di dalam kanal perangkat lunak"
+
+#: ../GDebi/GDebiCommon.py:135
+msgid ""
+"You are strongly advised to install the version from the software channel, "
+"since it is usually better supported."
+msgstr ""
+"Anda disarankan untuk menginstal versi dari kanal perangkat lunak, karena "
+"hal ini biasanya disokong dengan baik."
+
+#: ../GDebi/GDebiCommon.py:177
+msgid "All dependencies are satisfied"
+msgstr "Semua ketergantungan terpenuhi"
+
+#. FIXME: use ngettext here
+#: ../GDebi/GDebiCommon.py:180
+#, python-format
+msgid "Requires the <b>removal</b> of %s packages\n"
+msgstr "Butuh <b>penghapusan</b> paket %s\n"
+
+#: ../GDebi/GDebiCommon.py:182
+#, python-format
+msgid "Requires the installation of %s packages"
+msgstr "Butuh instalasi paket %s"
+
+#: ../GDebi/GDebiCommon.py:190 ../GDebi/GDebiCommon.py:208
+msgid "Only one software management tool is allowed to run at the same time"
+msgstr ""
+"Hanya dapat menjalankan satu alat manajemen perangkat lunak di saat yang "
+"bersamaan."
+
+#: ../GDebi/GDebiCommon.py:192 ../GDebi/GDebiCommon.py:210
+msgid ""
+"Please close the other application e.g. 'Update Manager', 'aptitude' or "
+"'Synaptic' first."
+msgstr ""
+"Silakan tutup dulu alplikasi lain seperti 'Update Manager', 'aptitude' atau "
+"'Synaptic' first.\""
+
+#. change = QMessageBox.question(None, _("Media Change"), msg, QMessageBox.Ok, QMessageBox.Cancel)
+#: ../GDebi/KDEAptDialogs.py:219
+msgid "Media Change"
+msgstr ""
+
+#, python-format
+#~ msgid "Dependency is not satisfiable: %s\n"
+#~ msgstr "Ketergantungan tidak terpenuhi: %s\n"
+
+#~ msgid "Failed to satisfy all dependencies (broken cache)"
+#~ msgstr "Gagal memenuhi semua ketergantungan (cache rusak)"
+
+#~ msgid ""
+#~ "Malicous software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefor be of malicous "
+#~ "nature."
+#~ msgstr ""
+#~ "Program perusak dapat menghancurkan data dan mengambil alih sistem anda.\n"
+#~ "\n"
+#~ "Paket berikut belum di otentifikasi dan untuk itu dapat mengandung hal yang "
+#~ "dapat merusak."
+
+#~ msgid "A later version is already installed"
+#~ msgstr "Versi terbaru sudah terinstal"
+
+#, python-format
+#~ msgid "Cannot install '%s'"
+#~ msgstr "Tidak dapat instal '%s'"
+
+#, python-format
+#~ msgid "Wrong architecture '%s'"
+#~ msgstr "Arsitektur salah '%s'"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Andika Triwidada https://launchpad.net/~andika\n"
+#~ "  Andy Apdhani https://launchpad.net/~imtheface\n"
+#~ "  Arief Setiadi Wibowo https://launchpad.net/~q-thrynx\n"
+#~ "  Cecep Mahbub https://launchpad.net/~cecepm\n"
+#~ "  Iwan https://launchpad.net/~iwan-nts\n"
+#~ "  Iwan Setiawan https://launchpad.net/~stwn\n"
+#~ "  Muhammad Riza https://launchpad.net/~muhammadriza\n"
+#~ "  Rahman Yusri Aftian https://launchpad.net/~aftian\n"
+#~ "  Wisnu Manupraba https://launchpad.net/~inoex135\n"
+#~ "  Yanuar NH https://launchpad.net/~ianthewarrior"
+
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "Software package"
+#~ msgstr "Paket perangkat lunak"
+
+#~ msgid "gdebi"
+#~ msgstr "gdebi"
+
+#~ msgid "Open..."
+#~ msgstr "Buka..."

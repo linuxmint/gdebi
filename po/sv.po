@@ -1,0 +1,807 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gdebi 0.1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-03 15:11+0200\n"
+"PO-Revision-Date: 2009-11-06 19:50+0000\n"
+"Last-Translator: Gustavo Franco <stratus@debian.org>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-08-03 22:48+0000\n"
+"X-Generator: Launchpad (build 16718)\n"
+
+#: ../gdebi:51
+#, c-format
+msgid ""
+"usage: %prog [options] filename\n"
+"For a graphical version run gdebi-gtk\n"
+msgstr ""
+"användning: %prog [flaggor] filnamn\n"
+"För en grafisk version, kör gdebi-gtk\n"
+
+#: ../gdebi:57 ../gdebi-gtk:57
+msgid "Run non-interactive (dangerous!)"
+msgstr "Kör icke-interaktivt (farligt!)"
+
+#: ../gdebi:61
+msgid "Set an APT configuration option"
+msgstr "Ställ in APT-konfigurationsflagga"
+
+#: ../gdebi:65
+msgid "Do not show progress information"
+msgstr "Visa inte förloppsinformation"
+
+#: ../gdebi:69
+msgid "Simulate only and print a apt-get install compatible line to stderr"
+msgstr ""
+"Simulera endast och skriv ut en apt-get install-kompatibel rad till standard "
+"fel"
+
+#: ../gdebi:71
+msgid "Use alternative root dir"
+msgstr "Använd alternativ rotkatalog"
+
+#: ../gdebi:79
+#, c-format
+msgid "gdebi error, file not found: %s\n"
+msgstr "fel i gdebi, filen hittades inte: %s\n"
+
+#: ../gdebi:98 ../gdebi:107
+msgid "Need to be root to install packages"
+msgstr "Du måste vara root för att installera paket"
+
+#: ../gdebi:109 ../GDebi/GDebiCli.py:154
+msgid "Do you want to install the software package? [y/N]:"
+msgstr "Vill du installera programpaketet? [j/N]:"
+
+#: ../gdebi-gtk:60
+msgid "Auto close when the install is finished"
+msgstr ""
+
+#: ../gdebi-gtk:62
+msgid "Use alternative datadir"
+msgstr ""
+
+#: ../gdebi-gtk:65
+msgid "Remove package"
+msgstr ""
+
+#: ../gdebi-gtk:84
+msgid "Software index is broken"
+msgstr "Programvaruindexet är trasigt"
+
+#: ../gdebi-gtk:85
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Det här är ett allvarligt fel i hanteringssystem för programvaror. Leta "
+"efter trasiga paket med synaptic, kontrollera att filrättigheterna och att "
+"filen \"/etc/apt/sources.list\" är korrekta. Läs sedan om "
+"programvaruinformationen med \"sudo apt-get update\" och \"sudo apt-get "
+"install -f\"."
+
+#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "Installera och visa programpaket"
+
+#: ../data/gdebi.ui.h:2
+msgid "GPL, see /usr/share/common-licenses/GPL"
+msgstr "GPL, se /usr/share/common-licenses/GPL"
+
+#: ../data/gdebi.ui.h:3
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../data/gdebi.ui.h:4
+msgid "Automatically close after the changes have been successfully applied"
+msgstr ""
+
+#: ../data/gdebi.ui.h:5 ../GDebi/GDebiKDE.py:157 ../GDebi/GDebiKDE.py:159
+#: ../GDebi/GDebiKDE.py:321
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../data/gdebi.ui.h:6 ../GDebi/GDebiKDE.py:320
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>För att installera krävs följande ändringar:</b>"
+
+#: ../data/gdebi.ui.h:7 ../data/gdebi.desktop.in.h:2
+msgid "Package Installer"
+msgstr "Paketinstallerare"
+
+#: ../data/gdebi.ui.h:8
+msgid "_File"
+msgstr "_Arkiv"
+
+#: ../data/gdebi.ui.h:9
+msgid "_Open…"
+msgstr ""
+
+#: ../data/gdebi.ui.h:10
+msgid "_Refresh"
+msgstr "_Uppdatera"
+
+#: ../data/gdebi.ui.h:11
+msgid "_Edit"
+msgstr "R_edigera"
+
+#: ../data/gdebi.ui.h:12
+msgid "_Help"
+msgstr "_Hjälp"
+
+#. first, we load all the default descriptions -- pyuic doesn't use
+#. gettext as default (FIXME, copy code from language-selector)
+#: ../data/gdebi.ui.h:13 ../GDebi/GDebiKDE.py:155
+msgid "Package:"
+msgstr "Paket:"
+
+#: ../data/gdebi.ui.h:14
+msgid "<b><big>   </big></b>"
+msgstr "<b><big>   </big></b>"
+
+#: ../data/gdebi.ui.h:15
+msgid "_Details"
+msgstr "_Detaljer"
+
+#: ../data/gdebi.ui.h:16 ../GDebi/GDebiKDE.py:156
+msgid "Status:"
+msgstr "Status:"
+
+#: ../data/gdebi.ui.h:17
+msgid "Description:"
+msgstr "Beskrivning:"
+
+#. img = Gtk.Image()
+#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
+#. self.button_install.set_image(img)
+#: ../data/gdebi.ui.h:18 ../GDebi/GDebiGtk.py:337 ../GDebi/GDebiGtk.py:395
+msgid "_Install Package"
+msgstr "_Installera paket"
+
+#: ../data/gdebi.ui.h:19
+msgid "_Remove Package"
+msgstr ""
+
+#: ../data/gdebi.ui.h:20
+msgid "_Download Package"
+msgstr "_Hämta paket"
+
+#: ../data/gdebi.ui.h:21 ../GDebi/GDebiKDE.py:158
+msgid "Description"
+msgstr "Beskrivning"
+
+#: ../data/gdebi.ui.h:22 ../GDebi/GDebiKDE.py:164
+msgid "<b>Version:</b>"
+msgstr "<b>Version:</b>"
+
+#: ../data/gdebi.ui.h:23 ../GDebi/GDebiKDE.py:165
+msgid "<b>Maintainer:</b>"
+msgstr "<b>Ansvarig:</b>"
+
+#: ../data/gdebi.ui.h:24 ../GDebi/GDebiKDE.py:166
+msgid "<b>Priority:</b>"
+msgstr "<b>Prioritet:</b>"
+
+#: ../data/gdebi.ui.h:25 ../GDebi/GDebiKDE.py:167
+msgid "<b>Section:</b>"
+msgstr "<b>Avsnitt:</b>"
+
+#: ../data/gdebi.ui.h:26 ../GDebi/GDebiKDE.py:168
+msgid "<b>Size:</b>"
+msgstr "<b>Storlek:</b>"
+
+#: ../data/gdebi.ui.h:27
+msgid "  "
+msgstr "  "
+
+#: ../data/gdebi.ui.h:28
+msgid "Included files"
+msgstr ""
+
+#: ../data/gdebi.ui.h:29
+msgid "Lintian output"
+msgstr ""
+
+#: ../data/gdebi.desktop.in.h:1
+msgid "GDebi Package Installer"
+msgstr "Paketinstalleraren GDebi"
+
+#. Translators: it's for missing entries in the deb package,
+#. e.g. a missing "Maintainer" field
+#: ../GDebi/DebPackage.py:38
+#, python-format
+msgid "%s is not available"
+msgstr "%s inte tillgänglig"
+
+#: ../GDebi/GDebiGtk.py:95
+msgid "Copy selected text"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:106
+msgid "Loading..."
+msgstr "Läser in..."
+
+#: ../GDebi/GDebiGtk.py:181
+msgid "Can not download as root"
+msgstr "Kan inte hämta som root"
+
+#: ../GDebi/GDebiGtk.py:182
+msgid ""
+"Remote packages can not be downloaded when running as root. Please try again "
+"as a normal user."
+msgstr ""
+"Fjärrpaket kan inte hämtas när programmet körs som root. Försök igen som en "
+"vanlig användare."
+
+#: ../GDebi/GDebiGtk.py:195
+msgid "Downloading package"
+msgstr "Hämtar paket"
+
+#: ../GDebi/GDebiGtk.py:202
+msgid "Download failed"
+msgstr "Hämtningen misslyckades"
+
+#: ../GDebi/GDebiGtk.py:203
+#, python-format
+msgid "Downloading the package failed: file '%s' '%s'"
+msgstr "Hämtning av paketet misslyckades: filen \"%s\" \"%s\""
+
+#. set window title
+#. set name
+#: ../GDebi/GDebiGtk.py:251 ../GDebi/GDebiKDE.py:208
+#, python-format
+msgid "Package Installer - %s"
+msgstr "Paketinstallerare - %s"
+
+#: ../GDebi/GDebiGtk.py:308
+msgid "Package control data"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:311
+msgid "Upstream data"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:317
+msgid "Error reading filelist"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:333
+msgid "Error: "
+msgstr "Fel: "
+
+#: ../GDebi/GDebiGtk.py:348
+msgid "Error: no longer provides "
+msgstr "Fel: tillhandahåller inte längre "
+
+#: ../GDebi/GDebiGtk.py:365
+msgid "Same version is already installed"
+msgstr "Samma version är redan installerad"
+
+#: ../GDebi/GDebiGtk.py:366
+msgid "_Reinstall Package"
+msgstr "_Ominstallera paket"
+
+#: ../GDebi/GDebiGtk.py:404
+msgid ""
+"No lintian available.\n"
+"Please install using sudo apt-get install lintian"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:407
+msgid "Running lintian..."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:424
+#, python-format
+msgid ""
+"\n"
+"Lintian finished with exit status %s"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:453
+msgid "Selection is a directory"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:458 ../GDebi/GDebiGtk.py:464
+#, python-format
+msgid "Error reading file content '%s'"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:469
+msgid "File content can not be extracted"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:480
+#, python-format
+msgid "<b>To be removed: %s</b>"
+msgstr "<b>Att tas bort: %s</b>"
+
+#: ../GDebi/GDebiGtk.py:482 ../GDebi/GDebiKDE.py:314
+#, python-format
+msgid "To be installed: %s"
+msgstr "Att installeras: %s"
+
+#: ../GDebi/GDebiGtk.py:497
+msgid "Open Software Package"
+msgstr "Fria programvarupaket"
+
+#: ../GDebi/GDebiGtk.py:502
+msgid "Software packages"
+msgstr "Programvarupaket"
+
+#: ../GDebi/GDebiGtk.py:551
+msgid "Dependency problems"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:552
+#, python-format
+msgid "One or more packages are required by %s, it cannot be removed."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:560
+msgid "File not found"
+msgstr "Filen hittades inte"
+
+#: ../GDebi/GDebiGtk.py:561
+msgid "You tried to install a file that does not (or no longer) exist. "
+msgstr "Du försökte installera en fil som inte (eller inte längre) finns. "
+
+#: ../GDebi/GDebiGtk.py:572
+msgid "Installing package file..."
+msgstr "Installerar paketfil..."
+
+#: ../GDebi/GDebiGtk.py:574
+msgid "Removing package..."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:577
+msgid "Install unauthenticated software?"
+msgstr "Installera programvara som inte har autentiserats?"
+
+#: ../GDebi/GDebiGtk.py:578
+msgid ""
+"Malicious software can damage your data and take control of your system.\n"
+"\n"
+"The packages below are not authenticated and could therefore be of malicious "
+"nature."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:606
+msgid "You need to grant administrative rights to install software"
+msgstr "Du behöver administrativ behörighet för att installera programvara"
+
+#: ../GDebi/GDebiGtk.py:607
+msgid ""
+"\n"
+"It is a possible security risk to install packages files manually.\n"
+"Install software from trustworthy software distributors only.\n"
+msgstr ""
+"\n"
+"Det är en möjlig säkerhetsrisk att manuellt installera paketfiler. "
+"Installera endast programvara från pålitliga programvarudistributörer.\n"
+
+#: ../GDebi/GDebiGtk.py:612
+msgid "You need to grant administrative rights to remove software"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:613
+msgid "It is a possible risk to remove packages."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:635 ../GDebi/GDebiGtk.py:699
+msgid "Failed to install package file"
+msgstr "Misslyckades med att installera paketfil"
+
+#: ../GDebi/GDebiGtk.py:637
+msgid "Failed to remove package"
+msgstr ""
+
+#. errMsg = "%s" % msg
+#: ../GDebi/GDebiGtk.py:683 ../GDebi/GDebiKDE.py:369
+msgid "Could not download all required files"
+msgstr "Kunde inte hämta alla nödvändiga filer"
+
+#: ../GDebi/GDebiGtk.py:684 ../GDebi/GDebiKDE.py:370
+msgid "Please check your internet connection or installation medium."
+msgstr "Kontrollera din Internetanslutning eller installationsmedium."
+
+#: ../GDebi/GDebiGtk.py:688 ../GDebi/GDebiKDE.py:375
+msgid "Could not install all dependencies"
+msgstr "Kunde inte installera alla beroenden"
+
+#: ../GDebi/GDebiGtk.py:689 ../GDebi/GDebiKDE.py:376
+msgid ""
+"Usually this is related to an error of the software distributor. See the "
+"terminal window for more details."
+msgstr ""
+"Normalt sett är detta relaterat till ett fel hos programdistributören. Se "
+"terminalfönstret för fler detaljer."
+
+#: ../GDebi/GDebiGtk.py:705
+#, python-format
+msgid "Installing %s"
+msgstr "Installerar %s"
+
+#: ../GDebi/GDebiGtk.py:708
+#, python-format
+msgid "Removing %s"
+msgstr ""
+
+#. self.label_action.set_markup("<b><big>"+_("Package installed")+"</big></b>")
+#. show the button
+#. self.button_deb_install_close.set_sensitive(True)
+#. self.button_deb_install_close.grab_default()
+#: ../GDebi/GDebiGtk.py:730 ../GDebi/GDebiKDE.py:395
+msgid "Installation finished"
+msgstr "Installationen är klar"
+
+#: ../GDebi/GDebiGtk.py:732
+msgid "Removal finished"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:735
+#, python-format
+msgid "Package '%s' was installed"
+msgstr "Paketet \"%s\" installerades"
+
+#: ../GDebi/GDebiGtk.py:737
+#, python-format
+msgid "Package '%s' was removed"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:740 ../GDebi/GDebiKDE.py:399
+#, python-format
+msgid "Failed to install package '%s'"
+msgstr "Misslyckades med att installera paketet \"%s\""
+
+#: ../GDebi/GDebiGtk.py:743
+#, python-format
+msgid "Failed to remove package '%s'"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:747
+msgid "Installation complete"
+msgstr "Installationen slutförd"
+
+#: ../GDebi/GDebiGtk.py:749
+msgid "Removal complete"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:757 ../GDebi/GDebiKDE.py:409
+msgid "Failed to completely install all dependencies"
+msgstr "Misslyckades med att installera alla beroenden"
+
+#: ../GDebi/GDebiGtk.py:759
+msgid "Failed to completely remove package"
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:760 ../GDebi/GDebiKDE.py:410
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"För att rätta till detta, kör \"sudo aptitude install -f\" i ett "
+"terminalfönster."
+
+#. ui
+#: ../GDebi/GDebiGtk.py:879 ../GDebi/KDEAptDialogs.py:70
+#, python-format
+msgid "Installing '%s'..."
+msgstr "Installerar \"%s\"..."
+
+#: ../GDebi/GDebiGtk.py:882
+#, python-format
+msgid "Removing '%s'..."
+msgstr ""
+
+#: ../GDebi/GDebiGtk.py:986 ../GDebi/KDEAptDialogs.py:136
+msgid "Installing dependencies..."
+msgstr "Installerar beroenden..."
+
+#: ../GDebi/GDebiGtk.py:1031 ../GDebi/KDEAptDialogs.py:199
+#: ../GDebi/KDEAptDialogs.py:209 ../GDebi/KDEAptDialogs.py:211
+msgid "Downloading additional package files..."
+msgstr "Hämtar ytterligare paketfiler..."
+
+#: ../GDebi/GDebiGtk.py:1040 ../GDebi/KDEAptDialogs.py:209
+#, python-format
+msgid "File %s of %s at %sB/s"
+msgstr "Fil %s av %s i %s B/s"
+
+#: ../GDebi/GDebiGtk.py:1042 ../GDebi/KDEAptDialogs.py:211
+#, python-format
+msgid "File %s of %s"
+msgstr "Fil %s av %s"
+
+#. print "mediaChange %s %s" % (medium, drive)
+#: ../GDebi/GDebiGtk.py:1049 ../GDebi/KDEAptDialogs.py:217
+#, python-format
+msgid "Please insert '%s' into the drive '%s'"
+msgstr "Mata in \"%s\" i enheten \"%s\""
+
+#: ../GDebi/GDebiCli.py:59
+msgid "Configuration items must be specified with a =<value>\n"
+msgstr "Konfigurationsposter måste anges med ett =<värde>\n"
+
+#: ../GDebi/GDebiCli.py:65
+#, python-format
+msgid "Couldn't set APT option %s to %s\n"
+msgstr "Kunde inte ange APT-flagga %s till %s\n"
+
+#: ../GDebi/GDebiCli.py:78
+#, python-format
+msgid "Unknown package type '%s', exiting\n"
+msgstr "Okänd pakettyp \"%s\", avslutar\n"
+
+#: ../GDebi/GDebiCli.py:82
+msgid "Failed to open the software package\n"
+msgstr "Misslyckades med att öppna programvarupaketet\n"
+
+#: ../GDebi/GDebiCli.py:83
+msgid ""
+"The package might be corrupted or you are not allowed to open the file. "
+"Check the permissions of the file.\n"
+msgstr ""
+"Paketet kan vara skadat eller så tillåts du inte att öppna filen. "
+"Kontrollera rättigheterna på filen.\n"
+
+#: ../GDebi/GDebiCli.py:89
+msgid "This package is uninstallable\n"
+msgstr "Det här paketet kan inte installeras\n"
+
+#: ../GDebi/GDebiCli.py:98 ../GDebi/GDebiKDE.py:244
+msgid "No description is available"
+msgstr "Ingen beskrivning finns tillgänglig"
+
+#: ../GDebi/GDebiCli.py:108
+msgid "The following packages are UNAUTHENTICATED: "
+msgstr "Följande paket är INTE AUTENTISERADE: "
+
+#: ../GDebi/GDebiCli.py:112
+msgid "Requires the REMOVAL of the following packages: "
+msgstr "Kräver BORTTAGNING av följande paket: "
+
+#: ../GDebi/GDebiCli.py:117
+msgid "Requires the installation of the following packages: "
+msgstr "Kräver installation av följande paket: "
+
+#: ../GDebi/GDebiCli.py:132
+#, python-format
+msgid "Error during install: '%s'"
+msgstr ""
+
+#: ../GDebi/GDebiKDE.py:160
+msgid "Included Files"
+msgstr "Inkluderade filer"
+
+#: ../GDebi/GDebiKDE.py:162 ../GDebi/GDebiKDE.py:302
+msgid "&Install Package"
+msgstr "&Installera paket"
+
+#: ../GDebi/GDebiKDE.py:163
+msgid "&Download Package"
+msgstr "&Hämta paket"
+
+#: ../GDebi/GDebiKDE.py:188
+msgid "The package file does not exist"
+msgstr "Paketfilen finns inte"
+
+#: ../GDebi/GDebiKDE.py:189
+msgid ""
+"A nonexistent file has been selected for installation. Please select an "
+"existing .deb package file."
+msgstr ""
+"En icke-existerande fil har valts för installation. Välj en befintlig .deb-"
+"paketfil."
+
+#. self.textLabel1_3_2.setText(_("Same version is already installed"))
+#: ../GDebi/GDebiKDE.py:270
+msgid "&Reinstall Package"
+msgstr "&Ominstallera paketet"
+
+#: ../GDebi/GDebiKDE.py:305
+msgid "Re&install Package"
+msgstr "Installera &om paketet"
+
+#: ../GDebi/GDebiKDE.py:316
+#, python-format
+msgid "To be removed: %s"
+msgstr "Kommer att tas bort: %s"
+
+#: ../GDebi/GDebiKDE.py:397
+#, python-format
+msgid "<b>Package '%s' was installed</b>"
+msgstr ""
+
+#: ../GDebi/GDebiKDE.py:423
+msgid "Installing"
+msgstr ""
+
+#: ../GDebi/GDebiCommon.py:75
+msgid "Broken dependencies"
+msgstr "Trasiga beroenden"
+
+#: ../GDebi/GDebiCommon.py:76
+msgid ""
+"Your system has broken dependencies. This application can not continue until "
+"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"in a terminal window."
+msgstr ""
+"Ditt system innehåller trasiga beroenden. Detta program kan inte fortsätta "
+"förräns detta har rättats till. För att rätta till det, kör \"gksudo "
+"synaptic\" eller \"sudo apt-get install -f\" i ett terminalfönster."
+
+#: ../GDebi/GDebiCommon.py:94
+#, python-format
+msgid "'%s' is not a Debian package"
+msgstr "\"%s\" är inte ett Debianpaket"
+
+#: ../GDebi/GDebiCommon.py:95
+#, python-format
+msgid ""
+"The MIME type of this file is '%s' and can not be installed on this system."
+msgstr ""
+"MIME-typen för denna fil är \"%s\" och kan inte installeras på detta system."
+
+#: ../GDebi/GDebiCommon.py:99
+#, python-format
+msgid "Could not open '%s'"
+msgstr "Kunde inte öppna \"%s\""
+
+#: ../GDebi/GDebiCommon.py:100
+msgid ""
+"The package might be corrupted or you are not allowed to open the file. "
+"Check the permissions of the file."
+msgstr ""
+"Paketet kan vara skadat eller så tillåts du inte att öppna filen. "
+"Kontrollera rättigheterna på filen."
+
+#: ../GDebi/GDebiCommon.py:122
+msgid "Same version is available in a software channel"
+msgstr "Samma version finns tillgänglig i en programvarukanal"
+
+#: ../GDebi/GDebiCommon.py:123
+msgid "You are recommended to install the software from the channel instead."
+msgstr "Du rekommenderas att istället installera programvaran från kanalen."
+
+#: ../GDebi/GDebiCommon.py:127
+msgid "An older version is available in a software channel"
+msgstr "En äldre version finns tillgänglig i en programvarukanal"
+
+#: ../GDebi/GDebiCommon.py:128
+msgid ""
+"Generally you are recommended to install the version from the software "
+"channel, since it is usually better supported."
+msgstr ""
+"Generellt sett rekommenderas du att installera från programvarukanalen, "
+"eftersom den normalt sett har bättre stöd."
+
+#: ../GDebi/GDebiCommon.py:133
+msgid "A later version is available in a software channel"
+msgstr "En senare version finns tillgänglig i en programvarukanal"
+
+#: ../GDebi/GDebiCommon.py:135
+msgid ""
+"You are strongly advised to install the version from the software channel, "
+"since it is usually better supported."
+msgstr ""
+"Du rekommenderas starkt att installera från programvarukanalen, eftersom den "
+"normalt sett har bättre stöd."
+
+#: ../GDebi/GDebiCommon.py:177
+msgid "All dependencies are satisfied"
+msgstr "Alla beroenden är tillfredsställda"
+
+#. FIXME: use ngettext here
+#: ../GDebi/GDebiCommon.py:180
+#, python-format
+msgid "Requires the <b>removal</b> of %s packages\n"
+msgstr "Kräver <b>borttagning</b> av %s paket\n"
+
+#: ../GDebi/GDebiCommon.py:182
+#, python-format
+msgid "Requires the installation of %s packages"
+msgstr "Kräver installation av %s paket"
+
+#: ../GDebi/GDebiCommon.py:190 ../GDebi/GDebiCommon.py:208
+msgid "Only one software management tool is allowed to run at the same time"
+msgstr "Endast ett programvaruhanteringsverktyg kan köras i taget"
+
+#: ../GDebi/GDebiCommon.py:192 ../GDebi/GDebiCommon.py:210
+msgid ""
+"Please close the other application e.g. 'Update Manager', 'aptitude' or "
+"'Synaptic' first."
+msgstr ""
+"Stäng de andra programmen, exempelvis \"Uppdateringshanteraren\", "
+"\"aptitude\" eller \"Synaptic\" först."
+
+#. change = QMessageBox.question(None, _("Media Change"), msg, QMessageBox.Ok, QMessageBox.Cancel)
+#: ../GDebi/KDEAptDialogs.py:219
+msgid "Media Change"
+msgstr "Mediabyte"
+
+#~ msgid "gdebi"
+#~ msgstr "gdebi"
+
+#, python-format
+#~ msgid "Wrong architecture '%s'"
+#~ msgstr "Fel arkitektur \"%s\""
+
+#~ msgid "Y"
+#~ msgstr "J"
+
+#~ msgid "Software package"
+#~ msgstr "Programpaket"
+
+#~ msgid "Open..."
+#~ msgstr "Öppna..."
+
+#~ msgid ""
+#~ "Malicous software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefor be of malicous "
+#~ "nature."
+#~ msgstr ""
+#~ "Ondsint programvara kan skada ditt data och ta över kontrollen av ditt "
+#~ "system.\n"
+#~ "\n"
+#~ "Paketen nedan är inte autentiserade och kan därför vara av skadlig karaktär."
+
+#, python-format
+#~ msgid "Dependency is not satisfiable: %s\n"
+#~ msgstr "Beroendet tillfredsställs inte: %s\n"
+
+#~ msgid "Analysing dependencies"
+#~ msgstr "Analyserar beroenden"
+
+#, python-format
+#~ msgid "Conflicts with the installed package '%s'\n"
+#~ msgstr "Står i konflikt med installerade paketet \"%s\"\n"
+
+#~ msgid "Failed to satisfy all dependencies (broken cache)"
+#~ msgstr "Misslyckades med att tillfredsställa alla beroenden (trasig cache)"
+
+#~ msgid "No Architecture field in the package"
+#~ msgstr "Inget Architecture-fält i paketet"
+
+#, python-format
+#~ msgid "Breaks exisiting package '%s' conflict: %s (%s %s)\n"
+#~ msgstr "Gör sönder befintliga paketet \"%s\", konflikt: %s (%s %s)\n"
+
+#, python-format
+#~ msgid "Breaks exisiting package '%s' dependency %s (%s %s)\n"
+#~ msgstr "Beroenden för paketet \"%s\" på %s uppfylls ej (%s %s)\n"
+
+#, python-format
+#~ msgid "Cannot install '%s'"
+#~ msgstr "Kan inte installera \"%s\""
+
+#, python-format
+#~ msgid "IOError during filelist read: %s"
+#~ msgstr "In-/Ut-fel under läsning av fillista: %s"
+
+#~ msgid "List of files could not be read, please report this as a bug"
+#~ msgstr "Fillista kunde inte läsas, rapportera detta som ett fel"
+
+#~ msgid "<b>"
+#~ msgstr "<b>"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Arve Eriksson https://launchpad.net/~031299870-telia\n"
+#~ "  Daniel Nylander https://launchpad.net/~yeager\n"
+#~ "  Kess Vargavind https://launchpad.net/~kess\n"
+#~ "  Martin Bagge / brother https://launchpad.net/~brother\n"
+#~ "  Nafallo Bjälevik https://launchpad.net/~nafallo"
+
+#~ msgid "A later version is already installed"
+#~ msgstr "En senare version är redan installerad"

@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+PY3VER=$(shell py3versions -dvr)
+DH_VERBOSE=1
+
+%:
+	dh $@ --with python3 --buildsystem pybuild
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf build GDebi/Version.py po/mo
+
+override_dh_auto_test:
+	xvfb-run -a python$(PY3VER) setup.py test
+
+override_dh_auto_install:
+	PYBUILD_SYSTEM=custom \
+	PYBUILD_INSTALL_ARGS="python{version} setup.py install \
+		--install-layout=deb \
+		--root=debian/tmp \
+		--install-scripts=/usr/share/gdebi \
+		--install-lib=/usr/share/gdebi" \
+	dh_auto_install
+
+override_dh_python3:
+	dh_python3 --shebang=/usr/bin/python3 /usr/share/gdebi

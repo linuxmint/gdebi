@@ -1,0 +1,45 @@
+.TH GDEBI 1 "Oce 13, 2009"
+.SH NAME
+gdebi \- Simple tool to install deb files
+.SH SYNOPSIS
+.B gdebi
+[\fIpackage.deb\fR]...
+.SH DESCRIPTION
+gdebi lets you install local deb packages resolving and installing its
+dependencies. apt does the same, but only for remote (http, ftp) located
+packages. It can also resolve build-depends of debian/control files.
+.SH OPTIONS
+.TP
+\fB\-\-version\fR
+Show program's version number and exit.
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Show this help message and exit.
+.TP
+\fB\-\-n\fR, \fB\-\-non\-interactive\fR
+Run non-interactive (dangerous!).
+.TP
+\fB\-\-o\fR \fIAPT_OPTS\fR, \fB\-\-option=\fIAPT_OPTS\fR
+Set an APT configuration option.
+.TP
+\fB\-\-q\fR, \fB\-\-quiet
+Do not show progress information.
+.TP
+\fB\-\-apt\-line\fR
+Simulate only and print a apt-get install compatible line to stderr.
+.TP
+\fB\-\-root=\fIROOTDIR\fR
+Use alternative root dir.
+.SH EXAMPLES
+.nf
+.RS
+gdebi foo_1.0_all.deb
+gdebi foo-1.0/debian/control
+.RE
+.fi
+.SH SEE ALSO
+Homepage: <https://launchpad.net/gdebi/>
+.SH AUTHOR
+This manual page was written by Gustavo Franco <stratus@debian.org> and
+Kartik Mistry <kartik@debian.org>, for the Debian project (but may be used by
+others).

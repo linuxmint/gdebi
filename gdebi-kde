@@ -1,0 +1,102 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+#
+# Copyright (c) 2005-2007 Martin Böhm
+# Copyright (c) 2008-2009 Canonical Ltd
+#
+# AUTHOR:
+# Martin Böhm <martin.bohm@ubuntu.com>
+#
+# This file is part of GDebi
+#
+# GDebi is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as published
+# by the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# GDebi is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import sys
+from PyKDE4.kdecore import KCmdLineArgs, KAboutData, KCmdLineOptions, ki18n
+from PyKDE4.kdeui import KApplication, KMessageBox
+
+from optparse import OptionParser
+from GDebi.GDebiKDE import GDebiKDE
+
+import gettext
+
+class OptionParsed:
+    non_interactive = False
+
+
+if __name__ == "__main__":
+
+    localesApp="gdebi"
+    localesDir="/usr/share/locale"
+    gettext.bindtextdomain(localesApp, localesDir)
+    gettext.textdomain(localesApp)
+    t = gettext.translation(localesApp, localesDir, fallback=True)
+    _ = t.gettext
+    data="/usr/share/gdebi"
+
+
+    parser = OptionParser()
+    parser.add_option("-n", "--non-interactive",
+                      action="store_true", dest="non_interactive",
+                      default=False,
+                      help=_("Run non-interactive (dangerous!)"))
+    (options, args) = parser.parse_args()
+
+    try:
+        #Don't edit from this point
+        appName     = "gdebi-kde"
+        catalog     = ""
+        programName = ki18n (bytes("GDebi", 'utf-8'))
+        version     = "1.0"
+        description = ki18n (bytes(".deb Package Installer", 'utf-8'))
+        license     = KAboutData.License_GPL
+        copyright   = ki18n (bytes("(c) 2005-2007 Martin Böhm, 2008 Canonical Ltd", 'utf-8'))
+        text        = ki18n (bytes("none", 'utf-8'))
+        homePage    = "launchpad.net/gdebi"
+        bugEmail    = ""
+
+        aboutData   = KAboutData (appName, catalog, programName, version, description,
+                                license, copyright, text, homePage, bugEmail)
+        KCmdLineArgs.init(sys.argv, aboutData)
+        #To this point
+        #Keep sync with OptionParser() - this is to workaround utf-8 issues
+        # on the commandline that KCmdLineOptions can not handle, see
+        # bug #190907
+        opts = KCmdLineOptions()
+        opts.add("n")
+        opts.add("dont-interactive", ki18n(bytes("Run non-interactive (dangerous!)", 'utf-8')))
+        opts.add("+[File]", ki18n(bytes("File to open", 'utf-8')))
+        KCmdLineArgs.addCmdLineOptions(opts)
+
+        app = KApplication()
+        #args = KCmdLineArgs.parsedArgs()
+        afile = ""
+        if len(args) >= 1:
+            afile = args[0]
+        gdebi = GDebiKDE(datadir=data,options=options,file=afile)
+        gdebi.show()
+        if options.non_interactive == True:
+            gdebi.installButtonClicked()
+        app.exec_()
+    except SystemError as e:
+        err_header = _("Software index is broken")
+        err_body = _("This is a major failure of your software "
+                    "management system. Please check for broken packages "
+                    "with synaptic, check the file permissions and "
+                    "correctness of the file '/etc/apt/sources.list' and "
+                    "reload the software information with: "
+                    "'sudo apt-get update' and 'sudo apt-get install -f'."
+                    )
+        errorReport = KMessageBox.error(None, '<b>' + err_header + '</b><br>' + err_body, err_header)
+        sys.exit(1)
