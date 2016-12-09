@@ -290,7 +290,7 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
                                                Gtk.TextSearchFlags.TEXT_ONLY,
                                                None)
             buf.apply_tag(tag , iter, end)
-        except KeyError:
+        except:
             buf.set_text("No description is available")
 
         # set various status bits
