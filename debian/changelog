@@ -1,3 +1,13 @@
+gdebi (0.9.5.7xmint1) serena; urgency=medium
+
+  * Fix GTK.ScrolledWindow minimum content size
+  * Simplify UI
+  * Remove lintian GTK test
+  * Don't hardcode text color in the infobar
+  * Improve exception handling
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 09 Dec 2016 18:00:15 +0000
+
 gdebi (0.9.5.7ubuntu1) xenial; urgency=medium
 
   * debian/control:
