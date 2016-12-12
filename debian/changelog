@@ -1,3 +1,9 @@
+gdebi (0.9.5.7xmint2) serena; urgency=medium
+
+  * Hide app menu item
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 12 Dec 2016 09:55:25 +0000
+
 gdebi (0.9.5.7xmint1) serena; urgency=medium
 
   * Fix GTK.ScrolledWindow minimum content size
