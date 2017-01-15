@@ -1,3 +1,9 @@
+gdebi (0.9.5.7xmint4) serena; urgency=medium
+
+  * Remove wide_handle property in gdebi.ui
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 15 Jan 2017 16:28:12 +0000
+
 gdebi (0.9.5.7xmint3) serena; urgency=medium
 
   [ muzena ]
