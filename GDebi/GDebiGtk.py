@@ -383,12 +383,15 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
         # load changes into (self.install, self.remove, self.unauthenticated)
         if len(self.remove) == len(self.install) == 0:
             self.button_details.hide()
+            self.label_status.set_markup(self.deps)
+            self.infobar1.set_message_type(Gtk.MessageType.INFO)
+            self.infobar1.show()
         else:
             self.button_details.show()
+            self.label_status.set_markup(self.deps)
+            self.infobar1.set_message_type(Gtk.MessageType.WARNING)
+            self.infobar1.show()
 
-        self.label_status.set_markup(self.deps)
-        self.infobar1.set_message_type(Gtk.MessageType.WARNING)
-        self.infobar1.show()
         #img = Gtk.Image()
         #img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
         #self.button_install.set_image(img)
