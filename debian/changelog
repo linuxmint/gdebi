@@ -1,3 +1,10 @@
+gdebi (0.9.5.7xmint5) sylvia; urgency=medium
+
+  [ Sketch ]
+  * Make infobar blue for "All dependancies are satisfied." reference Issue #4 (#5)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 04 Nov 2017 12:26:04 +0000
+
 gdebi (0.9.5.7xmint4) serena; urgency=medium
 
   * Remove wide_handle property in gdebi.ui
