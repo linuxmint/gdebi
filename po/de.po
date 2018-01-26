@@ -384,7 +384,7 @@ msgstr "Das Entfernen des Pakets ist fehlgeschlagen."
 #. errMsg = "%s" % msg
 #: ../GDebi/GDebiGtk.py:688 ../GDebi/GDebiKDE.py:366
 msgid "Could not download all required files"
-msgstr "Es konnten nicht alle erforderlichen Dateien eheruntergeladen werden"
+msgstr "Es konnten nicht alle erforderlichen Dateien heruntergeladen werden."
 
 #: ../GDebi/GDebiGtk.py:689
 #, fuzzy
