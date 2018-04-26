@@ -39,7 +39,9 @@ s = setup(name='gdebi',
                       ('share/application-registry',
                        ['data/gdebi.applications']),
                       ('share/gdebi/',
-                       ['data/gdebi.png'])] + I18NFILES)
+                       ['data/gdebi.png']),
+                      ('share/polkit-1/actions/',
+                       ['data/com.ubuntu.pkexec.gdebi-gtk.policy'])] + I18NFILES)
 
 # Make sure that the mo files are generated and up-to-date
 if 'build' in s.commands:

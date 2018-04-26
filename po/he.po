@@ -614,11 +614,11 @@ msgstr "תלויות שבורות"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "המערכת שלך שברה תלויות. היישום לא יוכל להמשיך עד שהבעיה תתוקן. כדי לתקן את "
-"הבעיה, יש להריץ את הפקודה 'gksudo synaptic' או 'sudo apt-get install -f' "
+"הבעיה, יש להריץ את הפקודה 'pkexec synaptic' או 'sudo apt-get install -f' "
 "בחלון המסוף."
 
 #: ../GDebi/GDebiCommon.py:100

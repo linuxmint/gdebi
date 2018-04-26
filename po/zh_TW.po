@@ -608,11 +608,11 @@ msgstr "套件相依性損壞"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "您的系統有損壞的相依關係。除非修正問題，否則本應用程式不能繼續運作。在終端機"
-"視窗執行「gksudo synaptic」或「sudo apt-get install -f」修正。"
+"視窗執行「pkexec synaptic」或「sudo apt-get install -f」修正。"
 
 #: ../GDebi/GDebiCommon.py:100
 #, python-format

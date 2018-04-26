@@ -624,11 +624,11 @@ msgstr "A instalar dependências..."
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "O seu sistema tem dependências danificadas. Esta aplicação não pode "
-"continuar até isto estar arranjado. Para o arranjar corra 'gksudo synaptic' "
+"continuar até isto estar arranjado. Para o arranjar corra 'pkexec synaptic' "
 "ou 'sudo apt-get install -f' numa janela de terminal."
 
 #: ../GDebi/GDebiCommon.py:100

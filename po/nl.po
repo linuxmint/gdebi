@@ -632,11 +632,11 @@ msgstr "Gebroken afhankelijkheden"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Uw systeem heeft gebroken afhankelijkheden. Deze toepassing kan niet "
-"verdergaan totdat dit is hersteld. Probeer 'gksudo synaptic' of 'sudo apt-"
+"verdergaan totdat dit is hersteld. Probeer 'pkexec synaptic' of 'sudo apt-"
 "get install -f' uit te voeren in een terminalvenster om dit te herstellen."
 
 #: ../GDebi/GDebiCommon.py:100

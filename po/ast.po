@@ -620,11 +620,11 @@ msgstr "Dependencies frañáes"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "To sistema tien dependencies frañáes. Esta aplicacion nun puede continuar si "
-"nun ta iguao. Pa igualo executa 'gksudo synaptic' o 'sudo apt-get install -"
+"nun ta iguao. Pa igualo executa 'pkexec synaptic' o 'sudo apt-get install -"
 "f' na ventana d'un terminal."
 
 #: ../GDebi/GDebiCommon.py:100

@@ -626,12 +626,12 @@ msgstr "Les dependències estan trencades"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "El vostre sistema té dependències trencades. Aquesta aplicació no pot "
 "continuar fins que no s'hagin arreglat. Per a solucionar-ho, executeu "
-"«gksudo synaptic» o bé «sudo apt-get install -f» en una finestra de terminal."
+"«pkexec synaptic» o bé «sudo apt-get install -f» en una finestra de terminal."
 
 #: ../GDebi/GDebiCommon.py:100
 #, python-format

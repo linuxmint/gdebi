@@ -599,11 +599,11 @@ msgstr "Katkised sõltuvused"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Sinu süsteem sisaldab katkiseid sõltuvusi. See rakendus ei suuda jätkata "
-"seniks kuni ta on fikseeritud.  Fikseerimiseks käivita 'gksudo synaptic'"
+"seniks kuni ta on fikseeritud.  Fikseerimiseks käivita 'pkexec synaptic'"
 
 #: ../GDebi/GDebiCommon.py:100
 #, python-format

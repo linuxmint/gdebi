@@ -622,11 +622,11 @@ msgstr "Dependências quebradas"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Seu sistema tem dependências quebradas. Esta aplicação não pode continuar "
-"até que isto seja corrigido. Para consertar este problema, execute 'gksudo "
+"até que isto seja corrigido. Para consertar este problema, execute 'pkexec "
 "synaptic' ou 'sudo apt-get install -f' em uma janela de terminal"
 
 #: ../GDebi/GDebiCommon.py:100

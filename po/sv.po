@@ -619,11 +619,11 @@ msgstr "Trasiga beroenden"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Ditt system innehåller trasiga beroenden. Detta program kan inte fortsätta "
-"förräns detta har rättats till. För att rätta till det, kör \"gksudo synaptic"
+"förräns detta har rättats till. För att rätta till det, kör \"pkexec synaptic"
 "\" eller \"sudo apt-get install -f\" i ett terminalfönster."
 
 #: ../GDebi/GDebiCommon.py:100

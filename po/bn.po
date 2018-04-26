@@ -620,11 +620,11 @@ msgstr "ব্রোকেন ডিপেন্ডেন্সী"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "সিস্টেমে ব্রোকেন ডিপেন্ডেন্সী রয়েছে। টিক না করা পর্যন্ত এ অ্যাপ্লিকেশন চালানো যায় "
-"না। এটা ঠিক করতে টার্মিনাল উইন্ডোতে 'gksudo synaptic' or 'sudo apt-get install "
+"না। এটা ঠিক করতে টার্মিনাল উইন্ডোতে 'pkexec synaptic' or 'sudo apt-get install "
 "-f' চালান।"
 
 #: ../GDebi/GDebiCommon.py:100

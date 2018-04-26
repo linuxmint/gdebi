@@ -629,12 +629,12 @@ msgstr "Fehlerhafte Abhängigkeiten"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Ihr System hat fehlerhafte Abhängigkeiten. Diese Anwendung kann nicht "
 "fortfahren, bevor dieses Problem behoben wurde. Um das Problem zu beheben, "
-"geben Sie »gksudo synaptic« oder »sudo apt-get install -f« in ein Terminal "
+"geben Sie »pkexec synaptic« oder »sudo apt-get install -f« in ein Terminal "
 "ein."
 
 #: ../GDebi/GDebiCommon.py:100

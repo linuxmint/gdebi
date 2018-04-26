@@ -649,12 +649,12 @@ msgstr "Dépendances cassées"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Votre système a des dépendances cassées. Cette application ne peut pas "
 "continuer tant que ce problème n'est pas résolu. Pour y remédier, lancez "
-"« gksudo synaptic » ou « sudo apt-get install -f » dans un terminal."
+"« pkexec synaptic » ou « sudo apt-get install -f » dans un terminal."
 
 #: ../GDebi/GDebiCommon.py:100
 #, python-format

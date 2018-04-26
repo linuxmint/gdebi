@@ -619,11 +619,11 @@ msgstr "Netenkinamos priklausomybės"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Jūsų sistema turi paketų, kurių priklausomybės nėra patenkintos. Įdiegimo "
-"programa neveiks, kol tai nebus ištaisyta. Prašome paleisti „gksu synaptic“ "
+"programa neveiks, kol tai nebus ištaisyta. Prašome paleisti „pkexec synaptic“ "
 "ar „sudo apt-get install -f“ komandų terminale."
 
 #: ../GDebi/GDebiCommon.py:100

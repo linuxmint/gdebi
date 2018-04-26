@@ -626,11 +626,11 @@ msgstr "Нарушены зависимости"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "В вашей системе нарушены зависимости. Выполнение приложения не может быть "
-"продолжено, пока это не будет исправлено. Для исправления запустите \"gksudo "
+"продолжено, пока это не будет исправлено. Для исправления запустите \"pkexec "
 "synaptic' или 'sudo apt-get install -f'  в окне терминала."
 
 #: ../GDebi/GDebiCommon.py:100

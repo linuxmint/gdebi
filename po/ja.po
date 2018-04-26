@@ -625,11 +625,11 @@ msgstr "依存関係の破損"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "システムの依存関係が壊れています。この状態が修正されるまで、このアプリケー"
-"ションは動作を行うことができません。修正するには端末で 'gksudo synaptic' また"
+"ションは動作を行うことができません。修正するには端末で 'pkexec synaptic' また"
 "は 'sudo apt-get install -f' を実行してください。"
 
 #: ../GDebi/GDebiCommon.py:100

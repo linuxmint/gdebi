@@ -617,11 +617,11 @@ msgstr "의존성 망가짐"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "시스템 의존성이 망가졌습니다. 이 문제를 해결하기 전에는 프로그램을 계속 사용 "
-"할 수 없습니다. 이 문제를 해결하려면 'gksudo synaptic' 또는 'sudo apt-get "
+"할 수 없습니다. 이 문제를 해결하려면 'pkexec synaptic' 또는 'sudo apt-get "
 "install -f' 명령을 터미널 창에서 실행하십시오."
 
 #: ../GDebi/GDebiCommon.py:100

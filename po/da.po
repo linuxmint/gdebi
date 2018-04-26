@@ -620,11 +620,11 @@ msgstr "Ødelagte afhængigheder"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Dit system har ødelagte afhængigheder. Dette program kan ikke fortsætte, "
-"indtil disse er ordnet. Kør \"gksudo synaptic\" eller \"sudo apt-get install "
+"indtil disse er ordnet. Kør \"pkexec synaptic\" eller \"sudo apt-get install "
 "-f\" i et terminalvindue, for at ordne det."
 
 #: ../GDebi/GDebiCommon.py:100

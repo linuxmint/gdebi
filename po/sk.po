@@ -623,12 +623,12 @@ msgstr "Poškodené závislosti"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Váš systém obsahuje poškodené závislosti. Táto aplikácia nemôže pokračovať, "
 "kým nebude problém opravený. Ak to chcete opraviť, spustite v okne terminálu "
-"„gksudo synaptic“ alebo „sudo apt-get install -f“."
+"„pkexec synaptic“ alebo „sudo apt-get install -f“."
 
 #: ../GDebi/GDebiCommon.py:100
 #, python-format

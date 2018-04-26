@@ -618,11 +618,11 @@ msgstr "Slomljene zavisnosti"
 #: ../GDebi/GDebiCommon.py:79
 msgid ""
 "Your system has broken dependencies. This application can not continue until "
-"this is fixed. To fix it run 'gksudo synaptic' or 'sudo apt-get install -f' "
+"this is fixed. To fix it run 'pkexec synaptic' or 'sudo apt-get install -f' "
 "in a terminal window."
 msgstr ""
 "Vaš sustav ima slomljene zavisnosti. Ova aplikacija ne može nastaviti dok se "
-"problem ne popravi. Pokušajte popraviti pokretanjem 'gksudo synaptic' ili "
+"problem ne popravi. Pokušajte popraviti pokretanjem 'pkexec synaptic' ili "
 "'sudo apt-get install -f' iz terminala."
 
 #: ../GDebi/GDebiCommon.py:100
