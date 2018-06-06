@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2011-09-06 15:21+0000\n"
 "Last-Translator: Hideki Yamane <henrich@debian.or.jp>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -90,81 +90,66 @@ msgstr ""
 "確さを確認した上で以下のようにしてソフトウェアの情報を再読み込みしてくださ"
 "い: 'sudo apt-get update' and 'sudo apt-get install -f'"
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "パッケージインストーラー"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "詳細"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>インストールするには以下の変更が必要です:</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "詳細(_D)"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "説明"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>バージョン:</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>メンテナ:</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>優先度:</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>セクション:</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>サイズ:</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "詳細"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "含まれているファイル"
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "パッケージをインストール(_I)"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "ソフトウェアパッケージのインストールと表示を行います"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL です。/usr/share/common-licenses/GPL を参照してください"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "端末"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "変更が無事に適用できたら、自動的に終了する"
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>インストールするには以下の変更が必要です:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "GDebi パッケージインストーラー"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "パッケージインストーラー"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "ソフトウェアパッケージのインストールと表示を行います"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -181,19 +166,15 @@ msgstr "%s が利用できません"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr "選択したテキストをコピーする"
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "読み込んでいます..."
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr "rootではダウンロードができません"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -201,260 +182,103 @@ msgstr ""
 "root で実行している間は外部からパッケージをダウンロードできません。一般ユー"
 "ザーで再度試してください。"
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr "パッケージをダウンロードしています"
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr "ダウンロードに失敗"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "パッケージのダウンロードに失敗しました: ファイル '%s' '%s'"
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr "パッケージの管理データ"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr "開発元から取得したデータ"
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr "ファイル一覧を読み込んでいる間にエラーが起きました"
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "エラー: "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr "エラー: もはや提供されていません "
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "既に同じバージョンがインストールされています"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "パッケージの再インストール(_R)"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr "選択されているのはディレクトリです"
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "ファイルの内容 '%s' を読み込んでいる間にエラーが起きました"
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr "ファイルの内容が展開できません"
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>以下がアンインストールされます: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr "以下がインストールされます: %s"
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "ソフトウェアパッケージを開きます"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "ソフトウェアパッケージ"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr "依存関係の問題"
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr "%s によってパッケージが必要とされているので、削除できません。"
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "ファイルが見つかりません"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr "既に存在していないファイルをインストールしようとしています。 "
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "パッケージファイルをインストールしています..."
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr "パッケージを削除しています..."
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "認証されていないソフトウェアをインストールしますか?"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-"悪意のあるソフトウェアによって、あなたのデータを破壊したりシステムを乗っ取ら"
-"れることがあります。\n"
-"\n"
-"このパッケージは認証されておらず、悪意のある者が作成したものである可能性があ"
-"ります。"
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "パッケージファイルのインストールが失敗しました"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr "パッケージの削除が失敗しました"
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "必要なファイルをすべてダウンロードできませんでした"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "インターネット接続あるいはインストールメディアを確認してください"
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "依存関係をすべてインストールできませんでした"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr ""
-"通常、これはソフトウェアのディストリビューター側の問題によるものです。詳細に"
-"ついては、端末を参照してください。"
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "%s をインストールしています"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr "'%s' を削除しています"
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "インストール完了"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr "削除完了"
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "パッケージ '%s' がインストールされました"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr "パッケージ '%s' は削除されました"
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "'%s' パッケージのインストールに失敗しました"
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr "'%s' パッケージの削除に失敗しました"
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "インストールが完了しました"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr "削除が完了しました"
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr "すべての依存関係を完全にインストールするのに失敗しました"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr "パッケージを完全に削除するのに失敗しました"
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "これを修正するには、端末で 'sudo apt-get install -f' を実行してください。"
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "'%s' をインストールしています..."
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr "'%s' を削除しています..."
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "依存関係をインストールしています..."
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "追加パッケージファイルをダウンロードしています..."
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr "ファイル %s / %s (%sB/s)"
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr "ファイル %s / %s"
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr "'%s' を '%s' ドライブに挿入してください"
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -595,17 +419,139 @@ msgstr "%s 個のパッケージを<b>削除</b>する必要があります\n"
 msgid "Requires the installation of %s packages"
 msgstr "%s 個のパッケージをインストールする必要があります"
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "ソフトウェア管理ツールは同時に 1 つだけしか実行できません"
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "GPL です。/usr/share/common-licenses/GPL を参照してください"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
-"まず、「アップデートマネージャー」「aptitude」「Synaptic」などの他のアプリ"
-"ケーションを閉じてください。"
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "ソフトウェア管理ツールは同時に 1 つだけしか実行できません"
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'Update Manager', 'aptitude' or "
+#~ "'Synaptic' first."
+#~ msgstr ""
+#~ "まず、「アップデートマネージャー」「aptitude」「Synaptic」などの他のアプリ"
+#~ "ケーションを閉じてください。"
+
+#~ msgid "Terminal"
+#~ msgstr "端末"
+
+#~ msgid "Automatically close after the changes have been successfully applied"
+#~ msgstr "変更が無事に適用できたら、自動的に終了する"
+
+#~ msgid "Copy selected text"
+#~ msgstr "選択したテキストをコピーする"
+
+#~ msgid "Dependency problems"
+#~ msgstr "依存関係の問題"
+
+#~ msgid "One or more packages are required by %s, it cannot be removed."
+#~ msgstr "%s によってパッケージが必要とされているので、削除できません。"
+
+#~ msgid "File not found"
+#~ msgstr "ファイルが見つかりません"
+
+#~ msgid "You tried to install a file that does not (or no longer) exist. "
+#~ msgstr "既に存在していないファイルをインストールしようとしています。 "
+
+#~ msgid "Installing package file..."
+#~ msgstr "パッケージファイルをインストールしています..."
+
+#~ msgid "Removing package..."
+#~ msgstr "パッケージを削除しています..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "認証されていないソフトウェアをインストールしますか?"
+
+#~ msgid ""
+#~ "Malicious software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefore be of "
+#~ "malicious nature."
+#~ msgstr ""
+#~ "悪意のあるソフトウェアによって、あなたのデータを破壊したりシステムを乗っ取"
+#~ "られることがあります。\n"
+#~ "\n"
+#~ "このパッケージは認証されておらず、悪意のある者が作成したものである可能性が"
+#~ "あります。"
+
+#~ msgid "Failed to install package file"
+#~ msgstr "パッケージファイルのインストールが失敗しました"
+
+#~ msgid "Failed to remove package"
+#~ msgstr "パッケージの削除が失敗しました"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "必要なファイルをすべてダウンロードできませんでした"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr "インターネット接続あるいはインストールメディアを確認してください"
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "依存関係をすべてインストールできませんでした"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr ""
+#~ "通常、これはソフトウェアのディストリビューター側の問題によるものです。詳細"
+#~ "については、端末を参照してください。"
+
+#~ msgid "Installing %s"
+#~ msgstr "%s をインストールしています"
+
+#~ msgid "Removing %s"
+#~ msgstr "'%s' を削除しています"
+
+#~ msgid "Installation finished"
+#~ msgstr "インストール完了"
+
+#~ msgid "Removal finished"
+#~ msgstr "削除完了"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "パッケージ '%s' がインストールされました"
+
+#~ msgid "Package '%s' was removed"
+#~ msgstr "パッケージ '%s' は削除されました"
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "'%s' パッケージのインストールに失敗しました"
+
+#~ msgid "Failed to remove package '%s'"
+#~ msgstr "'%s' パッケージの削除に失敗しました"
+
+#~ msgid "Installation complete"
+#~ msgstr "インストールが完了しました"
+
+#~ msgid "Removal complete"
+#~ msgstr "削除が完了しました"
+
+#~ msgid "Failed to completely remove package"
+#~ msgstr "パッケージを完全に削除するのに失敗しました"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "'%s' をインストールしています..."
+
+#~ msgid "Removing '%s'..."
+#~ msgstr "'%s' を削除しています..."
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "依存関係をインストールしています..."
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "追加パッケージファイルをダウンロードしています..."
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "ファイル %s / %s (%sB/s)"
+
+#~ msgid "File %s of %s"
+#~ msgstr "ファイル %s / %s"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "'%s' を '%s' ドライブに挿入してください"
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big>   </big></b>"

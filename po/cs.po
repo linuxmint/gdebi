@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2012-11-20 11:54+0000\n"
 "Last-Translator: Marv-CZ <marek@manet.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
@@ -89,81 +89,66 @@ msgstr ""
 "etc/apt/sources.list' a obnovte informace o softwaru příkazy: 'sudo apt-get "
 "update' a 'sudo apt-get install -f'."
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "Instalátor balíků"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "Podrobnosti"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>Pro instalaci je zapotřebí následujících změn:</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "Po_drobnosti"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "Popis"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>Verze:</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>Správce:</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>Priorita:</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>Sekce:</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>Velikost:</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "Podrobnosti"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "Obsažené soubory"
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "Na_instalovat balík"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "Instalovat a prohlížet balíky"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL, viz /usr/share/common-licenses/GPL"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "Terminál"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "Automaticky zavřít po úspěšném provedení změn"
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>Pro instalaci je zapotřebí následujících změn:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "Instalátor balíků GDebi"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "Instalátor balíků"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "Instalovat a prohlížet balíky"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -180,19 +165,15 @@ msgstr "%s není k dispozici"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr "Kopírovat vybraný text"
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "Načítání..."
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr "Nelze stáhnout jako uživatel root"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -200,259 +181,102 @@ msgstr ""
 "Vzdálené balíky nelze stahovat, pokud jste přihlášeni jako root. Zkuste to "
 "prosím znovu jako normální uživatel."
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr "Stahování balíku"
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr "Stahování selhalo"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "Stažení balíku se nezdařilo: soubor '%s' '%s'"
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr "Kontrolní data balíku"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr "Data z upstreamu"
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr "Chyba při čtení seznamu souborů"
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "Chyba: "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr "Chyba: již neposkytuje "
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "Stejná verze je již nainstalovaná"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "_Přeinstalovat balík"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr "Vybrali jste adresář"
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "Chyba při čtení obsahu souboru '%s'"
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr "Obsah souboru nelze rozbalit"
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>K odstranění: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr "K instalaci: %s"
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "Otevřít balík"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "Softwarové balíky"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr "Problémy se závislostí"
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr "Jeden nebo více balíčků je vyžadováno od %s, nemůže být odstraněn."
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "Soubor nenalezen"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr "Pokoušíte se nainstalovat soubor, který (již) neexistuje. "
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "Instalování balíku..."
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr "Odstraňování balíčku..."
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "Instalovat neověřený software?"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-"Škodlivý software může poškodit vaše data a převzít kontrolu nad vaším "
-"systémem.\n"
-"\n"
-"Níže uvedené balíky nejsou ověřené a mohou být tudíž potencionálně "
-"nebezpečné."
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "Instalace balíku selhala"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr "Chyba při odstraňování balíčku"
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "Nelze stáhnout všechny požadované soubory"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "Zkontrolujte prosím vaše internetové připojení nebo instalační médium."
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "Nelze nainstalovat všechny závislosti"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr ""
-"Toto se obvykle vztahuje k nějaké chybě dodavatele softwaru. Podívejte se do "
-"terminálového okna na přesnější informace."
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "Instalování %s"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr "Odstraňuje se %s"
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "Instalace dokončena"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr "Odstranění dokončeno"
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "Balík \"%s\" byl nainstalován"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr "Balíček '%s' byl odstraněn"
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "Nezdařilo se nainstalovat balík \"%s\""
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr "Chyba při odstraňování balíčku '%s'"
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "Instalace dokončena"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr "Odstranění je kompletní"
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr "Nezdařilo se zcela nainstalovat všechny závislosti"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr "Nepodařilo se zcela odstranit balíček"
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr "Vyřešte to spuštěním \"sudo apt-get install -f\" v terminálovém okně."
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "Instalování \"%s\"..."
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr "Odstraňuje se %s"
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "Instalování závislostí..."
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "Stahování dodatečných balíků..."
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr "Soubor %s z %s při %sB/s"
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr "Soubor %s z %s"
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr "Vložte prosím \"%s\" do jednotky \"%s\""
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -591,17 +415,140 @@ msgstr "Vyžaduje <b>odstranění</b> %s balíků\n"
 msgid "Requires the installation of %s packages"
 msgstr "Vyžaduje instalaci %s balíků"
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "Nelze mít spuštěných více nástrojů pro správu softwaru naráz"
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "GPL, viz /usr/share/common-licenses/GPL"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
-"Ukončete prosím nejdříve ostatní aplikace, např. \"Správce aktualizací\", "
-"\"aptitude\" nebo \"Synaptic\"."
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "Nelze mít spuštěných více nástrojů pro správu softwaru naráz"
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'Update Manager', 'aptitude' or "
+#~ "'Synaptic' first."
+#~ msgstr ""
+#~ "Ukončete prosím nejdříve ostatní aplikace, např. \"Správce aktualizací\", "
+#~ "\"aptitude\" nebo \"Synaptic\"."
+
+#~ msgid "Terminal"
+#~ msgstr "Terminál"
+
+#~ msgid "Automatically close after the changes have been successfully applied"
+#~ msgstr "Automaticky zavřít po úspěšném provedení změn"
+
+#~ msgid "Copy selected text"
+#~ msgstr "Kopírovat vybraný text"
+
+#~ msgid "Dependency problems"
+#~ msgstr "Problémy se závislostí"
+
+#~ msgid "One or more packages are required by %s, it cannot be removed."
+#~ msgstr "Jeden nebo více balíčků je vyžadováno od %s, nemůže být odstraněn."
+
+#~ msgid "File not found"
+#~ msgstr "Soubor nenalezen"
+
+#~ msgid "You tried to install a file that does not (or no longer) exist. "
+#~ msgstr "Pokoušíte se nainstalovat soubor, který (již) neexistuje. "
+
+#~ msgid "Installing package file..."
+#~ msgstr "Instalování balíku..."
+
+#~ msgid "Removing package..."
+#~ msgstr "Odstraňování balíčku..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "Instalovat neověřený software?"
+
+#~ msgid ""
+#~ "Malicious software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefore be of "
+#~ "malicious nature."
+#~ msgstr ""
+#~ "Škodlivý software může poškodit vaše data a převzít kontrolu nad vaším "
+#~ "systémem.\n"
+#~ "\n"
+#~ "Níže uvedené balíky nejsou ověřené a mohou být tudíž potencionálně "
+#~ "nebezpečné."
+
+#~ msgid "Failed to install package file"
+#~ msgstr "Instalace balíku selhala"
+
+#~ msgid "Failed to remove package"
+#~ msgstr "Chyba při odstraňování balíčku"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "Nelze stáhnout všechny požadované soubory"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr ""
+#~ "Zkontrolujte prosím vaše internetové připojení nebo instalační médium."
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "Nelze nainstalovat všechny závislosti"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr ""
+#~ "Toto se obvykle vztahuje k nějaké chybě dodavatele softwaru. Podívejte se "
+#~ "do terminálového okna na přesnější informace."
+
+#~ msgid "Installing %s"
+#~ msgstr "Instalování %s"
+
+#~ msgid "Removing %s"
+#~ msgstr "Odstraňuje se %s"
+
+#~ msgid "Installation finished"
+#~ msgstr "Instalace dokončena"
+
+#~ msgid "Removal finished"
+#~ msgstr "Odstranění dokončeno"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "Balík \"%s\" byl nainstalován"
+
+#~ msgid "Package '%s' was removed"
+#~ msgstr "Balíček '%s' byl odstraněn"
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "Nezdařilo se nainstalovat balík \"%s\""
+
+#~ msgid "Failed to remove package '%s'"
+#~ msgstr "Chyba při odstraňování balíčku '%s'"
+
+#~ msgid "Installation complete"
+#~ msgstr "Instalace dokončena"
+
+#~ msgid "Removal complete"
+#~ msgstr "Odstranění je kompletní"
+
+#~ msgid "Failed to completely remove package"
+#~ msgstr "Nepodařilo se zcela odstranit balíček"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "Instalování \"%s\"..."
+
+#~ msgid "Removing '%s'..."
+#~ msgstr "Odstraňuje se %s"
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "Instalování závislostí..."
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "Stahování dodatečných balíků..."
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "Soubor %s z %s při %sB/s"
+
+#~ msgid "File %s of %s"
+#~ msgstr "Soubor %s z %s"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "Vložte prosím \"%s\" do jednotky \"%s\""
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big>   </big></b>"

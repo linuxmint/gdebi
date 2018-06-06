@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2011-06-22 23:52+0000\n"
 "Last-Translator: Shehzad Ashiq Ali <Unknown>\n"
 "Language-Team: Urdu Team of www.urducoder.com <makkiabufaris@aol.com>\n"
@@ -91,81 +91,66 @@ msgstr ""
 "پڑتال کریں اور سوفٹ ویئر کی معلومات 'sudo apt-get update' اور 'sudo apt-get "
 "install -f' سے دوبارہ لادیں."
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "پیکج تنصیب کار"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "تفصیلات"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>تنصیب کے لیے مندرجہ ذیل تبدیلیاں درکار ہیں:</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "_تفصیلات"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "تفصیل"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>نسخہ:</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>قائم کار:</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>اہمیت:</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>سیکشن:</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>حجم:</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "تفصیلات"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "شامل فائلیں"
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "پیکج _نصب کریں"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "اردو ترجمہ از محمد علی مکی"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "جی پی ایل, دیکھیں /usr/share/common-licenses/GPL"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "ٹرمنل"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "تبدیلیوں کے کامیاب اطلاق کے بعد خودکار طور پر بند کریں"
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>تنصیب کے لیے مندرجہ ذیل تبدیلیاں درکار ہیں:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "جی ڈیبی پیکج انسٹالر"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "پیکج تنصیب کار"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "اردو ترجمہ از محمد علی مکی"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -182,19 +167,15 @@ msgstr "%s دستیاب نہیں ہے"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "لادا جارہا ہے..."
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr "بطور روٹ ڈائون لئود نہیں کر سکتا"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -202,259 +183,103 @@ msgstr ""
 "بطور روٹ دور دراز پیکجوں کو ڈائون لئود نہیں کیا جا سکتا۔ براہ مہربانی ایک "
 "عام صارف کے طور پر دوبارہ کوشش کریں۔"
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr "پیکج کو دائون لئود کیا جا ریا ہے"
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr "دائون لئود ناکام"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "پیکج کو دائون لئود  نہیں کیا جا سکا مسل '%s' '%s':"
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr "پیکج کنٹرول کوائف"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr "اپ سٹریم کوائف"
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr "فائل فہرست پڑھنے میں غلطی"
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "غلطی: "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr "غلطی : اب نہیں فراہم کرتا "
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "یہی نسخہ پہلے ہی نصب ہے"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "پیکج _دوبارہ نصب کریں"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr "انتخاب ڈائریکٹری ہے"
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "فائل کا مواد پڑھنے میں غلطی '%s'"
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr "فائل کا مواد کشید نہیں کیا جاسکتا"
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>حذف ہونے جارہے ہیں: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr "نصب ہونے جارہے ہیں: %s"
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "سوفٹ ویئر پیکج کھولیں"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "سوفٹ ویئر پیکج"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "فائل نہیں پائی گئی"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr "آپ نے ایک ایسی فائل نصب کرنے کی کوشش کی ہے جو (اب) موجود نہیں رہی. "
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "پیکج فائل نصب کی جارہی ہے..."
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "کیا غیر مصدقہ سوفٹ ویئر نصب کردیا جائے؟"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-"خبیت سوفٹ ویئر آپ کے کوائف کو نقصان اور آپ کے نظام پر تسلط حاصل کر سکتے "
-"ہیں.\n"
-"\n"
-"ذیل کا پیکج غیر مصدقہ ہے اور اپنی اصل میں خبیث ہوسکتا ہے."
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "پیکج فائل نصب کرنے میں ناکامی"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "تمام درکار فائلیں اتاری نہیں جاسکتیں"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "براہِ مہربانی تنصیب کے وسیط یا اپنے انٹرنیٹ اتصال کی پڑتال کریں."
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "تمام انحصاریاں نصب نہیں کی جاسکتیں"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr ""
-"بالعموم اس غلطی کا تعلق سوفٹ ویئر تقسیم کار سے ہوتا ہے. مزید تفصیلات کے لیے "
-"ٹرمنل کا دریچہ دیکھیں."
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "نصیب کیا جارہا ہے %s"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "تنصیب تمام ہوئی"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "پیکج '%s' نصب کردیا گیا ہے"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "پیکج '%s' نصب کرنے میں ناکامی"
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "تنصیب مکمل ہوئی"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr "تمام انحصاریاں مکمل طور پر نصب کرنے میں ناکامی"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "اسے درست کرنے کے لیے ٹرمنل کے دریچے میں 'sudo apt-get install -f' چلائیں."
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "نصب کیا جارہا ہے '%s'..."
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "انحصاریاں نصب کی جارہی ہیں..."
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "اضافی پیکج فائلیں اتاری جارہی ہیں..."
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr "فائل %s برائے %s بر رفتار %sB/s"
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr "فائل %s برائے %s"
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr "ازراہِ کرم ڈرائیو '%s' میں '%s' داخل کریں"
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -592,17 +417,102 @@ msgstr "اسے نصب کرنے کے لیے %s پیکج <b>حذف</b> کرنا ل
 msgid "Requires the installation of %s packages"
 msgstr "اسے نصب کرنے کے لیے مزید %s پیکج نصب کرنا لازمی ہیں"
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "ایک وقت میں صرف ایک سوفٹ ویئر ادارت اوزار چلانے کی اجازت ہے"
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "جی پی ایل, دیکھیں /usr/share/common-licenses/GPL"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
-"ازراہِ کرم پہلے دوسرے اطلاقیے کو بند کریں جیسے 'Update Manager'، 'aptitude' "
-"یا 'Synaptic'."
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "ایک وقت میں صرف ایک سوفٹ ویئر ادارت اوزار چلانے کی اجازت ہے"
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'Update Manager', 'aptitude' or "
+#~ "'Synaptic' first."
+#~ msgstr ""
+#~ "ازراہِ کرم پہلے دوسرے اطلاقیے کو بند کریں جیسے 'Update Manager'، "
+#~ "'aptitude' یا 'Synaptic'."
+
+#~ msgid "Terminal"
+#~ msgstr "ٹرمنل"
+
+#~ msgid "Automatically close after the changes have been successfully applied"
+#~ msgstr "تبدیلیوں کے کامیاب اطلاق کے بعد خودکار طور پر بند کریں"
+
+#~ msgid "File not found"
+#~ msgstr "فائل نہیں پائی گئی"
+
+#~ msgid "You tried to install a file that does not (or no longer) exist. "
+#~ msgstr "آپ نے ایک ایسی فائل نصب کرنے کی کوشش کی ہے جو (اب) موجود نہیں رہی. "
+
+#~ msgid "Installing package file..."
+#~ msgstr "پیکج فائل نصب کی جارہی ہے..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "کیا غیر مصدقہ سوفٹ ویئر نصب کردیا جائے؟"
+
+#~ msgid ""
+#~ "Malicious software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefore be of "
+#~ "malicious nature."
+#~ msgstr ""
+#~ "خبیت سوفٹ ویئر آپ کے کوائف کو نقصان اور آپ کے نظام پر تسلط حاصل کر سکتے "
+#~ "ہیں.\n"
+#~ "\n"
+#~ "ذیل کا پیکج غیر مصدقہ ہے اور اپنی اصل میں خبیث ہوسکتا ہے."
+
+#~ msgid "Failed to install package file"
+#~ msgstr "پیکج فائل نصب کرنے میں ناکامی"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "تمام درکار فائلیں اتاری نہیں جاسکتیں"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr "براہِ مہربانی تنصیب کے وسیط یا اپنے انٹرنیٹ اتصال کی پڑتال کریں."
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "تمام انحصاریاں نصب نہیں کی جاسکتیں"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr ""
+#~ "بالعموم اس غلطی کا تعلق سوفٹ ویئر تقسیم کار سے ہوتا ہے. مزید تفصیلات کے "
+#~ "لیے ٹرمنل کا دریچہ دیکھیں."
+
+#~ msgid "Installing %s"
+#~ msgstr "نصیب کیا جارہا ہے %s"
+
+#~ msgid "Installation finished"
+#~ msgstr "تنصیب تمام ہوئی"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "پیکج '%s' نصب کردیا گیا ہے"
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "پیکج '%s' نصب کرنے میں ناکامی"
+
+#~ msgid "Installation complete"
+#~ msgstr "تنصیب مکمل ہوئی"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "نصب کیا جارہا ہے '%s'..."
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "انحصاریاں نصب کی جارہی ہیں..."
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "اضافی پیکج فائلیں اتاری جارہی ہیں..."
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "فائل %s برائے %s بر رفتار %sB/s"
+
+#~ msgid "File %s of %s"
+#~ msgstr "فائل %s برائے %s"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "ازراہِ کرم ڈرائیو '%s' میں '%s' داخل کریں"
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big>   </big></b>"

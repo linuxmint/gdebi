@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2012-07-06 15:01+0000\n"
 "Last-Translator: Constantine E. Kozlov <tempor.demonius@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -89,81 +89,66 @@ msgstr ""
 "оновіть інформацію про програмне забезпечення за допомогою: 'sudo apt-get "
 "update' та 'sudo apt-get install -f'."
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "Встановлювач пакунків"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "Подробиці"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>Для встановлення потрібні наступні зміни:</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "_Подробиці"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "Опис"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>Версія:</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>Упорядник:</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>Пріоритет:</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>Секція:</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>Розмір:</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "Подробиці"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "Включені файли"
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "_Встановити пакунок"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "Встановити та оглянути програмні пакунки"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL, див. /usr/share/common-licenses/GPL"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "Термінал"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "Автоматично закрити після успішного прийняття усіх змін"
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>Для встановлення потрібні наступні зміни:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "Встановлювач пакунків GDebi"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "Встановлювач пакунків"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "Встановити та оглянути програмні пакунки"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -180,19 +165,15 @@ msgstr "%s є недоступним"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr "Копіювати виділений текст"
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "Завантаження..."
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr "Не можливо завантажити від root"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -200,261 +181,103 @@ msgstr ""
 "Віддалені пакунки не можуть бути завантажені під root’ом. Будь ласка, "
 "спробуйте знову під звичайним користувачем"
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr "Завантаження пакунків"
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr "Завантаження не вдалось"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "Завантаження не вдалось: файл '%s' '%s'"
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr "Дані контролю пакунку"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr "Вихідні дані"
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr "Помилка читання файлу-списку"
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "Помилка: "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "Така ж версія вже встановлена"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "_Перевстановити пакунок"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr "Обрано каталог"
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "Помилка читання вмісту файлу '%s'"
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr "Не можливо видобути вміст файлу"
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>Буде видалено: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr "Буде встановлено: %s"
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "Відкрити програмний пакунок"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "Програмні пакунки"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr "Проблеми залежностей"
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr ""
-"Пакет \"%s\" вимагається одним або більше пакетами і не може бути видалений."
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "Файл не знайдено"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr "Ви спробували встановити файл, якого не існує (або більше не існує). "
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "Встановлення файла пакунка..."
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr "Видалення пакету..."
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "Встановити недостовірне програмне забезпечення?"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-"Шкідливе програмне забезпечення може пошкодити дані і взяти контроль над "
-"системою.\n"
-"\n"
-"Пакунки, перелічені нижче, не ідентифіковані, а отже можуть містити шкідливе "
-"ПЗ."
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "Не вдалося встановити файл пакунка"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr "Не вдалось вилучити пакет"
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "Не вдалося завантажити всі необхідні файли"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "Будь ласка, перевірте ваше інтернет-з'єднання або носій встановлення."
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "Не вдалося встановити всі залежності"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr ""
-"Зазвичай це вважають помилкою постачальника програмного забезпечення. За "
-"подробицями див. у вікно терміналу"
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "Встановлюю %s"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr "Видаляється %s"
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "Встановлення завершено"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr "Видалення завершене"
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "Пакунок \"%s\" було встановлено"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr "Пакет \"%s\" було вилучено"
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "Не вдалося встановити пакунок \"%s\""
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr "Не вдалось вилучити пакет \"%s\""
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "Встановлення завершено"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr "Видалення завершене"
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr "Не вдалося повністю встановити всі залежності"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr "Не вдалось повністю видалити пакет"
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "Щоб виправити це, запустіть \"sudo apt-get install -f\" у вікні терміналу."
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "Встановлення \"%s\"..."
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr "Видалення пакету «%s»..."
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "Встановлення залежностей..."
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "Завантаження додаткових файлів пакунків..."
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr "Файл %s з %s при %sБ/с"
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr "Файл %s з %s"
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr "Будь ласка, вставте \"%s\" у привід \"%s\""
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -594,19 +417,145 @@ msgstr "Потребує <b>видалення</b> %s пакунків\n"
 msgid "Requires the installation of %s packages"
 msgstr "Потребує встановлення %s пакунків"
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr ""
-"Лише один інструмент керування програмним забезпеченням дозволено запускати "
-"одночасно"
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "GPL, див. /usr/share/common-licenses/GPL"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
-"Будь ласка, спершу закрийте інший додаток, як-от 'Менеджер оновлення', "
-"'aptitude' чи 'Synaptic'."
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr ""
+#~ "Лише один інструмент керування програмним забезпеченням дозволено "
+#~ "запускати одночасно"
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'Update Manager', 'aptitude' or "
+#~ "'Synaptic' first."
+#~ msgstr ""
+#~ "Будь ласка, спершу закрийте інший додаток, як-от 'Менеджер оновлення', "
+#~ "'aptitude' чи 'Synaptic'."
+
+#~ msgid "Terminal"
+#~ msgstr "Термінал"
+
+#~ msgid "Automatically close after the changes have been successfully applied"
+#~ msgstr "Автоматично закрити після успішного прийняття усіх змін"
+
+#~ msgid "Copy selected text"
+#~ msgstr "Копіювати виділений текст"
+
+#~ msgid "Dependency problems"
+#~ msgstr "Проблеми залежностей"
+
+#~ msgid "One or more packages are required by %s, it cannot be removed."
+#~ msgstr ""
+#~ "Пакет \"%s\" вимагається одним або більше пакетами і не може бути "
+#~ "видалений."
+
+#~ msgid "File not found"
+#~ msgstr "Файл не знайдено"
+
+#~ msgid "You tried to install a file that does not (or no longer) exist. "
+#~ msgstr ""
+#~ "Ви спробували встановити файл, якого не існує (або більше не існує). "
+
+#~ msgid "Installing package file..."
+#~ msgstr "Встановлення файла пакунка..."
+
+#~ msgid "Removing package..."
+#~ msgstr "Видалення пакету..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "Встановити недостовірне програмне забезпечення?"
+
+#~ msgid ""
+#~ "Malicious software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefore be of "
+#~ "malicious nature."
+#~ msgstr ""
+#~ "Шкідливе програмне забезпечення може пошкодити дані і взяти контроль над "
+#~ "системою.\n"
+#~ "\n"
+#~ "Пакунки, перелічені нижче, не ідентифіковані, а отже можуть містити "
+#~ "шкідливе ПЗ."
+
+#~ msgid "Failed to install package file"
+#~ msgstr "Не вдалося встановити файл пакунка"
+
+#~ msgid "Failed to remove package"
+#~ msgstr "Не вдалось вилучити пакет"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "Не вдалося завантажити всі необхідні файли"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr ""
+#~ "Будь ласка, перевірте ваше інтернет-з'єднання або носій встановлення."
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "Не вдалося встановити всі залежності"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr ""
+#~ "Зазвичай це вважають помилкою постачальника програмного забезпечення. За "
+#~ "подробицями див. у вікно терміналу"
+
+#~ msgid "Installing %s"
+#~ msgstr "Встановлюю %s"
+
+#~ msgid "Removing %s"
+#~ msgstr "Видаляється %s"
+
+#~ msgid "Installation finished"
+#~ msgstr "Встановлення завершено"
+
+#~ msgid "Removal finished"
+#~ msgstr "Видалення завершене"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "Пакунок \"%s\" було встановлено"
+
+#~ msgid "Package '%s' was removed"
+#~ msgstr "Пакет \"%s\" було вилучено"
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "Не вдалося встановити пакунок \"%s\""
+
+#~ msgid "Failed to remove package '%s'"
+#~ msgstr "Не вдалось вилучити пакет \"%s\""
+
+#~ msgid "Installation complete"
+#~ msgstr "Встановлення завершено"
+
+#~ msgid "Removal complete"
+#~ msgstr "Видалення завершене"
+
+#~ msgid "Failed to completely remove package"
+#~ msgstr "Не вдалось повністю видалити пакет"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "Встановлення \"%s\"..."
+
+#~ msgid "Removing '%s'..."
+#~ msgstr "Видалення пакету «%s»..."
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "Встановлення залежностей..."
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "Завантаження додаткових файлів пакунків..."
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "Файл %s з %s при %sБ/с"
+
+#~ msgid "File %s of %s"
+#~ msgstr "Файл %s з %s"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "Будь ласка, вставте \"%s\" у привід \"%s\""
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big>   </big></b>"

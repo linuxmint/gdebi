@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi 0.8.0\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2013-08-04 10:32+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -115,81 +115,66 @@ msgstr ""
 "formato de «/etc/apt/sources.list» sea el correcto. Actualice la información "
 "de software con «sudo apt-get update» y «sudo apt-get install -f»."
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "Instalador de paquetes"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "Detalles"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>La instalación requiere los siguientes cambios:</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "_Detalles"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "Descripción"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>Versión:</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>Responsable:</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>Prioridad:</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>Sección:</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>Tamaño:</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "Detalles"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "Archivos incluidos"
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "_Instalar paquete"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "Instala y muestra paquetes de software"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL, véase «/usr/share/common-licenses/GPL»"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "Terminal"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "Cerrar automáticamente después de aplicar los cambios con éxito"
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>La instalación requiere los siguientes cambios:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "Instalador de paquetes GDebi"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "Instalador de paquetes"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "Instala y muestra paquetes de software"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -206,19 +191,15 @@ msgstr "%s no está disponible"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr "Copiar el texto seleccionado"
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "Cargando…"
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr "No puede descargar como administrador"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -226,48 +207,48 @@ msgstr ""
 "No se pueden descargar los paquetes remotos con privilegios de "
 "administración. Inténtelo de nuevo como un usuario normal."
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr "Descargando paquete"
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr "Ha fallado la descarga"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "Error al descargar el paquete: archivo «%s» «%s»"
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr "Datos de control del paquete"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr "Datos de la fuente original"
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr "Error al leer la lista de archivos"
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "Error: "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr "Error: ya no proporciona la dependencia "
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "La misma versión está instalada en el sistema"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "_Reinstalar paquete"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
@@ -275,11 +256,11 @@ msgstr ""
 "Lintian no está disponible.\n"
 "Instálelo con la orden «sudo apt-get install lintian»"
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr "Ejecutando lintian…"
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
@@ -288,203 +269,47 @@ msgstr ""
 "\n"
 "Lintian finalizó con el estado de salida %s"
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr "La selección es un directorio"
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "Error al leer los contenidos del archivo «%s»"
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr "No se puede extraer el contenido del archivo"
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>Se va a eliminar: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr "Se va a instalar: %s"
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "Abrir paquete de software"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "Paquetes de software"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr "Problemas de dependencias"
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr "%s necesita uno o más paquetes, y no se puede desinstalar."
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "Archivo no encontrado"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr "Intentó instalar un archivo que no (o que ya no) existe. "
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "Instalando el archivo de paquete…"
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr "Quitando el paquete..."
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "¿Instalar software sin autenticar?"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-"El software malicioso podría dañar sus datos y tomar control de su sistema.\n"
-"\n"
-"Los siguientes paquetes no están autenticados y podrían ser de naturaleza "
-"maliciosa."
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "Falló la instalación del paquete"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr "Falló al desinstalar el paquete"
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "No se han podido descargar todos los archivos requeridos"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "Compruebe su conexión a Internet o el soporte de instalación."
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "No se han podido instalar todas las dependencias"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr ""
-"Esto normalmente se debe a un error del distribuidor del software. Vea la "
-"ventana de terminal para más detalles."
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "Instalando %s"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr "Desinstalando %s"
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "Instalación finalizada"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr "Desinstalación finalizada"
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "Se ha instalado el paquete «%s»"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr "Paquete '%s' estaba quitado."
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "Falló la instalación del paquete «%s»"
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr "Falló quitar paquete '%s'"
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "Instalación completada"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr "Desinstalación completada"
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr ""
 "Se produjo un error durante la instalación completa de todas las dependencias"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr "Falló quitar paquete completamente"
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "Para arreglar esto, ejecute «sudo apt-get install -f» en la ventana de una "
 "terminal."
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "Instalando «%s»…"
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr "Desinstalando «%s»…"
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "Instalando dependencias…"
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "Descargando archivos de paquetes adicionales…"
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr "Archivo %s de %s a %sB/s"
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr "Archivo %s de %s"
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr "Inserte «%s» en la unidad «%s»"
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -623,19 +448,141 @@ msgstr "Requiere <b>eliminar</b> %s paquetes\n"
 msgid "Requires the installation of %s packages"
 msgstr "Requiere la instalación de %s paquetes"
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr ""
-"Solo se permite la ejecución simultánea de una única herramienta de gestión "
-"de software"
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "GPL, véase «/usr/share/common-licenses/GPL»"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
-"Por favor, cierre primero cualquier otra aplicación como «Gestor de "
-"actualizaciones», «aptitude» o «Synaptic»."
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr ""
+#~ "Solo se permite la ejecución simultánea de una única herramienta de "
+#~ "gestión de software"
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'Update Manager', 'aptitude' or "
+#~ "'Synaptic' first."
+#~ msgstr ""
+#~ "Por favor, cierre primero cualquier otra aplicación como «Gestor de "
+#~ "actualizaciones», «aptitude» o «Synaptic»."
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "Automatically close after the changes have been successfully applied"
+#~ msgstr "Cerrar automáticamente después de aplicar los cambios con éxito"
+
+#~ msgid "Copy selected text"
+#~ msgstr "Copiar el texto seleccionado"
+
+#~ msgid "Dependency problems"
+#~ msgstr "Problemas de dependencias"
+
+#~ msgid "One or more packages are required by %s, it cannot be removed."
+#~ msgstr "%s necesita uno o más paquetes, y no se puede desinstalar."
+
+#~ msgid "File not found"
+#~ msgstr "Archivo no encontrado"
+
+#~ msgid "You tried to install a file that does not (or no longer) exist. "
+#~ msgstr "Intentó instalar un archivo que no (o que ya no) existe. "
+
+#~ msgid "Installing package file..."
+#~ msgstr "Instalando el archivo de paquete…"
+
+#~ msgid "Removing package..."
+#~ msgstr "Quitando el paquete..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "¿Instalar software sin autenticar?"
+
+#~ msgid ""
+#~ "Malicious software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefore be of "
+#~ "malicious nature."
+#~ msgstr ""
+#~ "El software malicioso podría dañar sus datos y tomar control de su "
+#~ "sistema.\n"
+#~ "\n"
+#~ "Los siguientes paquetes no están autenticados y podrían ser de naturaleza "
+#~ "maliciosa."
+
+#~ msgid "Failed to install package file"
+#~ msgstr "Falló la instalación del paquete"
+
+#~ msgid "Failed to remove package"
+#~ msgstr "Falló al desinstalar el paquete"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "No se han podido descargar todos los archivos requeridos"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr "Compruebe su conexión a Internet o el soporte de instalación."
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "No se han podido instalar todas las dependencias"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr ""
+#~ "Esto normalmente se debe a un error del distribuidor del software. Vea la "
+#~ "ventana de terminal para más detalles."
+
+#~ msgid "Installing %s"
+#~ msgstr "Instalando %s"
+
+#~ msgid "Removing %s"
+#~ msgstr "Desinstalando %s"
+
+#~ msgid "Installation finished"
+#~ msgstr "Instalación finalizada"
+
+#~ msgid "Removal finished"
+#~ msgstr "Desinstalación finalizada"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "Se ha instalado el paquete «%s»"
+
+#~ msgid "Package '%s' was removed"
+#~ msgstr "Paquete '%s' estaba quitado."
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "Falló la instalación del paquete «%s»"
+
+#~ msgid "Failed to remove package '%s'"
+#~ msgstr "Falló quitar paquete '%s'"
+
+#~ msgid "Installation complete"
+#~ msgstr "Instalación completada"
+
+#~ msgid "Removal complete"
+#~ msgstr "Desinstalación completada"
+
+#~ msgid "Failed to completely remove package"
+#~ msgstr "Falló quitar paquete completamente"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "Instalando «%s»…"
+
+#~ msgid "Removing '%s'..."
+#~ msgstr "Desinstalando «%s»…"
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "Instalando dependencias…"
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "Descargando archivos de paquetes adicionales…"
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "Archivo %s de %s a %sB/s"
+
+#~ msgid "File %s of %s"
+#~ msgstr "Archivo %s de %s"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "Inserte «%s» en la unidad «%s»"
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big>   </big></b>"

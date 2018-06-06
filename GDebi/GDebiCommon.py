@@ -187,38 +187,3 @@ class GDebiCommon(object):
         if len(self.install) > 0:
             self.deps += _("Requires the installation of %s packages") % len(self.install)
         return True
-
-    def try_acquire_lock(self):
-        " check if we can lock the apt database "
-        try:
-            apt_pkg.pkgsystem_lock()
-        except SystemError:
-            self.error_header = _("Only one software management tool is allowed to"
-                       " run at the same time")
-            self.error_body = _("Please close the other application e.g. 'Update "
-                     "Manager', 'aptitude' or 'Synaptic' first.")
-            return False
-        apt_pkg.pkgsystem_unlock()
-        return True
-
-    def acquire_lock(self):
-        " lock the pkgsystem for install "
-        # sanity check ( moved here )
-        if self._deb is None:
-          return False
-
-        # check if we can lock the apt database
-        try:
-            apt_pkg.pkgsystem_lock()
-        except SystemError:
-            self.error_header = _("Only one software management tool is allowed to"
-                                  " run at the same time")
-            self.error_body = _("Please close the other application e.g. 'Update "
-                                "Manager', 'aptitude' or 'Synaptic' first.")
-            return False
-        return True
-
-    def release_lock(self):
-        " release the pkgsystem lock "
-        apt_pkg.pkgsystem_lock()
-        return True

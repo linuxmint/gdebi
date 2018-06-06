@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2009-11-19 15:34+0000\n"
 "Last-Translator: jonas-ska <Unknown>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
@@ -89,81 +89,66 @@ msgstr ""
 "įrangos informaciją naudojant komandas „sudo apt-get update“ bei „sudo apt-"
 "get install -f“."
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "Paketų diegyklė"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "Išsamiau"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>Įdiegimui reikalingi šie pakeitimai:</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "_Išsamiau"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "Apibūdinimas"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>Versija:</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>Prižiūrėtojas:</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>Svarba:</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>Skyrius:</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>Dydis:</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "Išsamiau"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr ""
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "Į_diegti paketą"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "Įdiegti ir peržiūrėti programinės įrangos paketus"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL, žiūrėkite /usr/share/common-licenses/GPL"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "Terminalas"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr ""
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>Įdiegimui reikalingi šie pakeitimai:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "„GDebi“ paketų diegyklė"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "Paketų diegyklė"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "Įdiegti ir peržiūrėti programinės įrangos paketus"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -180,277 +165,117 @@ msgstr "%s neprieinamas"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "Įkeliama..."
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "Klaida: "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "Ta pati versija jau įdiegta"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "_Perdiegti paketą"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr "Pasirinktas katalogas"
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>Bus pašalinta: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr "Bus įdiegta: %s"
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "Atverti programinį paketą"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "Programiniai paketai"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "Byla nerasta"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr "Jūs pabandėte įdiegti nebeegzistuojančią bylą. "
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "Diegiama paketo byla..."
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "Įdiegti nepatvirtintą programinę įrangą?"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-"Kenksminga programinė įranga gali pakenkti jūsų duomenims arba perimti "
-"sistemos valdymą.\n"
-"\n"
-"Žemiau pateikti paketai nėra patvirtinti saugiais ir gali būti kenksmingi."
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "Nepavyko įdiegti paketo bylos"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "Nepavyko atsiųsti visų reikalingų bylų"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "Patikrinkite interneto ryšį ar diegimo laikmeną."
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "Nepavyko įdiegti visų priklausomų paketų"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr ""
-"Paprastai tai yra susiję su programinės įrangos platintoju. Peržiūrėkite "
-"terminalo langą, norėdami gauti daugiau informacijos."
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "Diegiama %s"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "Diegimas baigtas"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "Paketas „%s“ yra įdiegtas"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "Nepavyko įdiegti paketo „%s“"
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "Diegimas baigtas"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr "Nepavyko visiškai įdiegti visų priklausomų paketų"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "Norėdami tai ištaisyti, terminalo lange įveskite „sudo apt-get install -f“."
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "Diegiama „%s“..."
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "Diegiami priklausantys paketai..."
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "Atsiunčiamos papildomos paketo bylos..."
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr "Byla %s iš %s %sB/s greičiu"
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr "%s byla iš %s"
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr "Įdėkite „%s“ į įrenginį „%s“"
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -590,19 +415,101 @@ msgstr "Reikia <b>pašalinti</b> %s paketus (-ų)\n"
 msgid "Requires the installation of %s packages"
 msgstr "Reikia įdiegti %s paketus (-ų)"
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr ""
-"Tik vienas programinės įrangos tvarkymo įrankis gali būti paleistas vienu "
-"metu"
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "GPL, žiūrėkite /usr/share/common-licenses/GPL"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
-"Pirmiausia užverkite kitą programą, pvz., „Atnaujinimų tvarkyklę“, "
-"„aptitude“ arba „Synaptic“."
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr ""
+#~ "Tik vienas programinės įrangos tvarkymo įrankis gali būti paleistas vienu "
+#~ "metu"
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'Update Manager', 'aptitude' or "
+#~ "'Synaptic' first."
+#~ msgstr ""
+#~ "Pirmiausia užverkite kitą programą, pvz., „Atnaujinimų tvarkyklę“, "
+#~ "„aptitude“ arba „Synaptic“."
+
+#~ msgid "Terminal"
+#~ msgstr "Terminalas"
+
+#~ msgid "File not found"
+#~ msgstr "Byla nerasta"
+
+#~ msgid "You tried to install a file that does not (or no longer) exist. "
+#~ msgstr "Jūs pabandėte įdiegti nebeegzistuojančią bylą. "
+
+#~ msgid "Installing package file..."
+#~ msgstr "Diegiama paketo byla..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "Įdiegti nepatvirtintą programinę įrangą?"
+
+#~ msgid ""
+#~ "Malicious software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefore be of "
+#~ "malicious nature."
+#~ msgstr ""
+#~ "Kenksminga programinė įranga gali pakenkti jūsų duomenims arba perimti "
+#~ "sistemos valdymą.\n"
+#~ "\n"
+#~ "Žemiau pateikti paketai nėra patvirtinti saugiais ir gali būti kenksmingi."
+
+#~ msgid "Failed to install package file"
+#~ msgstr "Nepavyko įdiegti paketo bylos"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "Nepavyko atsiųsti visų reikalingų bylų"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr "Patikrinkite interneto ryšį ar diegimo laikmeną."
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "Nepavyko įdiegti visų priklausomų paketų"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr ""
+#~ "Paprastai tai yra susiję su programinės įrangos platintoju. Peržiūrėkite "
+#~ "terminalo langą, norėdami gauti daugiau informacijos."
+
+#~ msgid "Installing %s"
+#~ msgstr "Diegiama %s"
+
+#~ msgid "Installation finished"
+#~ msgstr "Diegimas baigtas"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "Paketas „%s“ yra įdiegtas"
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "Nepavyko įdiegti paketo „%s“"
+
+#~ msgid "Installation complete"
+#~ msgstr "Diegimas baigtas"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "Diegiama „%s“..."
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "Diegiami priklausantys paketai..."
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "Atsiunčiamos papildomos paketo bylos..."
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "Byla %s iš %s %sB/s greičiu"
+
+#~ msgid "File %s of %s"
+#~ msgstr "%s byla iš %s"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "Įdėkite „%s“ į įrenginį „%s“"
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big> </big></b>"

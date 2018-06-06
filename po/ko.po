@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2012-03-12 18:24+0000\n"
 "Last-Translator: Kim Boram <boramism@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -86,81 +86,66 @@ msgstr ""
 "권한 및 내용을 점검한 뒤 'sudo apt-get update' 그리고 'sudo apt-get install -"
 "f' 명령으로 소프트웨어 정보를 다시 불러오십시오."
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "패키지 설치 프로그램"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "자세한 내용"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>설치하려면 다음 내용을 바꿔야 합니다:</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "자세한 내용(_D)"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "설명"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>버전:</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>관리자:</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>우선 순위:</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>분류:</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>크기:</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "자세한 내용"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "포함된 파일"
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "패키지 설치(_I)"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "소프트웨어 패키지를 설치하고 봅니다"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL, /usr/share/common-licenses/GPL 참조"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "터미널"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "바뀐 내용을 적용하는 데 성공하면 자동으로 창 닫기"
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>설치하려면 다음 내용을 바꿔야 합니다:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "GDebi 패키지 설치 프로그램"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "패키지 설치 프로그램"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "소프트웨어 패키지를 설치하고 봅니다"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -177,19 +162,15 @@ msgstr "%s을(를) 사용할 수 없습니다"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr "선택한 텍스트 복사"
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "불러오는 중..."
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr "관리자 권한으로 다운로드할 수 없습니다"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -197,259 +178,103 @@ msgstr ""
 "관리자 권한으로 실행하고 있을 때는 원격 패키지를 다운로드할 수 없습니다. 일"
 "반 사용자로 다시 시도하십시오."
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr "패키지 파일 다운로드"
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr "다운로드 실패"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "패키지 다운로드 실패: 파일 '%s' '%s'"
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr "패키지 제어 데이터"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr "업스트림 데이터"
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr "파일 목록을 읽는 중 오류 발생"
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "오류: "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr "오류: 더 이상 제공하지 않음 "
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "이미 같은 버전을 설치했습니다"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "패키지 다시 설치(_R)"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr "선택한 것은 디렉터리입니다"
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "파일 내용 '%s'을(를) 읽던 중 오류가 발생했습니다"
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr "파일 내용을 풀 수 없습니다"
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>제거함: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr "설치함: %s"
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "소프트웨어 패키지 열기"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "소프트웨어 패키지"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr "의존성 문제 발생"
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr "하나 이상의 패키지가 %s을(를) 필요로 합니다. 제거할 수 없습니다."
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "파일을 찾을 수 없음"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr "설치하려는 파일이 (더이상)존재하지 않습니다. "
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "패키지 파일 설치 중..."
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr "패키지 제거 중..."
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "인증되지 않은 소프트웨어를 설치 합니까?"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-"악의를 가지고 만든 프로그램이 시스템의 권한을 빼앗고 자료를 파괴할 수 있습니"
-"다.\n"
-"\n"
-"아래의 패키지는 인증되지 않았으며 악의를 가지고 만들어 진 것일 수 있습니다."
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "패키지 파일을 설치할 수 없습니다"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr "패키지 제거 실패"
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "필요한 모든 파일을 다운로드 할 수 없습니다"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "인터넷 연결 또는 설치 매체를 확인 하십시오."
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "의존 패키지를 전부 설치할 수 없습니다"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr ""
-"이것은 보통 소프트웨어 배포자의 오류와 관련된 문제입니다. 자세한 내용은 터미"
-"널 창을 참조하십시오."
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "%s 설치 중"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr "%s을(를) 제거하는 중"
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "설치 완료"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr "제거 완료"
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "패키지 '%s'을(를) 설치했습니다"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr "패키지 '%s'을(를) 제거했습니다"
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "패키지 '%s'을(를) 설치할 수 없습니다"
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr "패키지 '%s'을(를) 제거할 수 없습니다"
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "설치 완료"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr "제거 완료"
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr "모든 의존 패키지를 완전히 설치할 수 없습니다"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr "패키지를 완전히 제거할 수 없습니다"
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "이것을 고치려면 터미널 창에서 'sudo apt-get install -f' 명령을 실행 하십시오."
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "'%s' 설치 중..."
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr "'%s' 제거 중..."
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "의존 패키지 설치 중..."
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "추가 패키지 파일 다운로드 중..."
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr "파일 %s / %s, 속도 %sB/s"
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr "파일 %s / %s"
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr "'%s'(을)를 '%s' 드라이브에 넣으십시오."
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -587,17 +412,139 @@ msgstr "패키지 %s을(를) <b>제거</b>해야 합니다\n"
 msgid "Requires the installation of %s packages"
 msgstr "패키지 %s을(를) 설치해야 합니다."
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "하나의 소프트웨어 관리 도구 만을 실행할 수 있습니다."
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "GPL, /usr/share/common-licenses/GPL 참조"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
-"먼저 다른 프로그램 예를 들어 '업데이트 관리자', 'aptitude' 또는 '시냅틱' 프로"
-"그램을 종료 하십시오."
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "하나의 소프트웨어 관리 도구 만을 실행할 수 있습니다."
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'Update Manager', 'aptitude' or "
+#~ "'Synaptic' first."
+#~ msgstr ""
+#~ "먼저 다른 프로그램 예를 들어 '업데이트 관리자', 'aptitude' 또는 '시냅틱' "
+#~ "프로그램을 종료 하십시오."
+
+#~ msgid "Terminal"
+#~ msgstr "터미널"
+
+#~ msgid "Automatically close after the changes have been successfully applied"
+#~ msgstr "바뀐 내용을 적용하는 데 성공하면 자동으로 창 닫기"
+
+#~ msgid "Copy selected text"
+#~ msgstr "선택한 텍스트 복사"
+
+#~ msgid "Dependency problems"
+#~ msgstr "의존성 문제 발생"
+
+#~ msgid "One or more packages are required by %s, it cannot be removed."
+#~ msgstr "하나 이상의 패키지가 %s을(를) 필요로 합니다. 제거할 수 없습니다."
+
+#~ msgid "File not found"
+#~ msgstr "파일을 찾을 수 없음"
+
+#~ msgid "You tried to install a file that does not (or no longer) exist. "
+#~ msgstr "설치하려는 파일이 (더이상)존재하지 않습니다. "
+
+#~ msgid "Installing package file..."
+#~ msgstr "패키지 파일 설치 중..."
+
+#~ msgid "Removing package..."
+#~ msgstr "패키지 제거 중..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "인증되지 않은 소프트웨어를 설치 합니까?"
+
+#~ msgid ""
+#~ "Malicious software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefore be of "
+#~ "malicious nature."
+#~ msgstr ""
+#~ "악의를 가지고 만든 프로그램이 시스템의 권한을 빼앗고 자료를 파괴할 수 있습"
+#~ "니다.\n"
+#~ "\n"
+#~ "아래의 패키지는 인증되지 않았으며 악의를 가지고 만들어 진 것일 수 있습니"
+#~ "다."
+
+#~ msgid "Failed to install package file"
+#~ msgstr "패키지 파일을 설치할 수 없습니다"
+
+#~ msgid "Failed to remove package"
+#~ msgstr "패키지 제거 실패"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "필요한 모든 파일을 다운로드 할 수 없습니다"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr "인터넷 연결 또는 설치 매체를 확인 하십시오."
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "의존 패키지를 전부 설치할 수 없습니다"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr ""
+#~ "이것은 보통 소프트웨어 배포자의 오류와 관련된 문제입니다. 자세한 내용은 터"
+#~ "미널 창을 참조하십시오."
+
+#~ msgid "Installing %s"
+#~ msgstr "%s 설치 중"
+
+#~ msgid "Removing %s"
+#~ msgstr "%s을(를) 제거하는 중"
+
+#~ msgid "Installation finished"
+#~ msgstr "설치 완료"
+
+#~ msgid "Removal finished"
+#~ msgstr "제거 완료"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "패키지 '%s'을(를) 설치했습니다"
+
+#~ msgid "Package '%s' was removed"
+#~ msgstr "패키지 '%s'을(를) 제거했습니다"
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "패키지 '%s'을(를) 설치할 수 없습니다"
+
+#~ msgid "Failed to remove package '%s'"
+#~ msgstr "패키지 '%s'을(를) 제거할 수 없습니다"
+
+#~ msgid "Installation complete"
+#~ msgstr "설치 완료"
+
+#~ msgid "Removal complete"
+#~ msgstr "제거 완료"
+
+#~ msgid "Failed to completely remove package"
+#~ msgstr "패키지를 완전히 제거할 수 없습니다"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "'%s' 설치 중..."
+
+#~ msgid "Removing '%s'..."
+#~ msgstr "'%s' 제거 중..."
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "의존 패키지 설치 중..."
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "추가 패키지 파일 다운로드 중..."
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "파일 %s / %s, 속도 %sB/s"
+
+#~ msgid "File %s of %s"
+#~ msgstr "파일 %s / %s"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "'%s'(을)를 '%s' 드라이브에 넣으십시오."
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big> </big></b>"

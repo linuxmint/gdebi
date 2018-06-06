@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2012-12-08 15:35+0000\n"
 "Last-Translator: Roy Chan <roy.chan@linux.org.hk>\n"
 "Language-Team: Chinese (Hong Kong) <zh_HK@li.org>\n"
@@ -87,81 +87,66 @@ msgstr ""
 "etc/apt/sources.list 的權限和內容是否正確，然後以 sudo apt-get update 以及 "
 "sudo apt-get install -f 指令重新載入軟件資訊。"
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "套件安裝程式"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "詳情"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>要進行安裝，必須作出以下更動：</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "詳情(_D)"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "說明"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>版本：</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>維護者：</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>優先等級：</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>組別：</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>大小：</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "詳情"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "包含檔案"
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "安裝套件(_I)"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "安裝和檢視軟件套件"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL，請參看 /usr/share/common-licenses/GPL"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "終端機"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "變更套用完成後自動關閉"
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>要進行安裝，必須作出以下更動：</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "GDebi 套件安裝程式"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "套件安裝程式"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "安裝和檢視軟件套件"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -178,273 +163,116 @@ msgstr "缺少 %s"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr "複製所選文字"
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "載入中..."
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr "無法以 root 身分下載"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
 msgstr "當以 root 身分執行時無法下載遠端套件。請以一般使用者身分重試。"
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr "正在下載套件"
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr "未能下載"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "未能下載套件：檔案「%s」「%s」"
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr "套件控制資料"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr "上游資料"
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr "讀取檔案清單時發生錯誤"
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "錯誤： "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr "錯誤：不再提供 "
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "已安裝相同版本"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "重新安裝套件(_R)"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr "選擇的是資料夾"
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "讀取檔案內容「%s」時發生錯誤"
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr "無法抽取檔案內容"
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>要刪除：%s</b>"
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr "要安裝：%s"
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "開啟軟件套件"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "軟件套件"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr "相依性問題"
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr "%s 需要當中某個套件，故無法將之移除。"
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "找不到檔案"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr "您正試圖安裝一個不存在或不再存在的檔案。 "
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "安裝套件中..."
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr "移除套件中..."
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "是否安裝未經認證的軟件？"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-"惡意軟件可能會損害您的資料並控制您的系統。\n"
-"\n"
-"下列套件沒有經過認證，可能帶有惡意。"
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "未能安裝套件檔案"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr "未能移除套件"
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "無法下載所有需要的檔案"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "請檢查您的互聯網連線或者安裝媒體。"
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "無法安裝所有相依套件"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr "這一般是由軟件分發者的錯誤引起。詳情請參看終端視窗。"
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "正在安裝 %s"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr "移除 %s"
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "完成安裝"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr "完成移除"
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "已安裝「%s」套件"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr "已移除「%s」套件"
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "未能安裝「%s」套件"
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr "未能移除「%s」套件"
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "完成安裝"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr "完成移除"
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr "未能完全安裝所有相依套件"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr "未能完全移除套件"
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr "在終端機執行 sudo apt-get install -f 以解決此問題。"
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "正在安裝「%s」..."
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr "正在移除「%s」..."
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "正在安裝相依套件..."
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "正在下載額外的套件檔案..."
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr "檔案 %s / %s (速度：%s 位元組/秒)"
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr "檔案 %s / %s"
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr "請將「%s」放入「%s」光碟機"
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -573,17 +401,135 @@ msgstr "需要<b>移除</b> %s 個套件\n"
 msgid "Requires the installation of %s packages"
 msgstr "需要安裝 %s 個套件"
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "同一時間只可以有一個軟件管理工具運作"
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "GPL，請參看 /usr/share/common-licenses/GPL"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
-"請先關閉其他應用程式，如「更新管理員」、「aptitude」或「Synaptic 套件管理程"
-"式」等。"
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "同一時間只可以有一個軟件管理工具運作"
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'Update Manager', 'aptitude' or "
+#~ "'Synaptic' first."
+#~ msgstr ""
+#~ "請先關閉其他應用程式，如「更新管理員」、「aptitude」或「Synaptic 套件管理"
+#~ "程式」等。"
+
+#~ msgid "Terminal"
+#~ msgstr "終端機"
+
+#~ msgid "Automatically close after the changes have been successfully applied"
+#~ msgstr "變更套用完成後自動關閉"
+
+#~ msgid "Copy selected text"
+#~ msgstr "複製所選文字"
+
+#~ msgid "Dependency problems"
+#~ msgstr "相依性問題"
+
+#~ msgid "One or more packages are required by %s, it cannot be removed."
+#~ msgstr "%s 需要當中某個套件，故無法將之移除。"
+
+#~ msgid "File not found"
+#~ msgstr "找不到檔案"
+
+#~ msgid "You tried to install a file that does not (or no longer) exist. "
+#~ msgstr "您正試圖安裝一個不存在或不再存在的檔案。 "
+
+#~ msgid "Installing package file..."
+#~ msgstr "安裝套件中..."
+
+#~ msgid "Removing package..."
+#~ msgstr "移除套件中..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "是否安裝未經認證的軟件？"
+
+#~ msgid ""
+#~ "Malicious software can damage your data and take control of your system.\n"
+#~ "\n"
+#~ "The packages below are not authenticated and could therefore be of "
+#~ "malicious nature."
+#~ msgstr ""
+#~ "惡意軟件可能會損害您的資料並控制您的系統。\n"
+#~ "\n"
+#~ "下列套件沒有經過認證，可能帶有惡意。"
+
+#~ msgid "Failed to install package file"
+#~ msgstr "未能安裝套件檔案"
+
+#~ msgid "Failed to remove package"
+#~ msgstr "未能移除套件"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "無法下載所有需要的檔案"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr "請檢查您的互聯網連線或者安裝媒體。"
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "無法安裝所有相依套件"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr "這一般是由軟件分發者的錯誤引起。詳情請參看終端視窗。"
+
+#~ msgid "Installing %s"
+#~ msgstr "正在安裝 %s"
+
+#~ msgid "Removing %s"
+#~ msgstr "移除 %s"
+
+#~ msgid "Installation finished"
+#~ msgstr "完成安裝"
+
+#~ msgid "Removal finished"
+#~ msgstr "完成移除"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "已安裝「%s」套件"
+
+#~ msgid "Package '%s' was removed"
+#~ msgstr "已移除「%s」套件"
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "未能安裝「%s」套件"
+
+#~ msgid "Failed to remove package '%s'"
+#~ msgstr "未能移除「%s」套件"
+
+#~ msgid "Installation complete"
+#~ msgstr "完成安裝"
+
+#~ msgid "Removal complete"
+#~ msgstr "完成移除"
+
+#~ msgid "Failed to completely remove package"
+#~ msgstr "未能完全移除套件"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "正在安裝「%s」..."
+
+#~ msgid "Removing '%s'..."
+#~ msgstr "正在移除「%s」..."
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "正在安裝相依套件..."
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "正在下載額外的套件檔案..."
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "檔案 %s / %s (速度：%s 位元組/秒)"
+
+#~ msgid "File %s of %s"
+#~ msgstr "檔案 %s / %s"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "請將「%s」放入「%s」光碟機"
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big> </big></b>"

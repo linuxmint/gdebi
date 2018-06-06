@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 09:29+0100\n"
+"POT-Creation-Date: 2018-06-06 13:06+0100\n"
 "PO-Revision-Date: 2011-09-14 02:41+0000\n"
 "Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
 "Language-Team: Telugu <te@li.org>\n"
@@ -82,81 +82,66 @@ msgid ""
 "'sudo apt-get update' and 'sudo apt-get install -f'."
 msgstr ""
 
-#. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
-msgid "Package Installer"
-msgstr "ప్యాకేజీ స్థాపకం"
+#: ../data/gdebi.ui.h:1
+msgid "Details"
+msgstr "వివరాలు"
 
 #: ../data/gdebi.ui.h:2
+msgid "<b>To install the following changes are required:</b>"
+msgstr "<b>స్థాపించడానికి కిందపేర్కొన్న మార్పులు అవసరమవుతాయి:</b>"
+
+#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "వివరాలు (_D)"
 
-#: ../data/gdebi.ui.h:3
+#: ../data/gdebi.ui.h:4
 msgid "Description"
 msgstr "వివరణ"
 
-#: ../data/gdebi.ui.h:4
+#: ../data/gdebi.ui.h:5
 msgid "<b>Version:</b>"
 msgstr "<b>వెర్షన్:</b>"
 
-#: ../data/gdebi.ui.h:5
+#: ../data/gdebi.ui.h:6
 msgid "<b>Maintainer:</b>"
 msgstr "<b>నిర్వాహకుడు:</b>"
 
-#: ../data/gdebi.ui.h:6
+#: ../data/gdebi.ui.h:7
 msgid "<b>Priority:</b>"
 msgstr "<b>ప్రాధాన్యత:</b>"
 
-#: ../data/gdebi.ui.h:7
+#: ../data/gdebi.ui.h:8
 msgid "<b>Section:</b>"
 msgstr "<b>విభాగం:</b>"
 
-#: ../data/gdebi.ui.h:8
+#: ../data/gdebi.ui.h:9
 msgid "<b>Size:</b>"
 msgstr "<b>పరిమాణం:</b>"
 
-#: ../data/gdebi.ui.h:9
+#: ../data/gdebi.ui.h:10
 msgid "  "
 msgstr "  "
-
-#: ../data/gdebi.ui.h:10
-msgid "Details"
-msgstr "వివరాలు"
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "చేర్చబడిన ఫైళ్ళు"
 
-#. img = Gtk.Image()
-#. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
-#. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
 msgstr "ప్యాకేజీ స్థాపించు (_I)"
-
-#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
-msgid "Install and view software packages"
-msgstr "సాఫ్ట్‍వేర్ ప్యాకేజీలను స్థాపించు మరియు చూడు"
-
-#: ../data/gdebi.ui.h:14
-msgid "GPL, see /usr/share/common-licenses/GPL"
-msgstr "GPL, చూడండి /usr/share/common-licenses/GPL"
-
-#: ../data/gdebi.ui.h:15
-msgid "Terminal"
-msgstr "టెర్మినల్"
-
-#: ../data/gdebi.ui.h:16
-msgid "Automatically close after the changes have been successfully applied"
-msgstr "మార్పులు విజయవంతంగా అనువర్తించిన తరువాత స్వయంచాలకంగా మూసివేయి"
-
-#: ../data/gdebi.ui.h:17
-msgid "<b>To install the following changes are required:</b>"
-msgstr "<b>స్థాపించడానికి కిందపేర్కొన్న మార్పులు అవసరమవుతాయి:</b>"
 
 #: ../data/gdebi.desktop.in.h:1
 msgid "GDebi Package Installer"
 msgstr "GDebi ప్యాకేజీ స్థాపకం"
+
+#. set window title
+#: ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:206
+msgid "Package Installer"
+msgstr "ప్యాకేజీ స్థాపకం"
+
+#: ../data/gdebi.desktop.in.h:3
+msgid "Install and view software packages"
+msgstr "సాఫ్ట్‍వేర్ ప్యాకేజీలను స్థాపించు మరియు చూడు"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
@@ -173,19 +158,15 @@ msgstr "%s అందుబాటులోలేదు"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:94
-msgid "Copy selected text"
-msgstr "ఎంపికచేసిన పాఠ్యాన్ని నకలుతీయి"
-
-#: ../GDebi/GDebiGtk.py:105
+#: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
 msgstr "నింపుతోంది..."
 
-#: ../GDebi/GDebiGtk.py:180
+#: ../GDebi/GDebiGtk.py:136
 msgid "Can not download as root"
 msgstr "రూట్ వలె డౌన్‌లోడ్ చేయలేదు"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:137
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -193,253 +174,102 @@ msgstr ""
 "రూట్ వాడుకరిగా ఉన్నపుడు సుదూర ప్యాకేజీలను డౌన్‌లోడ్‌చేయుట వీలుకాదు. దయచేసి సాధారణ వాడుకరిగా మారి మరలా "
 "ప్రయత్నించండి."
 
-#: ../GDebi/GDebiGtk.py:194
+#: ../GDebi/GDebiGtk.py:150
 msgid "Downloading package"
 msgstr "ప్యాకేజీని డౌన్‌లోడ్‌చేస్తోంది"
 
-#: ../GDebi/GDebiGtk.py:201
+#: ../GDebi/GDebiGtk.py:157
 msgid "Download failed"
 msgstr "డౌన్‌లోడ్ విఫలమైంది"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:158
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "ప్యాకేజీని డౌన్‌లోడ్‌చేయుటలో విఫలమైంది: file '%s' '%s'"
 
-#: ../GDebi/GDebiGtk.py:305
+#: ../GDebi/GDebiGtk.py:261
 msgid "Package control data"
 msgstr "ప్యాకేజీ నియంత్రణ డేటా"
 
-#: ../GDebi/GDebiGtk.py:308
+#: ../GDebi/GDebiGtk.py:264
 msgid "Upstream data"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:314
+#: ../GDebi/GDebiGtk.py:270
 msgid "Error reading filelist"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:328
+#: ../GDebi/GDebiGtk.py:284
 msgid "Error: "
 msgstr "దోషం: "
 
-#: ../GDebi/GDebiGtk.py:342
+#: ../GDebi/GDebiGtk.py:298
 msgid "Error: no longer provides "
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:360
+#: ../GDebi/GDebiGtk.py:316
 msgid "Same version is already installed"
 msgstr "ఇదే వెర్షన్ ఇదివరకే స్థాపించబడింది"
 
-#: ../GDebi/GDebiGtk.py:363
+#: ../GDebi/GDebiGtk.py:319
 msgid "_Reinstall Package"
 msgstr "ప్యాకేజీని మళ్ళీస్థాపించు (_R)"
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:358
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:409
+#: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:431
+#: ../GDebi/GDebiGtk.py:383
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:462
+#: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
+#: ../GDebi/GDebiGtk.py:419 ../GDebi/GDebiGtk.py:425
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:478
+#: ../GDebi/GDebiGtk.py:430
 msgid "File content can not be extracted"
 msgstr "ఫైల్ సారము పొందుట వీలుకాదు"
 
-#: ../GDebi/GDebiGtk.py:489
+#: ../GDebi/GDebiGtk.py:441
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:491
+#: ../GDebi/GDebiGtk.py:443
 #, python-format
 msgid "To be installed: %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:506
+#: ../GDebi/GDebiGtk.py:458
 msgid "Open Software Package"
 msgstr "సాఫ్ట్‍వేర్ ప్యాకేజీని తెరువు"
 
-#: ../GDebi/GDebiGtk.py:511
+#: ../GDebi/GDebiGtk.py:463
 msgid "Software packages"
 msgstr "సాఫ్ట్‍వేర్ ప్యాకేజీలు"
 
-#: ../GDebi/GDebiGtk.py:560
-msgid "Dependency problems"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:561
-#, python-format
-msgid "One or more packages are required by %s, it cannot be removed."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:569
-msgid "File not found"
-msgstr "ఫైల్ కనపడలేదు"
-
-#: ../GDebi/GDebiGtk.py:570
-msgid "You tried to install a file that does not (or no longer) exist. "
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:581
-msgid "Installing package file..."
-msgstr "ఫ్యాకేజీ ఫైలును స్థాపిస్తోంది..."
-
-#: ../GDebi/GDebiGtk.py:583
-msgid "Removing package..."
-msgstr "ప్యాకేజీని తొలగిస్తున్నది..."
-
-#: ../GDebi/GDebiGtk.py:586
-msgid "Install unauthenticated software?"
-msgstr "ధృవీకరించని సాఫ్ట్‍వేర్‌ని స్థాపించాలా?"
-
-#: ../GDebi/GDebiGtk.py:587
-msgid ""
-"Malicious software can damage your data and take control of your system.\n"
-"\n"
-"The packages below are not authenticated and could therefore be of malicious "
-"nature."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
-msgid "Failed to install package file"
-msgstr "ప్యాకేజీ ఫైలుని స్థాపించుటలో విఫలమైంది"
-
-#: ../GDebi/GDebiGtk.py:626
-msgid "Failed to remove package"
-msgstr "ప్యాకేజీని తీసివేయుటలో విఫలమైంది"
-
-#: ../GDebi/GDebiGtk.py:671
-msgid "Could not download all required files"
-msgstr "అవసరమైన అన్ని ఫైళ్ళను డౌన్‌లోడ్ చేయుట వీలుపడదు"
-
-#: ../GDebi/GDebiGtk.py:672
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, and make sure "
-"your APT cache is up-to-date."
-msgstr "దయచేసి మీ అంతర్జాల అనుసంధానాన్ని లేక స్థాపక మాధ్యమాన్ని సరిచూడండి."
-
-#: ../GDebi/GDebiGtk.py:678
-msgid "Could not install all dependencies"
-msgstr "అన్ని ఆధారితత్వాలను స్థాపించుట వీలుకాదు"
-
-#: ../GDebi/GDebiGtk.py:679
-msgid ""
-"Usually this is related to an error of the software distributor. See the "
-"terminal window for more details."
-msgstr ""
-"ఇది సాధారణంగా సాఫ్ట్‍వేర్ పంపిణీదారుకు సంబంధించిన దోషం. మరిన్ని వివరాల కోసం టెర్మినల్ విండోను చూడండి."
-
-#: ../GDebi/GDebiGtk.py:695
-#, python-format
-msgid "Installing %s"
-msgstr "%s స్థాపించబడుతోంది"
-
-#: ../GDebi/GDebiGtk.py:698
-#, python-format
-msgid "Removing %s"
-msgstr "%s తొలగించబడుతోంది"
-
-#: ../GDebi/GDebiGtk.py:720
-msgid "Installation finished"
-msgstr "స్థాపన పూర్తయింది"
-
-#: ../GDebi/GDebiGtk.py:722
-msgid "Removal finished"
-msgstr "తీసివేయుట పూర్తయినది"
-
-#: ../GDebi/GDebiGtk.py:725
-#, python-format
-msgid "Package '%s' was installed"
-msgstr "'%s' ప్యాకేజీ స్థాపించబడింది"
-
-#: ../GDebi/GDebiGtk.py:727
-#, python-format
-msgid "Package '%s' was removed"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:730
-#, python-format
-msgid "Failed to install package '%s'"
-msgstr "'%s' ప్యాకేజీని స్థాపించుటలో విఫలమైంది"
-
-#: ../GDebi/GDebiGtk.py:733
-#, python-format
-msgid "Failed to remove package '%s'"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:737
-msgid "Installation complete"
-msgstr "స్థాపన పూర్తయింది"
-
-#: ../GDebi/GDebiGtk.py:739
-msgid "Removal complete"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:747
+#: ../GDebi/GDebiGtk.py:488
 msgid "Failed to completely install all dependencies"
 msgstr "అన్ని ఆధారితత్వాలను పూర్తిగా స్థాపించుటలో విఫలమయ్యింది"
 
-#: ../GDebi/GDebiGtk.py:749
-msgid "Failed to completely remove package"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:489
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr "దీనిని పరిష్కరించుటకు టెర్మినల్ విండోలో 'sudo apt-get install -f' నడుపండి"
-
-#: ../GDebi/GDebiGtk.py:871
-#, python-format
-msgid "Installing '%s'..."
-msgstr "'%s' స్థాపిస్తోంది..."
-
-#: ../GDebi/GDebiGtk.py:874
-#, python-format
-msgid "Removing '%s'..."
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:984
-msgid "Installing dependencies..."
-msgstr "ఆధారితత్వాలను స్థాపిస్తోంది..."
-
-#: ../GDebi/GDebiGtk.py:1029
-msgid "Downloading additional package files..."
-msgstr "అదనపు ప్యాకేజీ ఫైళ్ళను డౌన్‌లోడ్ చేస్తోంది..."
-
-#: ../GDebi/GDebiGtk.py:1038
-#, python-format
-msgid "File %s of %s at %sB/s"
-msgstr ""
-
-#: ../GDebi/GDebiGtk.py:1040
-#, python-format
-msgid "File %s of %s"
-msgstr ""
-
-#. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1047
-#, python-format
-msgid "Please insert '%s' into the drive '%s'"
-msgstr ""
 
 #: ../GDebi/GDebiCli.py:59
 msgid "Configuration items must be specified with a =<value>\n"
@@ -566,15 +396,83 @@ msgstr ""
 msgid "Requires the installation of %s packages"
 msgstr ""
 
-#: ../GDebi/GDebiCommon.py:196 ../GDebi/GDebiCommon.py:214
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr ""
+#~ msgid "GPL, see /usr/share/common-licenses/GPL"
+#~ msgstr "GPL, చూడండి /usr/share/common-licenses/GPL"
 
-#: ../GDebi/GDebiCommon.py:198 ../GDebi/GDebiCommon.py:216
-msgid ""
-"Please close the other application e.g. 'Update Manager', 'aptitude' or "
-"'Synaptic' first."
-msgstr ""
+#~ msgid "Terminal"
+#~ msgstr "టెర్మినల్"
+
+#~ msgid "Automatically close after the changes have been successfully applied"
+#~ msgstr "మార్పులు విజయవంతంగా అనువర్తించిన తరువాత స్వయంచాలకంగా మూసివేయి"
+
+#~ msgid "Copy selected text"
+#~ msgstr "ఎంపికచేసిన పాఠ్యాన్ని నకలుతీయి"
+
+#~ msgid "File not found"
+#~ msgstr "ఫైల్ కనపడలేదు"
+
+#~ msgid "Installing package file..."
+#~ msgstr "ఫ్యాకేజీ ఫైలును స్థాపిస్తోంది..."
+
+#~ msgid "Removing package..."
+#~ msgstr "ప్యాకేజీని తొలగిస్తున్నది..."
+
+#~ msgid "Install unauthenticated software?"
+#~ msgstr "ధృవీకరించని సాఫ్ట్‍వేర్‌ని స్థాపించాలా?"
+
+#~ msgid "Failed to install package file"
+#~ msgstr "ప్యాకేజీ ఫైలుని స్థాపించుటలో విఫలమైంది"
+
+#~ msgid "Failed to remove package"
+#~ msgstr "ప్యాకేజీని తీసివేయుటలో విఫలమైంది"
+
+#~ msgid "Could not download all required files"
+#~ msgstr "అవసరమైన అన్ని ఫైళ్ళను డౌన్‌లోడ్ చేయుట వీలుపడదు"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, and make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr "దయచేసి మీ అంతర్జాల అనుసంధానాన్ని లేక స్థాపక మాధ్యమాన్ని సరిచూడండి."
+
+#~ msgid "Could not install all dependencies"
+#~ msgstr "అన్ని ఆధారితత్వాలను స్థాపించుట వీలుకాదు"
+
+#~ msgid ""
+#~ "Usually this is related to an error of the software distributor. See the "
+#~ "terminal window for more details."
+#~ msgstr ""
+#~ "ఇది సాధారణంగా సాఫ్ట్‍వేర్ పంపిణీదారుకు సంబంధించిన దోషం. మరిన్ని వివరాల కోసం టెర్మినల్ విండోను చూడండి."
+
+#~ msgid "Installing %s"
+#~ msgstr "%s స్థాపించబడుతోంది"
+
+#~ msgid "Removing %s"
+#~ msgstr "%s తొలగించబడుతోంది"
+
+#~ msgid "Installation finished"
+#~ msgstr "స్థాపన పూర్తయింది"
+
+#~ msgid "Removal finished"
+#~ msgstr "తీసివేయుట పూర్తయినది"
+
+#~ msgid "Package '%s' was installed"
+#~ msgstr "'%s' ప్యాకేజీ స్థాపించబడింది"
+
+#~ msgid "Failed to install package '%s'"
+#~ msgstr "'%s' ప్యాకేజీని స్థాపించుటలో విఫలమైంది"
+
+#~ msgid "Installation complete"
+#~ msgstr "స్థాపన పూర్తయింది"
+
+#~ msgid "Installing '%s'..."
+#~ msgstr "'%s' స్థాపిస్తోంది..."
+
+#~ msgid "Installing dependencies..."
+#~ msgstr "ఆధారితత్వాలను స్థాపిస్తోంది..."
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "అదనపు ప్యాకేజీ ఫైళ్ళను డౌన్‌లోడ్ చేస్తోంది..."
 
 #~ msgid "<b><big>   </big></b>"
 #~ msgstr "<b><big> </big></b>"
