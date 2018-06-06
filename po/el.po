@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2016-12-08 16:02+0000\n"
+"POT-Creation-Date: 2018-06-06 09:29+0100\n"
 "PO-Revision-Date: 2012-01-23 12:01+0000\n"
 "Last-Translator: Christos Spyroglou <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -91,83 +91,75 @@ msgstr ""
 "ανανεώστε τις πληροφορίες για το λογισμικό με την εντολή: 'sudo apt-get "
 "update' και μετά με την 'sudo apt-get install -f'."
 
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2
+#. set window title
+#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
 msgid "Package Installer"
 msgstr "Εγκατάσταση πακέτων"
 
 #: ../data/gdebi.ui.h:2
-msgid "<b><big>   </big></b>"
-msgstr "<b><big> </big></b>"
-
-#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "_Λεπτομέρειες"
 
-#: ../data/gdebi.ui.h:4 ../GDebi/GDebiKDE.py:155
+#: ../data/gdebi.ui.h:3
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: ../data/gdebi.ui.h:5 ../GDebi/GDebiKDE.py:161
+#: ../data/gdebi.ui.h:4
 msgid "<b>Version:</b>"
 msgstr "<b>Έκδοση:</b>"
 
-#: ../data/gdebi.ui.h:6 ../GDebi/GDebiKDE.py:162
+#: ../data/gdebi.ui.h:5
 msgid "<b>Maintainer:</b>"
 msgstr "<b>Προγραμματιστής:</b>"
 
-#: ../data/gdebi.ui.h:7 ../GDebi/GDebiKDE.py:163
+#: ../data/gdebi.ui.h:6
 msgid "<b>Priority:</b>"
 msgstr "<b>Προτεραιότητα:</b>"
 
-#: ../data/gdebi.ui.h:8 ../GDebi/GDebiKDE.py:164
+#: ../data/gdebi.ui.h:7
 msgid "<b>Section:</b>"
 msgstr "<b>Ενότητα:</b>"
 
-#: ../data/gdebi.ui.h:9 ../GDebi/GDebiKDE.py:165
+#: ../data/gdebi.ui.h:8
 msgid "<b>Size:</b>"
 msgstr "<b>Μέγεθος:</b>"
 
-#: ../data/gdebi.ui.h:10
+#: ../data/gdebi.ui.h:9
 msgid "  "
 msgstr "  "
 
-#: ../data/gdebi.ui.h:11 ../GDebi/GDebiKDE.py:154 ../GDebi/GDebiKDE.py:156
-#: ../GDebi/GDebiKDE.py:318
+#: ../data/gdebi.ui.h:10
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../data/gdebi.ui.h:12
+#: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "συμπεριλαμβανόμενα αρχεία"
-
-#: ../data/gdebi.ui.h:13
-msgid "Lintian output"
-msgstr ""
 
 #. img = Gtk.Image()
 #. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
 #. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:14 ../GDebi/GDebiGtk.py:336 ../GDebi/GDebiGtk.py:394
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
 msgid "_Install Package"
 msgstr "_Εγκατάσταση πακέτου"
 
-#: ../data/gdebi.ui.h:15 ../data/gdebi.desktop.in.h:3
+#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
 msgid "Install and view software packages"
 msgstr "Εγκαταστήστε και εμφανίστε πακέτα λογισμικού"
 
-#: ../data/gdebi.ui.h:16
+#: ../data/gdebi.ui.h:14
 msgid "GPL, see /usr/share/common-licenses/GPL"
 msgstr "GPL, δείτε στο /usr/share/common-licenses/GPL"
 
-#: ../data/gdebi.ui.h:17
+#: ../data/gdebi.ui.h:15
 msgid "Terminal"
 msgstr "Τερματικό"
 
-#: ../data/gdebi.ui.h:18
+#: ../data/gdebi.ui.h:16
 msgid "Automatically close after the changes have been successfully applied"
 msgstr "Αυτόματο κλείσιμο μετά την επιτυχή εφαρμογή των αλλαγών"
 
-#: ../data/gdebi.ui.h:19 ../GDebi/GDebiKDE.py:317
+#: ../data/gdebi.ui.h:17
 msgid "<b>To install the following changes are required:</b>"
 msgstr "<b>Για να εγκαταστήσετε χρειάζονται οι παρακάτω αλλαγές:</b>"
 
@@ -190,19 +182,19 @@ msgstr "Το %s δεν είναι διαθέσιμο"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:95
+#: ../GDebi/GDebiGtk.py:94
 msgid "Copy selected text"
 msgstr "Αντιγραφή επιλεγμένου κειμένου"
 
-#: ../GDebi/GDebiGtk.py:106
+#: ../GDebi/GDebiGtk.py:105
 msgid "Loading..."
 msgstr "Φόρτωση..."
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:180
 msgid "Can not download as root"
 msgstr "Δεν μπορεί να γίνει η λήψη ως Διαχειριστής (root)"
 
-#: ../GDebi/GDebiGtk.py:182
+#: ../GDebi/GDebiGtk.py:181
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -210,133 +202,126 @@ msgstr ""
 "Τα απομακρυσμένα πακέτα δεν μπορούν να ληφθούν όταν είστε συνδεδεμένοι ως "
 "root. Παρακαλώ δοκιμάστε ως απλός χρήστης."
 
-#: ../GDebi/GDebiGtk.py:195
+#: ../GDebi/GDebiGtk.py:194
 msgid "Downloading package"
 msgstr "Γίνεται λήψη πακέτου"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:201
 msgid "Download failed"
 msgstr "Αποτυχία λήψης"
 
-#: ../GDebi/GDebiGtk.py:203
+#: ../GDebi/GDebiGtk.py:202
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "Αποτυχία λήψης του πακέτου: αρχείο «%s» «%s»"
 
-#. set window title
-#. set name
-#: ../GDebi/GDebiGtk.py:251 ../GDebi/GDebiKDE.py:205
-#, python-format
-msgid "Package Installer - %s"
-msgstr "Εγκατάσταση πακέτων - %s"
-
-#: ../GDebi/GDebiGtk.py:307
+#: ../GDebi/GDebiGtk.py:305
 msgid "Package control data"
 msgstr "Δεδομένα ελέγχου πακέτου"
 
-#: ../GDebi/GDebiGtk.py:310
+#: ../GDebi/GDebiGtk.py:308
 msgid "Upstream data"
 msgstr "Δεδομένα upstream"
 
-#: ../GDebi/GDebiGtk.py:316
+#: ../GDebi/GDebiGtk.py:314
 msgid "Error reading filelist"
 msgstr "Σφάλμα ανάγνωσης λίστας αρχείων"
 
-#: ../GDebi/GDebiGtk.py:332
+#: ../GDebi/GDebiGtk.py:328
 msgid "Error: "
 msgstr "Σφάλμα: "
 
-#: ../GDebi/GDebiGtk.py:347
+#: ../GDebi/GDebiGtk.py:342
 msgid "Error: no longer provides "
 msgstr "Σφάλμα: δεν προβλέπει πλέον "
 
-#: ../GDebi/GDebiGtk.py:364
+#: ../GDebi/GDebiGtk.py:360
 msgid "Same version is already installed"
 msgstr "Μια ίδια έκδοση είναι ήδη εγκατεστημένη"
 
-#: ../GDebi/GDebiGtk.py:365
+#: ../GDebi/GDebiGtk.py:363
 msgid "_Reinstall Package"
 msgstr "_Επανεγκατάσταση πακέτου"
 
-#: ../GDebi/GDebiGtk.py:403
+#: ../GDebi/GDebiGtk.py:406
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:409
 msgid "Running lintian..."
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:428
+#: ../GDebi/GDebiGtk.py:431
 #, python-format
 msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:459
+#: ../GDebi/GDebiGtk.py:462
 msgid "Selection is a directory"
 msgstr "Η επιλογή είναι κατάλογος"
 
-#: ../GDebi/GDebiGtk.py:464 ../GDebi/GDebiGtk.py:470
+#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "Σφάλμα ανάγνωσης περιεχομένων του αρχείου '%s'"
 
-#: ../GDebi/GDebiGtk.py:475
+#: ../GDebi/GDebiGtk.py:478
 msgid "File content can not be extracted"
 msgstr "Δεν είναι δυνατή η εξαγωγή των περιεχομένων του αρχείου"
 
-#: ../GDebi/GDebiGtk.py:486
+#: ../GDebi/GDebiGtk.py:489
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>Προς αφαίρεση: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:488 ../GDebi/GDebiKDE.py:311
+#: ../GDebi/GDebiGtk.py:491
 #, python-format
 msgid "To be installed: %s"
 msgstr "Προς εγκατάσταση: %s"
 
-#: ../GDebi/GDebiGtk.py:503
+#: ../GDebi/GDebiGtk.py:506
 msgid "Open Software Package"
 msgstr "Άνοιγμα πακέτου λογισμικού"
 
-#: ../GDebi/GDebiGtk.py:508
+#: ../GDebi/GDebiGtk.py:511
 msgid "Software packages"
 msgstr "Πακέτα λογισμικού"
 
-#: ../GDebi/GDebiGtk.py:557
+#: ../GDebi/GDebiGtk.py:560
 msgid "Dependency problems"
 msgstr "Πρόβλημα εξάρτησης"
 
-#: ../GDebi/GDebiGtk.py:558
+#: ../GDebi/GDebiGtk.py:561
 #, python-format
 msgid "One or more packages are required by %s, it cannot be removed."
 msgstr ""
 "Ένα ή περισσότερα πακέτα απαιτούνται από το %s, δεν μπορεί να αφαιρεθεί."
 
-#: ../GDebi/GDebiGtk.py:566
+#: ../GDebi/GDebiGtk.py:569
 msgid "File not found"
 msgstr "Το αρχείο δεν βρέθηκε"
 
-#: ../GDebi/GDebiGtk.py:567
+#: ../GDebi/GDebiGtk.py:570
 msgid "You tried to install a file that does not (or no longer) exist. "
 msgstr "Προσπαθείτε να εγκαταστήσετε ένα αρχείο που δεν υπάρχει. "
 
-#: ../GDebi/GDebiGtk.py:578
+#: ../GDebi/GDebiGtk.py:581
 msgid "Installing package file..."
 msgstr "Εγκατάσταση πακέτου..."
 
-#: ../GDebi/GDebiGtk.py:580
+#: ../GDebi/GDebiGtk.py:583
 msgid "Removing package..."
 msgstr "Αφαίρεση πακέτου..."
 
-#: ../GDebi/GDebiGtk.py:583
+#: ../GDebi/GDebiGtk.py:586
 msgid "Install unauthenticated software?"
 msgstr "Εγκατάσταση μη πιστοποιημένου λογισμικού;"
 
-#: ../GDebi/GDebiGtk.py:584
+#: ../GDebi/GDebiGtk.py:587
 msgid ""
 "Malicious software can damage your data and take control of your system.\n"
 "\n"
@@ -349,44 +334,19 @@ msgstr ""
 "Τα παρακάτω πακέτα δεν έχουν πιστοποιηθεί και θα μπορούσαν να είναι "
 "κακόβουλα."
 
-#: ../GDebi/GDebiGtk.py:612
-msgid "You need to grant administrative rights to install software"
-msgstr "Χρειάζεστε διαχειριστικά δικαιώματα για να εγκαταστήσετε λογισμικό"
-
-#: ../GDebi/GDebiGtk.py:613
-msgid ""
-"\n"
-"It is a possible security risk to install packages files manually.\n"
-"Install software from trustworthy software distributors only.\n"
-msgstr ""
-"\n"
-"Είναι ένα πιθανό ρίσκο ασφαλείας, να εγκαταστήσετε πακέτα χειροκίνητα.\n"
-"Εγκαταστήστε λογισμικό μόνο από αξιόπιστες πηγές μόνο.\n"
-
-#: ../GDebi/GDebiGtk.py:618
-msgid "You need to grant administrative rights to remove software"
-msgstr ""
-"Χρειάζεται να παραχωρήσετε δικαιώματα διαχείρισης για την αφαίρεση του "
-"λογισμικού"
-
-#: ../GDebi/GDebiGtk.py:619
-msgid "It is a possible risk to remove packages."
-msgstr "Η αφαίρεση πακέτων είναι πιθανώς επικίνδυνη."
-
-#: ../GDebi/GDebiGtk.py:641 ../GDebi/GDebiGtk.py:706
+#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
 msgid "Failed to install package file"
 msgstr "Αποτυχία εγκατάστασης πακέτου"
 
-#: ../GDebi/GDebiGtk.py:643
+#: ../GDebi/GDebiGtk.py:626
 msgid "Failed to remove package"
 msgstr "Αποτυχία αφαίρεσης πακέτου"
 
-#. errMsg = "%s" % msg
-#: ../GDebi/GDebiGtk.py:688 ../GDebi/GDebiKDE.py:366
+#: ../GDebi/GDebiGtk.py:671
 msgid "Could not download all required files"
 msgstr "Δεν ήταν δυνατή η μεταφόρτωση των απαιτούμενων αρχείων"
 
-#: ../GDebi/GDebiGtk.py:689
+#: ../GDebi/GDebiGtk.py:672
 #, fuzzy
 msgid ""
 "Please check your internet connection or installation medium, and make sure "
@@ -394,11 +354,11 @@ msgid ""
 msgstr ""
 "Παρακαλούμε ελέγξτε την σύνδεση σας στο διαδίκτυο ή το μέσο εγκατάστασης."
 
-#: ../GDebi/GDebiGtk.py:695 ../GDebi/GDebiKDE.py:373
+#: ../GDebi/GDebiGtk.py:678
 msgid "Could not install all dependencies"
 msgstr "Δεν ήταν δυνατή η εγκατάσταση όλων των εξαρτήσεων"
 
-#: ../GDebi/GDebiGtk.py:696 ../GDebi/GDebiKDE.py:374
+#: ../GDebi/GDebiGtk.py:679
 msgid ""
 "Usually this is related to an error of the software distributor. See the "
 "terminal window for more details."
@@ -406,101 +366,95 @@ msgstr ""
 "Συνήθως αυτό είναι ένα σφάλμα του διανομέα του λογισμικού. Δείτε το παράθυρο "
 "του τερματικού για περισσότερες λεπτομέρειες."
 
-#: ../GDebi/GDebiGtk.py:712
+#: ../GDebi/GDebiGtk.py:695
 #, python-format
 msgid "Installing %s"
 msgstr "Εγκατάσταση του %s"
 
-#: ../GDebi/GDebiGtk.py:715
+#: ../GDebi/GDebiGtk.py:698
 #, python-format
 msgid "Removing %s"
 msgstr "Αφαίρεση του %s"
 
-#. self.label_action.set_markup("<b><big>"+_("Package installed")+"</big></b>")
-#. show the button
-#. self.button_deb_install_close.set_sensitive(True)
-#. self.button_deb_install_close.grab_default()
-#: ../GDebi/GDebiGtk.py:737 ../GDebi/GDebiKDE.py:393
+#: ../GDebi/GDebiGtk.py:720
 msgid "Installation finished"
 msgstr "Η εγκατάσταση ολοκληρώθηκε"
 
-#: ../GDebi/GDebiGtk.py:739
+#: ../GDebi/GDebiGtk.py:722
 msgid "Removal finished"
 msgstr "Η αφαίρεση τελείωσε"
 
-#: ../GDebi/GDebiGtk.py:742
+#: ../GDebi/GDebiGtk.py:725
 #, python-format
 msgid "Package '%s' was installed"
 msgstr "Το πακέτο '%s' εγκαταστάθηκε"
 
-#: ../GDebi/GDebiGtk.py:744
+#: ../GDebi/GDebiGtk.py:727
 #, python-format
 msgid "Package '%s' was removed"
 msgstr "Το πακέτο '%s' αφαιρέθηκε"
 
-#: ../GDebi/GDebiGtk.py:747 ../GDebi/GDebiKDE.py:397
+#: ../GDebi/GDebiGtk.py:730
 #, python-format
 msgid "Failed to install package '%s'"
 msgstr "Αδυναμία εγκατάστασης του πακέτου '%s'"
 
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:733
 #, python-format
 msgid "Failed to remove package '%s'"
 msgstr "Αποτυχία αφαίρεσης του πακέτου '%s'"
 
-#: ../GDebi/GDebiGtk.py:754
+#: ../GDebi/GDebiGtk.py:737
 msgid "Installation complete"
 msgstr "Η εγκατάσταση ολοκληρώθηκε"
 
-#: ../GDebi/GDebiGtk.py:756
+#: ../GDebi/GDebiGtk.py:739
 msgid "Removal complete"
 msgstr "Η αφαίρεση ολοκληρώθηκε"
 
-#: ../GDebi/GDebiGtk.py:764 ../GDebi/GDebiKDE.py:407
+#: ../GDebi/GDebiGtk.py:747
 msgid "Failed to completely install all dependencies"
 msgstr "Αδυναμία εγκατάστασης όλων των εξαρτήσεων"
 
-#: ../GDebi/GDebiGtk.py:766
+#: ../GDebi/GDebiGtk.py:749
 msgid "Failed to completely remove package"
 msgstr "Αποτυχία ολοκληρωτικής αφαίρεσης του πακέτου"
 
-#: ../GDebi/GDebiGtk.py:767 ../GDebi/GDebiKDE.py:408
+#: ../GDebi/GDebiGtk.py:750
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "Για το διορθώσετε εκτελέστε 'sudo apt-get install -f' σε ένα τερματικό."
 
-#. ui
-#: ../GDebi/GDebiGtk.py:885 ../GDebi/KDEAptDialogs.py:69
+#: ../GDebi/GDebiGtk.py:871
 #, python-format
 msgid "Installing '%s'..."
 msgstr "Εγκατάσταση του '%s'..."
 
-#: ../GDebi/GDebiGtk.py:888
+#: ../GDebi/GDebiGtk.py:874
 #, python-format
 msgid "Removing '%s'..."
 msgstr "Απομάκρυνση '%s'..."
 
-#: ../GDebi/GDebiGtk.py:998 ../GDebi/KDEAptDialogs.py:135
+#: ../GDebi/GDebiGtk.py:984
 msgid "Installing dependencies..."
 msgstr "Εγκατάσταση εξαρτήσεων..."
 
-#: ../GDebi/GDebiGtk.py:1043 ../GDebi/KDEAptDialogs.py:198
-#: ../GDebi/KDEAptDialogs.py:208 ../GDebi/KDEAptDialogs.py:210
+#: ../GDebi/GDebiGtk.py:1029
 msgid "Downloading additional package files..."
 msgstr "Λήψη επιπρόσθετων πακέτων..."
 
-#: ../GDebi/GDebiGtk.py:1052 ../GDebi/KDEAptDialogs.py:208
+#: ../GDebi/GDebiGtk.py:1038
 #, python-format
 msgid "File %s of %s at %sB/s"
 msgstr "Το αρχείο %s από %s στα %sB/s"
 
-#: ../GDebi/GDebiGtk.py:1054 ../GDebi/KDEAptDialogs.py:210
+#: ../GDebi/GDebiGtk.py:1040
 #, python-format
 msgid "File %s of %s"
 msgstr "Το αρχείο %s από %s"
 
 #. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1061 ../GDebi/KDEAptDialogs.py:216
+#: ../GDebi/GDebiGtk.py:1047
 #, python-format
 msgid "Please insert '%s' into the drive '%s'"
 msgstr "Παρακαλώ εισάγετε τον δίσκο '%s' στον οδηγό '%s'"
@@ -535,7 +489,7 @@ msgstr ""
 msgid "This package is uninstallable\n"
 msgstr "Αυτό το πακέτο δεν γίνεται να εγκατασταθεί\n"
 
-#: ../GDebi/GDebiCli.py:98 ../GDebi/GDebiKDE.py:241
+#: ../GDebi/GDebiCli.py:98
 msgid "No description is available"
 msgstr "Δεν υπάρχει διαθέσιμη περιγραφή"
 
@@ -555,71 +509,6 @@ msgstr "Απαιτείται η εγκατάσταση των παρακάτω �
 #, python-format
 msgid "Error during install: '%s'"
 msgstr "Σφάλμα κατά την εγκατάσταση: '%s'"
-
-#. first, we load all the default descriptions -- pyuic doesn't use
-#. gettext as default (FIXME, copy code from language-selector)
-#: ../GDebi/GDebiKDE.py:152
-msgid "Package:"
-msgstr "Πακέτο:"
-
-#: ../GDebi/GDebiKDE.py:153
-msgid "Status:"
-msgstr "Κατάσταση:"
-
-#: ../GDebi/GDebiKDE.py:157
-msgid "Included Files"
-msgstr "Συμπεριλαμβανόμενα αρχεία"
-
-#: ../GDebi/GDebiKDE.py:159 ../GDebi/GDebiKDE.py:299
-msgid "&Install Package"
-msgstr "&Εγκατάσταση πακέτου"
-
-#: ../GDebi/GDebiKDE.py:160
-msgid "&Download Package"
-msgstr "&Κατεβάστε το Πακέτο"
-
-#: ../GDebi/GDebiKDE.py:185
-msgid "The package file does not exist"
-msgstr "Το πακέτο δεν υπάρχει"
-
-#: ../GDebi/GDebiKDE.py:186
-msgid ""
-"A nonexistent file has been selected for installation. Please select an "
-"existing .deb package file."
-msgstr ""
-"Ένα ανύπαρκτο αρχείο έχει επιλεγεί για εγκατάσταση. Παρακαλούμε επιλέξετε "
-"ένα υπαρκτό πακέτο .deb."
-
-#. self.textLabel1_3_2.setText(_("Same version is already installed"))
-#: ../GDebi/GDebiKDE.py:267
-msgid "&Reinstall Package"
-msgstr "&Επανεγκατάσταση πακέτου"
-
-#: ../GDebi/GDebiKDE.py:302
-msgid "Re&install Package"
-msgstr "Επα&εγκατάσταση πακέτου"
-
-#: ../GDebi/GDebiKDE.py:313
-#, python-format
-msgid "To be removed: %s"
-msgstr "Για απομάκρυνση: %s"
-
-#: ../GDebi/GDebiKDE.py:367
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, or make sure "
-"your APT cache is up-to-date."
-msgstr ""
-"Παρακαλούμε ελέγξτε την σύνδεση σας στο διαδίκτυο ή το μέσο εγκατάστασης."
-
-#: ../GDebi/GDebiKDE.py:395
-#, python-format
-msgid "<b>Package '%s' was installed</b>"
-msgstr ""
-
-#: ../GDebi/GDebiKDE.py:421
-msgid "Installing"
-msgstr ""
 
 #: ../GDebi/GDebiCommon.py:78
 msgid "Broken dependencies"
@@ -720,10 +609,75 @@ msgstr ""
 "Παρακαλούμε κλείστε πρώτα την άλλη εφαρμογή πχ την 'Διαχειριση ενημερώσεων', "
 "το 'aptitude' ή το 'Synaptic'."
 
-#. change = QMessageBox.question(None, _("Media Change"), msg, QMessageBox.Ok, QMessageBox.Cancel)
-#: ../GDebi/KDEAptDialogs.py:218
-msgid "Media Change"
-msgstr "Αλλαγή μέσου"
+#~ msgid "<b><big>   </big></b>"
+#~ msgstr "<b><big> </big></b>"
+
+#~ msgid "Package Installer - %s"
+#~ msgstr "Εγκατάσταση πακέτων - %s"
+
+#~ msgid "You need to grant administrative rights to install software"
+#~ msgstr "Χρειάζεστε διαχειριστικά δικαιώματα για να εγκαταστήσετε λογισμικό"
+
+#~ msgid ""
+#~ "\n"
+#~ "It is a possible security risk to install packages files manually.\n"
+#~ "Install software from trustworthy software distributors only.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Είναι ένα πιθανό ρίσκο ασφαλείας, να εγκαταστήσετε πακέτα χειροκίνητα.\n"
+#~ "Εγκαταστήστε λογισμικό μόνο από αξιόπιστες πηγές μόνο.\n"
+
+#~ msgid "You need to grant administrative rights to remove software"
+#~ msgstr ""
+#~ "Χρειάζεται να παραχωρήσετε δικαιώματα διαχείρισης για την αφαίρεση του "
+#~ "λογισμικού"
+
+#~ msgid "It is a possible risk to remove packages."
+#~ msgstr "Η αφαίρεση πακέτων είναι πιθανώς επικίνδυνη."
+
+#~ msgid "Package:"
+#~ msgstr "Πακέτο:"
+
+#~ msgid "Status:"
+#~ msgstr "Κατάσταση:"
+
+#~ msgid "Included Files"
+#~ msgstr "Συμπεριλαμβανόμενα αρχεία"
+
+#~ msgid "&Install Package"
+#~ msgstr "&Εγκατάσταση πακέτου"
+
+#~ msgid "&Download Package"
+#~ msgstr "&Κατεβάστε το Πακέτο"
+
+#~ msgid "The package file does not exist"
+#~ msgstr "Το πακέτο δεν υπάρχει"
+
+#~ msgid ""
+#~ "A nonexistent file has been selected for installation. Please select an "
+#~ "existing .deb package file."
+#~ msgstr ""
+#~ "Ένα ανύπαρκτο αρχείο έχει επιλεγεί για εγκατάσταση. Παρακαλούμε επιλέξετε "
+#~ "ένα υπαρκτό πακέτο .deb."
+
+#~ msgid "&Reinstall Package"
+#~ msgstr "&Επανεγκατάσταση πακέτου"
+
+#~ msgid "Re&install Package"
+#~ msgstr "Επα&εγκατάσταση πακέτου"
+
+#~ msgid "To be removed: %s"
+#~ msgstr "Για απομάκρυνση: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, or make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr ""
+#~ "Παρακαλούμε ελέγξτε την σύνδεση σας στο διαδίκτυο ή το μέσο εγκατάστασης."
+
+#~ msgid "Media Change"
+#~ msgstr "Αλλαγή μέσου"
 
 #~ msgid "_Download Package"
 #~ msgstr "_Κατεβάστε το Πακέτο"

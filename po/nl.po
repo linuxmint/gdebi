@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2016-12-08 16:02+0000\n"
+"POT-Creation-Date: 2018-06-06 09:29+0100\n"
 "PO-Revision-Date: 2014-03-08 20:13+0000\n"
 "Last-Translator: Pjotr12345 <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
@@ -90,84 +90,76 @@ msgstr ""
 "en correctheid van het bestand '/etc/apt/sources.list' en herlaad de "
 "pakketinformatie met 'sudo apt-get update' en 'sudo apt-get install -f'."
 
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2
+#. set window title
+#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
 msgid "Package Installer"
 msgstr "Pakketinstalleerder"
 
 #: ../data/gdebi.ui.h:2
-msgid "<b><big>   </big></b>"
-msgstr "<b><big> </big></b>"
-
-#: ../data/gdebi.ui.h:3
 msgid "_Details"
 msgstr "_Details"
 
-#: ../data/gdebi.ui.h:4 ../GDebi/GDebiKDE.py:155
+#: ../data/gdebi.ui.h:3
 msgid "Description"
 msgstr "Omschrijving"
 
-#: ../data/gdebi.ui.h:5 ../GDebi/GDebiKDE.py:161
+#: ../data/gdebi.ui.h:4
 msgid "<b>Version:</b>"
 msgstr "<b>Versie:</b>"
 
-#: ../data/gdebi.ui.h:6 ../GDebi/GDebiKDE.py:162
+#: ../data/gdebi.ui.h:5
 msgid "<b>Maintainer:</b>"
 msgstr "<b>Beheerder:</b>"
 
-#: ../data/gdebi.ui.h:7 ../GDebi/GDebiKDE.py:163
+#: ../data/gdebi.ui.h:6
 msgid "<b>Priority:</b>"
 msgstr "<b>Prioriteit:</b>"
 
-#: ../data/gdebi.ui.h:8 ../GDebi/GDebiKDE.py:164
+#: ../data/gdebi.ui.h:7
 msgid "<b>Section:</b>"
 msgstr "<b>Onderdeel:</b>"
 
-#: ../data/gdebi.ui.h:9 ../GDebi/GDebiKDE.py:165
+#: ../data/gdebi.ui.h:8
 msgid "<b>Size:</b>"
 msgstr "<b>Grootte:</b>"
 
-#: ../data/gdebi.ui.h:10
+#: ../data/gdebi.ui.h:9
 msgid "  "
 msgstr "  "
 
-#: ../data/gdebi.ui.h:11 ../GDebi/GDebiKDE.py:154 ../GDebi/GDebiKDE.py:156
-#: ../GDebi/GDebiKDE.py:318
+#: ../data/gdebi.ui.h:10
 msgid "Details"
 msgstr "Bijzonderheden"
 
-#: ../data/gdebi.ui.h:12
+#: ../data/gdebi.ui.h:11
 msgid "Included files"
 msgstr "Bijgevoegde bestanden"
-
-#: ../data/gdebi.ui.h:13
-msgid "Lintian output"
-msgstr "Lintian-uitvoer"
 
 #. img = Gtk.Image()
 #. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
 #. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:14 ../GDebi/GDebiGtk.py:336 ../GDebi/GDebiGtk.py:394
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
 msgid "_Install Package"
 msgstr "Pakket _installeren"
 
-#: ../data/gdebi.ui.h:15 ../data/gdebi.desktop.in.h:3
+#: ../data/gdebi.ui.h:13 ../data/gdebi.desktop.in.h:3
 msgid "Install and view software packages"
 msgstr "Programmapakketten installeren en bekijken"
 
-#: ../data/gdebi.ui.h:16
+#: ../data/gdebi.ui.h:14
 msgid "GPL, see /usr/share/common-licenses/GPL"
 msgstr "GPL, zie /usr/share/common-licenses/GPL"
 
-#: ../data/gdebi.ui.h:17
+#: ../data/gdebi.ui.h:15
 msgid "Terminal"
 msgstr "Terminalvenster"
 
-#: ../data/gdebi.ui.h:18
+#: ../data/gdebi.ui.h:16
 msgid "Automatically close after the changes have been successfully applied"
 msgstr ""
 "Venster automatisch sluiten nadat de veranderingen succesvol zijn toegepast"
 
-#: ../data/gdebi.ui.h:19 ../GDebi/GDebiKDE.py:317
+#: ../data/gdebi.ui.h:17
 msgid "<b>To install the following changes are required:</b>"
 msgstr "<b>De volgende wijzigingen zijn nodig om te kunnen installeren:</b>"
 
@@ -190,19 +182,19 @@ msgstr "%s is niet beschikbaar"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr ""
 
-#: ../GDebi/GDebiGtk.py:95
+#: ../GDebi/GDebiGtk.py:94
 msgid "Copy selected text"
 msgstr "Kopieer geselecteerde tekst"
 
-#: ../GDebi/GDebiGtk.py:106
+#: ../GDebi/GDebiGtk.py:105
 msgid "Loading..."
 msgstr "Bezig met laden…"
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:180
 msgid "Can not download as root"
 msgstr "Kan niet binnenhalen als beheerder (root)"
 
-#: ../GDebi/GDebiGtk.py:182
+#: ../GDebi/GDebiGtk.py:181
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -211,55 +203,48 @@ msgstr ""
 "programma als beheerder (root) uitvoert. Probeer het nogmaals als gewone "
 "gebruiker."
 
-#: ../GDebi/GDebiGtk.py:195
+#: ../GDebi/GDebiGtk.py:194
 msgid "Downloading package"
 msgstr "Bezig met ophalen van pakket"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:201
 msgid "Download failed"
 msgstr "Downloaden is mislukt"
 
-#: ../GDebi/GDebiGtk.py:203
+#: ../GDebi/GDebiGtk.py:202
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "Downloaden van pakket is mislukt: bestand '%s' '%s'"
 
-#. set window title
-#. set name
-#: ../GDebi/GDebiGtk.py:251 ../GDebi/GDebiKDE.py:205
-#, python-format
-msgid "Package Installer - %s"
-msgstr "Pakketinstalleerder - %s"
-
-#: ../GDebi/GDebiGtk.py:307
+#: ../GDebi/GDebiGtk.py:305
 msgid "Package control data"
 msgstr "Pakketcontrolegegevens"
 
-#: ../GDebi/GDebiGtk.py:310
+#: ../GDebi/GDebiGtk.py:308
 msgid "Upstream data"
 msgstr "Bovenstroomse gegevens"
 
-#: ../GDebi/GDebiGtk.py:316
+#: ../GDebi/GDebiGtk.py:314
 msgid "Error reading filelist"
 msgstr "Fout bij lezen bestandlijst"
 
-#: ../GDebi/GDebiGtk.py:332
+#: ../GDebi/GDebiGtk.py:328
 msgid "Error: "
 msgstr "Fout: "
 
-#: ../GDebi/GDebiGtk.py:347
+#: ../GDebi/GDebiGtk.py:342
 msgid "Error: no longer provides "
 msgstr "Fout: niet langer beschikbaar "
 
-#: ../GDebi/GDebiGtk.py:364
+#: ../GDebi/GDebiGtk.py:360
 msgid "Same version is already installed"
 msgstr "Dezelfde versie is al geïnstalleerd"
 
-#: ../GDebi/GDebiGtk.py:365
+#: ../GDebi/GDebiGtk.py:363
 msgid "_Reinstall Package"
 msgstr "Pakket he_rinstalleren"
 
-#: ../GDebi/GDebiGtk.py:403
+#: ../GDebi/GDebiGtk.py:406
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
@@ -267,11 +252,11 @@ msgstr ""
 "Lintian is niet beschikbaar.\n"
 "Installeer het a.u.b. via de terminalopdracht 'sudo apt-get install lintian'."
 
-#: ../GDebi/GDebiGtk.py:406
+#: ../GDebi/GDebiGtk.py:409
 msgid "Running lintian..."
 msgstr "Lintian aan het draaien..."
 
-#: ../GDebi/GDebiGtk.py:428
+#: ../GDebi/GDebiGtk.py:431
 #, python-format
 msgid ""
 "\n"
@@ -280,69 +265,69 @@ msgstr ""
 "\n"
 "Lintian is geëindigd met afsluitstatus %s"
 
-#: ../GDebi/GDebiGtk.py:459
+#: ../GDebi/GDebiGtk.py:462
 msgid "Selection is a directory"
 msgstr "Selectie is een map"
 
-#: ../GDebi/GDebiGtk.py:464 ../GDebi/GDebiGtk.py:470
+#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "Fout bij lezen bestandinhoud '%s'"
 
-#: ../GDebi/GDebiGtk.py:475
+#: ../GDebi/GDebiGtk.py:478
 msgid "File content can not be extracted"
 msgstr "Bestandinhoud kan niet uitgepakt worden"
 
-#: ../GDebi/GDebiGtk.py:486
+#: ../GDebi/GDebiGtk.py:489
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>Te verwijderen: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:488 ../GDebi/GDebiKDE.py:311
+#: ../GDebi/GDebiGtk.py:491
 #, python-format
 msgid "To be installed: %s"
 msgstr "Te installeren: %s"
 
-#: ../GDebi/GDebiGtk.py:503
+#: ../GDebi/GDebiGtk.py:506
 msgid "Open Software Package"
 msgstr "Programmapakket openen"
 
-#: ../GDebi/GDebiGtk.py:508
+#: ../GDebi/GDebiGtk.py:511
 msgid "Software packages"
 msgstr "Programmapakketten"
 
-#: ../GDebi/GDebiGtk.py:557
+#: ../GDebi/GDebiGtk.py:560
 msgid "Dependency problems"
 msgstr "Afhankelijkheidsproblemen"
 
-#: ../GDebi/GDebiGtk.py:558
+#: ../GDebi/GDebiGtk.py:561
 #, python-format
 msgid "One or more packages are required by %s, it cannot be removed."
 msgstr ""
 "Eén of meer pakketten worden vereist door %s, het kan dus niet worden "
 "verwijderd."
 
-#: ../GDebi/GDebiGtk.py:566
+#: ../GDebi/GDebiGtk.py:569
 msgid "File not found"
 msgstr "Bestand niet gevonden"
 
-#: ../GDebi/GDebiGtk.py:567
+#: ../GDebi/GDebiGtk.py:570
 msgid "You tried to install a file that does not (or no longer) exist. "
 msgstr "U probeerde een bestand te installeren dat niet (meer) bestaat. "
 
-#: ../GDebi/GDebiGtk.py:578
+#: ../GDebi/GDebiGtk.py:581
 msgid "Installing package file..."
 msgstr "Pakketbestand aan het installeren…"
 
-#: ../GDebi/GDebiGtk.py:580
+#: ../GDebi/GDebiGtk.py:583
 msgid "Removing package..."
 msgstr "Pakket aan het verwijderen..."
 
-#: ../GDebi/GDebiGtk.py:583
+#: ../GDebi/GDebiGtk.py:586
 msgid "Install unauthenticated software?"
 msgstr "Ongeverifieerde programmatuur installeren?"
 
-#: ../GDebi/GDebiGtk.py:584
+#: ../GDebi/GDebiGtk.py:587
 msgid ""
 "Malicious software can damage your data and take control of your system.\n"
 "\n"
@@ -355,53 +340,30 @@ msgstr ""
 "De onderstaande pakketten zijn ongeverifieerd en zouden daarom kwaadaardig "
 "kunnen zijn."
 
-#: ../GDebi/GDebiGtk.py:612
-msgid "You need to grant administrative rights to install software"
-msgstr "U dient beheersrechten toe te kennen om programmatuur te installeren"
-
-#: ../GDebi/GDebiGtk.py:613
-msgid ""
-"\n"
-"It is a possible security risk to install packages files manually.\n"
-"Install software from trustworthy software distributors only.\n"
-msgstr ""
-"\n"
-"Pakketbestanden handmatig installeren is een mogelijk veiligheidsrisico.\n"
-"Installeer alleen programma's van betrouwbare leveranciers!\n"
-
-#: ../GDebi/GDebiGtk.py:618
-msgid "You need to grant administrative rights to remove software"
-msgstr "U dient beheersrechten toe te kennen om programmatuur te verwijderen"
-
-#: ../GDebi/GDebiGtk.py:619
-msgid "It is a possible risk to remove packages."
-msgstr "Het is een mogelijk risico om pakketten te verwijderen."
-
-#: ../GDebi/GDebiGtk.py:641 ../GDebi/GDebiGtk.py:706
+#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
 msgid "Failed to install package file"
 msgstr "Kon het pakketbestand niet installeren"
 
-#: ../GDebi/GDebiGtk.py:643
+#: ../GDebi/GDebiGtk.py:626
 msgid "Failed to remove package"
 msgstr "Kon pakket niet verwijderen"
 
-#. errMsg = "%s" % msg
-#: ../GDebi/GDebiGtk.py:688 ../GDebi/GDebiKDE.py:366
+#: ../GDebi/GDebiGtk.py:671
 msgid "Could not download all required files"
 msgstr "Kon niet alle vereiste bestanden ophalen"
 
-#: ../GDebi/GDebiGtk.py:689
+#: ../GDebi/GDebiGtk.py:672
 #, fuzzy
 msgid ""
 "Please check your internet connection or installation medium, and make sure "
 "your APT cache is up-to-date."
 msgstr "Controleer a.u.b. uw internetverbinding of installatiemedium."
 
-#: ../GDebi/GDebiGtk.py:695 ../GDebi/GDebiKDE.py:373
+#: ../GDebi/GDebiGtk.py:678
 msgid "Could not install all dependencies"
 msgstr "Kon niet alle afhankelijkheden installeren"
 
-#: ../GDebi/GDebiGtk.py:696 ../GDebi/GDebiKDE.py:374
+#: ../GDebi/GDebiGtk.py:679
 msgid ""
 "Usually this is related to an error of the software distributor. See the "
 "terminal window for more details."
@@ -409,102 +371,96 @@ msgstr ""
 "Gewoonlijk wordt dit veroorzaakt door een fout van de leverancier van het "
 "programma. Zie het terminalvenster voor meer bijzonderheden."
 
-#: ../GDebi/GDebiGtk.py:712
+#: ../GDebi/GDebiGtk.py:695
 #, python-format
 msgid "Installing %s"
 msgstr "Bezig met installeren van %s"
 
-#: ../GDebi/GDebiGtk.py:715
+#: ../GDebi/GDebiGtk.py:698
 #, python-format
 msgid "Removing %s"
 msgstr "Bezig met verwijderen van %s"
 
-#. self.label_action.set_markup("<b><big>"+_("Package installed")+"</big></b>")
-#. show the button
-#. self.button_deb_install_close.set_sensitive(True)
-#. self.button_deb_install_close.grab_default()
-#: ../GDebi/GDebiGtk.py:737 ../GDebi/GDebiKDE.py:393
+#: ../GDebi/GDebiGtk.py:720
 msgid "Installation finished"
 msgstr "Installatie gereed"
 
-#: ../GDebi/GDebiGtk.py:739
+#: ../GDebi/GDebiGtk.py:722
 msgid "Removal finished"
 msgstr "Verwijdering gereed"
 
-#: ../GDebi/GDebiGtk.py:742
+#: ../GDebi/GDebiGtk.py:725
 #, python-format
 msgid "Package '%s' was installed"
 msgstr "Pakket '%s' werd geïnstalleerd"
 
-#: ../GDebi/GDebiGtk.py:744
+#: ../GDebi/GDebiGtk.py:727
 #, python-format
 msgid "Package '%s' was removed"
 msgstr "Pakket '%s' werd verwijderd"
 
-#: ../GDebi/GDebiGtk.py:747 ../GDebi/GDebiKDE.py:397
+#: ../GDebi/GDebiGtk.py:730
 #, python-format
 msgid "Failed to install package '%s'"
 msgstr "Kon pakket '%s' niet installeren"
 
-#: ../GDebi/GDebiGtk.py:750
+#: ../GDebi/GDebiGtk.py:733
 #, python-format
 msgid "Failed to remove package '%s'"
 msgstr "Kon pakket '%s' niet verwijderen"
 
-#: ../GDebi/GDebiGtk.py:754
+#: ../GDebi/GDebiGtk.py:737
 msgid "Installation complete"
 msgstr "Installatie is voltooid"
 
-#: ../GDebi/GDebiGtk.py:756
+#: ../GDebi/GDebiGtk.py:739
 msgid "Removal complete"
 msgstr "Verwijdering is voltooid"
 
-#: ../GDebi/GDebiGtk.py:764 ../GDebi/GDebiKDE.py:407
+#: ../GDebi/GDebiGtk.py:747
 msgid "Failed to completely install all dependencies"
 msgstr "Kon niet alle afhankelijkheden volledig installeren"
 
-#: ../GDebi/GDebiGtk.py:766
+#: ../GDebi/GDebiGtk.py:749
 msgid "Failed to completely remove package"
 msgstr "Kon pakket niet volledig verwijderen"
 
-#: ../GDebi/GDebiGtk.py:767 ../GDebi/GDebiKDE.py:408
+#: ../GDebi/GDebiGtk.py:750
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "Om dit te herstellen, moet u 'sudo apt-get install -f' uitvoeren in een "
 "terminalvenster."
 
-#. ui
-#: ../GDebi/GDebiGtk.py:885 ../GDebi/KDEAptDialogs.py:69
+#: ../GDebi/GDebiGtk.py:871
 #, python-format
 msgid "Installing '%s'..."
 msgstr "'%s' aan het installeren…"
 
-#: ../GDebi/GDebiGtk.py:888
+#: ../GDebi/GDebiGtk.py:874
 #, python-format
 msgid "Removing '%s'..."
 msgstr "'%s' aan het verwijderen..."
 
-#: ../GDebi/GDebiGtk.py:998 ../GDebi/KDEAptDialogs.py:135
+#: ../GDebi/GDebiGtk.py:984
 msgid "Installing dependencies..."
 msgstr "Afhankelijkheden aan het installeren…"
 
-#: ../GDebi/GDebiGtk.py:1043 ../GDebi/KDEAptDialogs.py:198
-#: ../GDebi/KDEAptDialogs.py:208 ../GDebi/KDEAptDialogs.py:210
+#: ../GDebi/GDebiGtk.py:1029
 msgid "Downloading additional package files..."
 msgstr "Aanvullende pakketbestanden aan het ophalen…"
 
-#: ../GDebi/GDebiGtk.py:1052 ../GDebi/KDEAptDialogs.py:208
+#: ../GDebi/GDebiGtk.py:1038
 #, python-format
 msgid "File %s of %s at %sB/s"
 msgstr "Bestand %s van %s met %sB/s"
 
-#: ../GDebi/GDebiGtk.py:1054 ../GDebi/KDEAptDialogs.py:210
+#: ../GDebi/GDebiGtk.py:1040
 #, python-format
 msgid "File %s of %s"
 msgstr "Bestand %s van %s"
 
 #. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1061 ../GDebi/KDEAptDialogs.py:216
+#: ../GDebi/GDebiGtk.py:1047
 #, python-format
 msgid "Please insert '%s' into the drive '%s'"
 msgstr "Voer a.u.b.  '%s' in, in het station '%s'"
@@ -540,7 +496,7 @@ msgstr ""
 msgid "This package is uninstallable\n"
 msgstr "Dit pakket is niet installeerbaar\n"
 
-#: ../GDebi/GDebiCli.py:98 ../GDebi/GDebiKDE.py:241
+#: ../GDebi/GDebiCli.py:98
 msgid "No description is available"
 msgstr "Er is geen beschrijving beschikbaar"
 
@@ -560,70 +516,6 @@ msgstr "Vereist de installatie van de volgende pakketten: "
 #, python-format
 msgid "Error during install: '%s'"
 msgstr "Fout bij installeren: '%s'"
-
-#. first, we load all the default descriptions -- pyuic doesn't use
-#. gettext as default (FIXME, copy code from language-selector)
-#: ../GDebi/GDebiKDE.py:152
-msgid "Package:"
-msgstr "Pakket:"
-
-#: ../GDebi/GDebiKDE.py:153
-msgid "Status:"
-msgstr "Status:"
-
-#: ../GDebi/GDebiKDE.py:157
-msgid "Included Files"
-msgstr "Bijgevoegde bestanden"
-
-#: ../GDebi/GDebiKDE.py:159 ../GDebi/GDebiKDE.py:299
-msgid "&Install Package"
-msgstr "Pakket &installeren"
-
-#: ../GDebi/GDebiKDE.py:160
-msgid "&Download Package"
-msgstr "Pakket &downloaden"
-
-#: ../GDebi/GDebiKDE.py:185
-msgid "The package file does not exist"
-msgstr "Het pakketbestand bestaat niet"
-
-#: ../GDebi/GDebiKDE.py:186
-msgid ""
-"A nonexistent file has been selected for installation. Please select an "
-"existing .deb package file."
-msgstr ""
-"U heeft een niet-bestaand bestand uitgekozen voor installatie. Kies a.u.b. "
-"een bestaand .deb-pakketbestand."
-
-#. self.textLabel1_3_2.setText(_("Same version is already installed"))
-#: ../GDebi/GDebiKDE.py:267
-msgid "&Reinstall Package"
-msgstr "Pakket he&rinstalleren"
-
-#: ../GDebi/GDebiKDE.py:302
-msgid "Re&install Package"
-msgstr "Pakket her_installeren"
-
-#: ../GDebi/GDebiKDE.py:313
-#, python-format
-msgid "To be removed: %s"
-msgstr "Te verwijderen: %s"
-
-#: ../GDebi/GDebiKDE.py:367
-#, fuzzy
-msgid ""
-"Please check your internet connection or installation medium, or make sure "
-"your APT cache is up-to-date."
-msgstr "Controleer a.u.b. uw internetverbinding of installatiemedium."
-
-#: ../GDebi/GDebiKDE.py:395
-#, python-format
-msgid "<b>Package '%s' was installed</b>"
-msgstr "<b>Pakket '%s' werd geïnstalleerd</b>"
-
-#: ../GDebi/GDebiKDE.py:421
-msgid "Installing"
-msgstr "Bezig met installeren"
 
 #: ../GDebi/GDebiCommon.py:78
 msgid "Broken dependencies"
@@ -724,10 +616,83 @@ msgstr ""
 "Sluit a.u.b. eerst de andere toepassing af (bijvoorbeeld 'Updatebeheerder', "
 "'aptitude' of 'Synaptic')."
 
-#. change = QMessageBox.question(None, _("Media Change"), msg, QMessageBox.Ok, QMessageBox.Cancel)
-#: ../GDebi/KDEAptDialogs.py:218
-msgid "Media Change"
-msgstr "Medium veranderen"
+#~ msgid "<b><big>   </big></b>"
+#~ msgstr "<b><big> </big></b>"
+
+#~ msgid "Lintian output"
+#~ msgstr "Lintian-uitvoer"
+
+#~ msgid "Package Installer - %s"
+#~ msgstr "Pakketinstalleerder - %s"
+
+#~ msgid "You need to grant administrative rights to install software"
+#~ msgstr ""
+#~ "U dient beheersrechten toe te kennen om programmatuur te installeren"
+
+#~ msgid ""
+#~ "\n"
+#~ "It is a possible security risk to install packages files manually.\n"
+#~ "Install software from trustworthy software distributors only.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Pakketbestanden handmatig installeren is een mogelijk veiligheidsrisico.\n"
+#~ "Installeer alleen programma's van betrouwbare leveranciers!\n"
+
+#~ msgid "You need to grant administrative rights to remove software"
+#~ msgstr ""
+#~ "U dient beheersrechten toe te kennen om programmatuur te verwijderen"
+
+#~ msgid "It is a possible risk to remove packages."
+#~ msgstr "Het is een mogelijk risico om pakketten te verwijderen."
+
+#~ msgid "Package:"
+#~ msgstr "Pakket:"
+
+#~ msgid "Status:"
+#~ msgstr "Status:"
+
+#~ msgid "Included Files"
+#~ msgstr "Bijgevoegde bestanden"
+
+#~ msgid "&Install Package"
+#~ msgstr "Pakket &installeren"
+
+#~ msgid "&Download Package"
+#~ msgstr "Pakket &downloaden"
+
+#~ msgid "The package file does not exist"
+#~ msgstr "Het pakketbestand bestaat niet"
+
+#~ msgid ""
+#~ "A nonexistent file has been selected for installation. Please select an "
+#~ "existing .deb package file."
+#~ msgstr ""
+#~ "U heeft een niet-bestaand bestand uitgekozen voor installatie. Kies a.u."
+#~ "b. een bestaand .deb-pakketbestand."
+
+#~ msgid "&Reinstall Package"
+#~ msgstr "Pakket he&rinstalleren"
+
+#~ msgid "Re&install Package"
+#~ msgstr "Pakket her_installeren"
+
+#~ msgid "To be removed: %s"
+#~ msgstr "Te verwijderen: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, or make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr "Controleer a.u.b. uw internetverbinding of installatiemedium."
+
+#~ msgid "<b>Package '%s' was installed</b>"
+#~ msgstr "<b>Pakket '%s' werd geïnstalleerd</b>"
+
+#~ msgid "Installing"
+#~ msgstr "Bezig met installeren"
+
+#~ msgid "Media Change"
+#~ msgstr "Medium veranderen"
 
 #~ msgid "_Download Package"
 #~ msgstr "Pakket ophalen"

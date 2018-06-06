@@ -10,7 +10,6 @@ class TestPyflakesClean(unittest.TestCase):
             os.path.join(os.path.dirname(__file__), ".."),
             os.path.join(os.path.dirname(__file__), "..", "gdebi"),
             os.path.join(os.path.dirname(__file__), "..", "gdebi-gtk"),
-            os.path.join(os.path.dirname(__file__), "..", "gdebi-kde"),
             ]
 
     def test_pyflakes_clean(self):

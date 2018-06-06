@@ -28,14 +28,11 @@ s = setup(name='gdebi',
           version=version,
           test_suite="tests",
           packages=['GDebi'],
-          scripts=['gdebi', 'gdebi-gtk', 'gdebi-kde'],
+          scripts=['gdebi', 'gdebi-gtk'],
           data_files=[('share/gdebi/',
-                       ['data/gdebi.ui', 'data/GDebiKDEDialog.ui',
-                        'data/GDebiKDEInstallDialog.ui']),
+                       ['data/gdebi.ui']),
                       ('share/applications',
                        ['build/gdebi.desktop']),
-                      ('share/applications/kde4',
-                       ['build/gdebi-kde.desktop']),
                       ('share/application-registry',
                        ['data/gdebi.applications']),
                       ('share/gdebi/',
@@ -47,6 +44,4 @@ s = setup(name='gdebi',
 if 'build' in s.commands:
     os.system('intltool-merge -d po data/gdebi.desktop.in'\
               ' build/gdebi.desktop')
-    os.system('intltool-merge -d po data/gdebi-kde.desktop.in'\
-              ' build/gdebi-kde.desktop')
     os.system('make -C po update-po')

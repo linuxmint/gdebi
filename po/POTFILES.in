@@ -7,6 +7,4 @@ gdebi-gtk
 GDebi/DebPackage.py
 GDebi/GDebiGtk.py
 GDebi/GDebiCli.py
-GDebi/GDebiKDE.py
 GDebi/GDebiCommon.py
-GDebi/KDEAptDialogs.py

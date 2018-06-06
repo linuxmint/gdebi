@@ -6,9 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-08 21:00+0100\n"
+"Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
+"POT-Creation-Date: 2018-06-06 09:29+0100\n"
 "PO-Revision-Date: 2016-12-08 21:04+0100\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2016-12-08 19:56+0000\n"
 "X-Generator: Poedit 1.8.7.1\n"
-"Last-Translator: gogo <trebelnik2@gmail.com>\n"
 
 #: ../gdebi:50
 #, c-format
@@ -89,7 +89,7 @@ msgstr ""
 "softveru naredbom: 'sudo apt-get update' i 'sudo apt-get install -f'."
 
 #. set window title
-#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:251
+#: ../data/gdebi.ui.h:1 ../data/gdebi.desktop.in.h:2 ../GDebi/GDebiGtk.py:250
 msgid "Package Installer"
 msgstr "Paketni instaler"
 
@@ -97,27 +97,27 @@ msgstr "Paketni instaler"
 msgid "_Details"
 msgstr "_Pojedinosti"
 
-#: ../data/gdebi.ui.h:3 ../GDebi/GDebiKDE.py:155
+#: ../data/gdebi.ui.h:3
 msgid "Description"
 msgstr "Opis"
 
-#: ../data/gdebi.ui.h:4 ../GDebi/GDebiKDE.py:161
+#: ../data/gdebi.ui.h:4
 msgid "<b>Version:</b>"
 msgstr "<b>Inačica:</b>"
 
-#: ../data/gdebi.ui.h:5 ../GDebi/GDebiKDE.py:162
+#: ../data/gdebi.ui.h:5
 msgid "<b>Maintainer:</b>"
 msgstr "<b>Održavatelj:</b>"
 
-#: ../data/gdebi.ui.h:6 ../GDebi/GDebiKDE.py:163
+#: ../data/gdebi.ui.h:6
 msgid "<b>Priority:</b>"
 msgstr "<b>Prioritet:</b>"
 
-#: ../data/gdebi.ui.h:7 ../GDebi/GDebiKDE.py:164
+#: ../data/gdebi.ui.h:7
 msgid "<b>Section:</b>"
 msgstr "<b>Odjeljak:</b>"
 
-#: ../data/gdebi.ui.h:8 ../GDebi/GDebiKDE.py:165
+#: ../data/gdebi.ui.h:8
 msgid "<b>Size:</b>"
 msgstr "<b>Veličina:</b>"
 
@@ -125,8 +125,7 @@ msgstr "<b>Veličina:</b>"
 msgid "  "
 msgstr "  "
 
-#: ../data/gdebi.ui.h:10 ../GDebi/GDebiKDE.py:154 ../GDebi/GDebiKDE.py:156
-#: ../GDebi/GDebiKDE.py:318
+#: ../data/gdebi.ui.h:10
 msgid "Details"
 msgstr "Pojedinosti"
 
@@ -137,7 +136,7 @@ msgstr "Uključene datoteke"
 #. img = Gtk.Image()
 #. img.set_from_stock(Gtk.STOCK_APPLY,Gtk.IconSize.BUTTON)
 #. self.button_install.set_image(img)
-#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:334 ../GDebi/GDebiGtk.py:395
+#: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:333 ../GDebi/GDebiGtk.py:397
 msgid "_Install Package"
 msgstr "_Instaliraj paket"
 
@@ -157,7 +156,7 @@ msgstr "Terminal"
 msgid "Automatically close after the changes have been successfully applied"
 msgstr "Automatski zatvori nakon što su promjene uspješno primjenjene"
 
-#: ../data/gdebi.ui.h:17 ../GDebi/GDebiKDE.py:317
+#: ../data/gdebi.ui.h:17
 msgid "<b>To install the following changes are required:</b>"
 msgstr "<b>Za završetak instalacije, potrebne su slijedeće promjene:</b>"
 
@@ -180,19 +179,19 @@ msgstr "%s nije dostupan"
 msgid "Click packages can currently only be inspected with this tool"
 msgstr "Klik na pakete trenutno može biti samo provjereno s ovim alatom"
 
-#: ../GDebi/GDebiGtk.py:95
+#: ../GDebi/GDebiGtk.py:94
 msgid "Copy selected text"
 msgstr "Kopiraj odabrani tekst"
 
-#: ../GDebi/GDebiGtk.py:106
+#: ../GDebi/GDebiGtk.py:105
 msgid "Loading..."
 msgstr "Učitavanje..."
 
-#: ../GDebi/GDebiGtk.py:181
+#: ../GDebi/GDebiGtk.py:180
 msgid "Can not download as root"
 msgstr "Nemoguće preuzimanje kao root korisnik"
 
-#: ../GDebi/GDebiGtk.py:182
+#: ../GDebi/GDebiGtk.py:181
 msgid ""
 "Remote packages can not be downloaded when running as root. Please try again "
 "as a normal user."
@@ -200,48 +199,48 @@ msgstr ""
 "Udaljene pakete nije moguće preuzeti kao root korisnik. Ponovno pokušajte "
 "kao normalan korisnik."
 
-#: ../GDebi/GDebiGtk.py:195
+#: ../GDebi/GDebiGtk.py:194
 msgid "Downloading package"
 msgstr "Preuzimanje paketa"
 
-#: ../GDebi/GDebiGtk.py:202
+#: ../GDebi/GDebiGtk.py:201
 msgid "Download failed"
 msgstr "Preuzimanje neuspjelo"
 
-#: ../GDebi/GDebiGtk.py:203
+#: ../GDebi/GDebiGtk.py:202
 #, python-format
 msgid "Downloading the package failed: file '%s' '%s'"
 msgstr "Preuzimanje paketa neuspjelo: datoteka '%s' '%s'"
 
-#: ../GDebi/GDebiGtk.py:306
+#: ../GDebi/GDebiGtk.py:305
 msgid "Package control data"
 msgstr "Kontrolni podaci paketa"
 
-#: ../GDebi/GDebiGtk.py:309
+#: ../GDebi/GDebiGtk.py:308
 msgid "Upstream data"
 msgstr "Izvorni podaci"
 
-#: ../GDebi/GDebiGtk.py:315
+#: ../GDebi/GDebiGtk.py:314
 msgid "Error reading filelist"
 msgstr "Greška pri čitanju popisa datoteka"
 
-#: ../GDebi/GDebiGtk.py:329
+#: ../GDebi/GDebiGtk.py:328
 msgid "Error: "
 msgstr "Greška: "
 
-#: ../GDebi/GDebiGtk.py:343
+#: ../GDebi/GDebiGtk.py:342
 msgid "Error: no longer provides "
 msgstr "Greška: više nije dostupno "
 
-#: ../GDebi/GDebiGtk.py:361
+#: ../GDebi/GDebiGtk.py:360
 msgid "Same version is already installed"
 msgstr "Ista inačica već je instalirana"
 
-#: ../GDebi/GDebiGtk.py:364
+#: ../GDebi/GDebiGtk.py:363
 msgid "_Reinstall Package"
 msgstr "_Ponovno instaliraj paket"
 
-#: ../GDebi/GDebiGtk.py:404
+#: ../GDebi/GDebiGtk.py:406
 msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
@@ -249,11 +248,11 @@ msgstr ""
 "Lintian nije dostupan.\n"
 "Instalirajte ga pomoću sudo apt-get install lintian"
 
-#: ../GDebi/GDebiGtk.py:407
+#: ../GDebi/GDebiGtk.py:409
 msgid "Running lintian..."
 msgstr "Pokretanje lintiana..."
 
-#: ../GDebi/GDebiGtk.py:429
+#: ../GDebi/GDebiGtk.py:431
 #, python-format
 msgid ""
 "\n"
@@ -262,67 +261,67 @@ msgstr ""
 "\n"
 "Lintian se zatvorio s izlaznim statusom %s"
 
-#: ../GDebi/GDebiGtk.py:460
+#: ../GDebi/GDebiGtk.py:462
 msgid "Selection is a directory"
 msgstr "Odabir je direktorij"
 
-#: ../GDebi/GDebiGtk.py:465 ../GDebi/GDebiGtk.py:471
+#: ../GDebi/GDebiGtk.py:467 ../GDebi/GDebiGtk.py:473
 #, python-format
 msgid "Error reading file content '%s'"
 msgstr "Greška pri čitanju sadržaja datoteke '%s'"
 
-#: ../GDebi/GDebiGtk.py:476
+#: ../GDebi/GDebiGtk.py:478
 msgid "File content can not be extracted"
 msgstr "Sadržaj datoteke se ne može raspakirati"
 
-#: ../GDebi/GDebiGtk.py:487
+#: ../GDebi/GDebiGtk.py:489
 #, python-format
 msgid "<b>To be removed: %s</b>"
 msgstr "<b>Za uklanjanje: %s</b>"
 
-#: ../GDebi/GDebiGtk.py:489 ../GDebi/GDebiKDE.py:311
+#: ../GDebi/GDebiGtk.py:491
 #, python-format
 msgid "To be installed: %s"
 msgstr "Za instalaciju: %s"
 
-#: ../GDebi/GDebiGtk.py:504
+#: ../GDebi/GDebiGtk.py:506
 msgid "Open Software Package"
 msgstr "Otvori softverski paket"
 
-#: ../GDebi/GDebiGtk.py:509
+#: ../GDebi/GDebiGtk.py:511
 msgid "Software packages"
 msgstr "Softverski paket"
 
-#: ../GDebi/GDebiGtk.py:558
+#: ../GDebi/GDebiGtk.py:560
 msgid "Dependency problems"
 msgstr "Problem sa zavisnostima"
 
-#: ../GDebi/GDebiGtk.py:559
+#: ../GDebi/GDebiGtk.py:561
 #, python-format
 msgid "One or more packages are required by %s, it cannot be removed."
 msgstr "Jedan ili više paketa su potrebni %s, ne može se ukloniti."
 
-#: ../GDebi/GDebiGtk.py:567
+#: ../GDebi/GDebiGtk.py:569
 msgid "File not found"
 msgstr "Datoteka nije pronađena"
 
-#: ../GDebi/GDebiGtk.py:568
+#: ../GDebi/GDebiGtk.py:570
 msgid "You tried to install a file that does not (or no longer) exist. "
 msgstr "Pokušali ste instalirati datoteku koja (više) ne postoji. "
 
-#: ../GDebi/GDebiGtk.py:579
+#: ../GDebi/GDebiGtk.py:581
 msgid "Installing package file..."
 msgstr "Instaliranje paketa..."
 
-#: ../GDebi/GDebiGtk.py:581
+#: ../GDebi/GDebiGtk.py:583
 msgid "Removing package..."
 msgstr "Uklanjanje paketa..."
 
-#: ../GDebi/GDebiGtk.py:584
+#: ../GDebi/GDebiGtk.py:586
 msgid "Install unauthenticated software?"
 msgstr "Instaliraj neovjerene pakete?"
 
-#: ../GDebi/GDebiGtk.py:585
+#: ../GDebi/GDebiGtk.py:587
 msgid ""
 "Malicious software can damage your data and take control of your system.\n"
 "\n"
@@ -334,42 +333,19 @@ msgstr ""
 "\n"
 "Paketi u nastavku nisu ovjereni, stoga mogu biti štetne prirode."
 
-#: ../GDebi/GDebiGtk.py:613
-msgid "You need to grant administrative rights to install software"
-msgstr "Morate imati administrativne ovlasti za instalaciju softvera"
-
-#: ../GDebi/GDebiGtk.py:614
-msgid ""
-"\n"
-"It is a possible security risk to install packages files manually.\n"
-"Install software from trustworthy software distributors only.\n"
-msgstr ""
-"\n"
-"Sigurnosni je rizik ručno instalirati pakete.\n"
-"Instalirajte samo one pakete koji dolaze od provjerenih isporučitelja.\n"
-
-#: ../GDebi/GDebiGtk.py:619
-msgid "You need to grant administrative rights to remove software"
-msgstr "Morate imati administrativne ovlasti za uklanjanje softvera"
-
-#: ../GDebi/GDebiGtk.py:620
-msgid "It is a possible risk to remove packages."
-msgstr "Moguć je rizik pri uklanjanju paketa."
-
-#: ../GDebi/GDebiGtk.py:642 ../GDebi/GDebiGtk.py:707
+#: ../GDebi/GDebiGtk.py:624 ../GDebi/GDebiGtk.py:689
 msgid "Failed to install package file"
 msgstr "Instalacija paketa nije uspjela"
 
-#: ../GDebi/GDebiGtk.py:644
+#: ../GDebi/GDebiGtk.py:626
 msgid "Failed to remove package"
 msgstr "Uklanjanje paketa nije uspjelo"
 
-#. errMsg = "%s" % msg
-#: ../GDebi/GDebiGtk.py:689 ../GDebi/GDebiKDE.py:366
+#: ../GDebi/GDebiGtk.py:671
 msgid "Could not download all required files"
 msgstr "Nemoguće preuzimanje svih potrebnih datoteka"
 
-#: ../GDebi/GDebiGtk.py:690
+#: ../GDebi/GDebiGtk.py:672
 msgid ""
 "Please check your internet connection or installation medium, and make sure "
 "your APT cache is up-to-date."
@@ -377,11 +353,11 @@ msgstr ""
 "Provjerite svoj pristup internetu ili instalacijskom mediju, i provjerite je "
 "li vaša APT predmemorija osvježena."
 
-#: ../GDebi/GDebiGtk.py:696 ../GDebi/GDebiKDE.py:373
+#: ../GDebi/GDebiGtk.py:678
 msgid "Could not install all dependencies"
 msgstr "Ne mogu instalirati sve zavisnosti"
 
-#: ../GDebi/GDebiGtk.py:697 ../GDebi/GDebiKDE.py:374
+#: ../GDebi/GDebiGtk.py:679
 msgid ""
 "Usually this is related to an error of the software distributor. See the "
 "terminal window for more details."
@@ -389,102 +365,96 @@ msgstr ""
 "Uobičajeno ovo je povezano s greškom distributera softvera. Pogledajte "
 "terminalni prozor za više pojedinosti."
 
-#: ../GDebi/GDebiGtk.py:713
+#: ../GDebi/GDebiGtk.py:695
 #, python-format
 msgid "Installing %s"
 msgstr "Instaliram %s"
 
-#: ../GDebi/GDebiGtk.py:716
+#: ../GDebi/GDebiGtk.py:698
 #, python-format
 msgid "Removing %s"
 msgstr "Uklanjam %s"
 
-#. self.label_action.set_markup("<b><big>"+_("Package installed")+"</big></b>")
-#. show the button
-#. self.button_deb_install_close.set_sensitive(True)
-#. self.button_deb_install_close.grab_default()
-#: ../GDebi/GDebiGtk.py:738 ../GDebi/GDebiKDE.py:393
+#: ../GDebi/GDebiGtk.py:720
 msgid "Installation finished"
 msgstr "Instalacija završena"
 
-#: ../GDebi/GDebiGtk.py:740
+#: ../GDebi/GDebiGtk.py:722
 msgid "Removal finished"
 msgstr "Uklanjanje završeno"
 
-#: ../GDebi/GDebiGtk.py:743
+#: ../GDebi/GDebiGtk.py:725
 #, python-format
 msgid "Package '%s' was installed"
 msgstr "Paket '%s' je instaliran"
 
-#: ../GDebi/GDebiGtk.py:745
+#: ../GDebi/GDebiGtk.py:727
 #, python-format
 msgid "Package '%s' was removed"
 msgstr "Paket '%s' je uklonjen"
 
-#: ../GDebi/GDebiGtk.py:748 ../GDebi/GDebiKDE.py:397
+#: ../GDebi/GDebiGtk.py:730
 #, python-format
 msgid "Failed to install package '%s'"
 msgstr "Instalacija paketa '%s' nije uspjela"
 
-#: ../GDebi/GDebiGtk.py:751
+#: ../GDebi/GDebiGtk.py:733
 #, python-format
 msgid "Failed to remove package '%s'"
 msgstr "Uklanjanje paketa '%s' nije uspjelo"
 
-#: ../GDebi/GDebiGtk.py:755
+#: ../GDebi/GDebiGtk.py:737
 msgid "Installation complete"
 msgstr "Instalacija završena"
 
-#: ../GDebi/GDebiGtk.py:757
+#: ../GDebi/GDebiGtk.py:739
 msgid "Removal complete"
 msgstr "Uklanjanje završeno"
 
-#: ../GDebi/GDebiGtk.py:765 ../GDebi/GDebiKDE.py:407
+#: ../GDebi/GDebiGtk.py:747
 msgid "Failed to completely install all dependencies"
 msgstr "Instalacija svih zavisnosti nije uspjela"
 
-#: ../GDebi/GDebiGtk.py:767
+#: ../GDebi/GDebiGtk.py:749
 msgid "Failed to completely remove package"
 msgstr "Potpuno uklanjanje paketa nije uspjelo"
 
-#: ../GDebi/GDebiGtk.py:768 ../GDebi/GDebiKDE.py:408
+#: ../GDebi/GDebiGtk.py:750
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "Kako biste ovo popravili, pokrenite 'sudo apt-get install -f' u terminalnom "
 "prozoru."
 
-#. ui
-#: ../GDebi/GDebiGtk.py:886 ../GDebi/KDEAptDialogs.py:69
+#: ../GDebi/GDebiGtk.py:871
 #, python-format
 msgid "Installing '%s'..."
 msgstr "Instaliram '%s'..."
 
-#: ../GDebi/GDebiGtk.py:889
+#: ../GDebi/GDebiGtk.py:874
 #, python-format
 msgid "Removing '%s'..."
 msgstr "Uklanjam '%s'..."
 
-#: ../GDebi/GDebiGtk.py:999 ../GDebi/KDEAptDialogs.py:135
+#: ../GDebi/GDebiGtk.py:984
 msgid "Installing dependencies..."
 msgstr "Instaliram zavisnosti..."
 
-#: ../GDebi/GDebiGtk.py:1044 ../GDebi/KDEAptDialogs.py:198
-#: ../GDebi/KDEAptDialogs.py:208 ../GDebi/KDEAptDialogs.py:210
+#: ../GDebi/GDebiGtk.py:1029
 msgid "Downloading additional package files..."
 msgstr "Preuzimam dodatne pakete..."
 
-#: ../GDebi/GDebiGtk.py:1053 ../GDebi/KDEAptDialogs.py:208
+#: ../GDebi/GDebiGtk.py:1038
 #, python-format
 msgid "File %s of %s at %sB/s"
 msgstr "Datoteka %s od %s pri %sB/s"
 
-#: ../GDebi/GDebiGtk.py:1055 ../GDebi/KDEAptDialogs.py:210
+#: ../GDebi/GDebiGtk.py:1040
 #, python-format
 msgid "File %s of %s"
 msgstr "Datoteka %s od %s"
 
 #. print "mediaChange %s %s" % (medium, drive)
-#: ../GDebi/GDebiGtk.py:1062 ../GDebi/KDEAptDialogs.py:216
+#: ../GDebi/GDebiGtk.py:1047
 #, python-format
 msgid "Please insert '%s' into the drive '%s'"
 msgstr "Umetnite '%s' u uređaj '%s'"
@@ -519,7 +489,7 @@ msgstr ""
 msgid "This package is uninstallable\n"
 msgstr "Ovaj paket se ne može instalirati\n"
 
-#: ../GDebi/GDebiCli.py:98 ../GDebi/GDebiKDE.py:241
+#: ../GDebi/GDebiCli.py:98
 msgid "No description is available"
 msgstr "Opis nije dostupan"
 
@@ -539,77 +509,6 @@ msgstr "Zahtijeva instalaciju sljedećih paketa: "
 #, python-format
 msgid "Error during install: '%s'"
 msgstr "Greška pri instalaciji: '%s'"
-
-#. first, we load all the default descriptions -- pyuic doesn't use
-#. gettext as default (FIXME, copy code from language-selector)
-#: ../GDebi/GDebiKDE.py:152
-msgid "Package:"
-msgstr "Paket:"
-
-#: ../GDebi/GDebiKDE.py:153
-msgid "Status:"
-msgstr "Stanje:"
-
-#: ../GDebi/GDebiKDE.py:157
-msgid "Included Files"
-msgstr "Uključene datoteke"
-
-#: ../GDebi/GDebiKDE.py:159 ../GDebi/GDebiKDE.py:299
-msgid "&Install Package"
-msgstr "&Instaliraj paket"
-
-#: ../GDebi/GDebiKDE.py:160
-msgid "&Download Package"
-msgstr "&Preuzmi paket"
-
-#: ../GDebi/GDebiKDE.py:185
-msgid "The package file does not exist"
-msgstr "Datoteka paketa ne postoji"
-
-#: ../GDebi/GDebiKDE.py:186
-msgid ""
-"A nonexistent file has been selected for installation. Please select an "
-"existing .deb package file."
-msgstr ""
-"Nepostojeća datoteka je odabrana za instalaciju. Odaberite .deb paket koji "
-"postoji."
-
-#. set name
-#: ../GDebi/GDebiKDE.py:205
-#, python-format
-msgid "Package Installer - %s"
-msgstr "Paketni instaler - %s"
-
-#. self.textLabel1_3_2.setText(_("Same version is already installed"))
-#: ../GDebi/GDebiKDE.py:267
-msgid "&Reinstall Package"
-msgstr "&Ponovno instaliraj paket"
-
-#: ../GDebi/GDebiKDE.py:302
-msgid "Re&install Package"
-msgstr "Po&novno instaliraj paket"
-
-#: ../GDebi/GDebiKDE.py:313
-#, python-format
-msgid "To be removed: %s"
-msgstr "Za uklanjanje: %s"
-
-#: ../GDebi/GDebiKDE.py:367
-msgid ""
-"Please check your internet connection or installation medium, or make sure "
-"your APT cache is up-to-date."
-msgstr ""
-"Provjerite vaš pristup internetu ili instalacijskom mediju, i provjerite je "
-"li vaša APT predmemorija osvježena."
-
-#: ../GDebi/GDebiKDE.py:395
-#, python-format
-msgid "<b>Package '%s' was installed</b>"
-msgstr "<b>Paket '%s' je instaliran</b>"
-
-#: ../GDebi/GDebiKDE.py:421
-msgid "Installing"
-msgstr "Instalacija"
 
 #: ../GDebi/GDebiCommon.py:78
 msgid "Broken dependencies"
@@ -707,37 +606,103 @@ msgid ""
 "'Synaptic' first."
 msgstr "Prvo zatvorite preostale aplikacije, npr. 'aptitude' ili 'Synaptic'."
 
-#. change = QMessageBox.question(None, _("Media Change"), msg, QMessageBox.Ok, QMessageBox.Cancel)
-#: ../GDebi/KDEAptDialogs.py:218
-msgid "Media Change"
-msgstr "Promjena medija"
+#~ msgid "You need to grant administrative rights to install software"
+#~ msgstr "Morate imati administrativne ovlasti za instalaciju softvera"
 
-msgid "_File"
-msgstr "_Datoteka"
+#~ msgid ""
+#~ "\n"
+#~ "It is a possible security risk to install packages files manually.\n"
+#~ "Install software from trustworthy software distributors only.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Sigurnosni je rizik ručno instalirati pakete.\n"
+#~ "Instalirajte samo one pakete koji dolaze od provjerenih isporučitelja.\n"
 
-msgid "_Open…"
-msgstr "_Otvori..."
+#~ msgid "You need to grant administrative rights to remove software"
+#~ msgstr "Morate imati administrativne ovlasti za uklanjanje softvera"
 
-msgid "_Refresh"
-msgstr "_Osvježi"
+#~ msgid "It is a possible risk to remove packages."
+#~ msgstr "Moguć je rizik pri uklanjanju paketa."
 
-msgid "_Edit"
-msgstr "_Uredi"
+#~ msgid "Package:"
+#~ msgstr "Paket:"
 
-msgid "_Help"
-msgstr "_Pomoć"
+#~ msgid "Status:"
+#~ msgstr "Stanje:"
 
-msgid "<b><big>   </big></b>"
-msgstr "<b><big> </big></b>"
+#~ msgid "Included Files"
+#~ msgstr "Uključene datoteke"
 
-msgid "Description:"
-msgstr "Opis:"
+#~ msgid "&Install Package"
+#~ msgstr "&Instaliraj paket"
 
-msgid "_Remove Package"
-msgstr "_Ukloni paket"
+#~ msgid "&Download Package"
+#~ msgstr "&Preuzmi paket"
 
-msgid "_Download Package"
-msgstr "_Preuzmi paket"
+#~ msgid "The package file does not exist"
+#~ msgstr "Datoteka paketa ne postoji"
 
-msgid "Lintian output"
-msgstr "Lintian izlaz"
+#~ msgid ""
+#~ "A nonexistent file has been selected for installation. Please select an "
+#~ "existing .deb package file."
+#~ msgstr ""
+#~ "Nepostojeća datoteka je odabrana za instalaciju. Odaberite .deb paket "
+#~ "koji postoji."
+
+#~ msgid "Package Installer - %s"
+#~ msgstr "Paketni instaler - %s"
+
+#~ msgid "&Reinstall Package"
+#~ msgstr "&Ponovno instaliraj paket"
+
+#~ msgid "Re&install Package"
+#~ msgstr "Po&novno instaliraj paket"
+
+#~ msgid "To be removed: %s"
+#~ msgstr "Za uklanjanje: %s"
+
+#~ msgid ""
+#~ "Please check your internet connection or installation medium, or make "
+#~ "sure your APT cache is up-to-date."
+#~ msgstr ""
+#~ "Provjerite vaš pristup internetu ili instalacijskom mediju, i provjerite "
+#~ "je li vaša APT predmemorija osvježena."
+
+#~ msgid "<b>Package '%s' was installed</b>"
+#~ msgstr "<b>Paket '%s' je instaliran</b>"
+
+#~ msgid "Installing"
+#~ msgstr "Instalacija"
+
+#~ msgid "Media Change"
+#~ msgstr "Promjena medija"
+
+#~ msgid "_File"
+#~ msgstr "_Datoteka"
+
+#~ msgid "_Open…"
+#~ msgstr "_Otvori..."
+
+#~ msgid "_Refresh"
+#~ msgstr "_Osvježi"
+
+#~ msgid "_Edit"
+#~ msgstr "_Uredi"
+
+#~ msgid "_Help"
+#~ msgstr "_Pomoć"
+
+#~ msgid "<b><big>   </big></b>"
+#~ msgstr "<b><big> </big></b>"
+
+#~ msgid "Description:"
+#~ msgstr "Opis:"
+
+#~ msgid "_Remove Package"
+#~ msgstr "_Ukloni paket"
+
+#~ msgid "_Download Package"
+#~ msgstr "_Preuzmi paket"
+
+#~ msgid "Lintian output"
+#~ msgstr "Lintian izlaz"
