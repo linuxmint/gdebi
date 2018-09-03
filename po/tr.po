@@ -131,7 +131,7 @@ msgstr "  "
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
-msgstr "Dâhilâ dosyalar"
+msgstr "Dahili Dosyalar"
 
 #: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
