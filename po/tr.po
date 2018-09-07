@@ -2,12 +2,13 @@
 # Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
 # This file is distributed under the same license as the gdebi package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+# Last Update Serdar Sağlam 2018-09-06
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gdebi\n"
 "Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
-"POT-Creation-Date: 2018-06-06 13:06+0100\n"
+"POT-Creation-Date: 2018-09-06 13:06+0100\n"
 "PO-Revision-Date: 2013-02-08 18:43+0000\n"
 "Last-Translator: Yiğit Ateş <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
@@ -131,7 +132,7 @@ msgstr "  "
 
 #: ../data/gdebi.ui.h:11
 msgid "Included files"
-msgstr "Dâhilâ dosyalar"
+msgstr "Dahili Dosyalar"
 
 #: ../data/gdebi.ui.h:12 ../GDebi/GDebiGtk.py:289 ../GDebi/GDebiGtk.py:350
 msgid "_Install Package"
@@ -152,7 +153,7 @@ msgstr "Yazılım paketlerini kur ve izle"
 
 #: ../data/gdebi.desktop.in.h:4
 msgid "package;apt;dpkg;install"
-msgstr ""
+msgstr "paket;apt;dpkg;kur"
 
 #. Translators: it's for missing entries in the deb package,
 #. e.g. a missing "Maintainer" field
@@ -163,7 +164,7 @@ msgstr "%s alanı eksik"
 
 #: ../GDebi/DebPackage.py:52
 msgid "Click packages can currently only be inspected with this tool"
-msgstr ""
+msgstr "Tıklanabilir paketler şu an sadece bu araç ile kontrol edilebilir"
 
 #: ../GDebi/GDebiGtk.py:69
 msgid "Loading..."
@@ -227,10 +228,12 @@ msgid ""
 "No lintian available.\n"
 "Please install using sudo apt-get install lintian"
 msgstr ""
+"Lintian paketi mevcut değil\n"
+"Lütfen uçbirimden yükle: sudo apt-get install lintian"
 
 #: ../GDebi/GDebiGtk.py:361
 msgid "Running lintian..."
-msgstr ""
+msgstr "Lintian çalıştırılıyor ..."
 
 #: ../GDebi/GDebiGtk.py:383
 #, python-format
@@ -238,6 +241,8 @@ msgid ""
 "\n"
 "Lintian finished with exit status %s"
 msgstr ""
+"\n"
+"Lintian kuruldu çıkış durum %s"
 
 #: ../GDebi/GDebiGtk.py:414
 msgid "Selection is a directory"
