@@ -1,3 +1,10 @@
+gdebi (0.9.5.7xmint8) tessa; urgency=medium
+
+  [ Serdar Sağlam ]
+  * Update tr.po (#12)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 16 Nov 2018 10:06:18 +0000
+
 gdebi (0.9.5.7xmint7) tara; urgency=medium
 
   * Pkexec: Remove message and add vendor info
