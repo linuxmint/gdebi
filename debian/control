@@ -24,7 +24,7 @@ Depends: ${python3:Depends},
          ${misc:Depends},
          python3-apt,
          python3-debian,
-         mint-common,
+         mint-common (>= 2),
          file
 Suggests: xz-utils | xz-lzma
 Description: simple tool to install deb files

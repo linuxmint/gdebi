@@ -33,7 +33,7 @@ import time
 import tempfile
 import threading
 
-import mintcommon
+import mintcommon.aptdaemon
 
 # py3 compat
 try:
@@ -281,7 +281,7 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
 
         # check the deps
         if not self._deb.check():
-            self.label_status.set_markup(_("Error: ") + 
+            self.label_status.set_markup(_("Error: ") +
                 #glib.markup_escape_text(self._deb._failure_string) +
                 self._deb._failure_string)
             self.infobar1.set_message_type(Gtk.MessageType.ERROR)
@@ -494,7 +494,7 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
     def dpkg_action(self, widget, install):
         # lock for install
         self.window_main.set_sensitive(False)
-        apt = mintcommon.APT(self.window_main)
+        apt = mintcommon.aptdaemon.APT(self.window_main)
         apt.set_finished_callback(self.on_install_finished)
         apt.set_cancelled_callback(self.on_install_finished)
         apt.install_file(self._deb.filename)
