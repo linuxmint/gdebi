@@ -1,3 +1,13 @@
+gdebi (0.9.5.7xmint9) tina; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Add mint-common to build-deps
+
+  [ gm10 ]
+  * Switch to mintcommon v2 (#14)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 03 Jul 2019 10:56:09 +0200
+
 gdebi (0.9.5.7xmint8) tessa; urgency=medium
 
   [ Serdar Sağlam ]
