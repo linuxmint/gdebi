@@ -93,7 +93,7 @@ class GDebiCli(object):
 
     def show_description(self):
         try:
-            print(self._deb["Description"])
+            print(self._deb["Description"].encode('utf-8'))
         except KeyError:
             print(_("No description is available"))
 
