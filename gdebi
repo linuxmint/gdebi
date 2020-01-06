@@ -110,7 +110,7 @@ if __name__ == "__main__":
     sys.stdout.flush()
     res = sys.stdin.readline()
     try:
-        c = findall("[[(](\S+)/\S+[])]", msg)[0].lower()
+        c = findall(r"[\[(](\S+)/\S+[\])]", msg)[0].lower()
     except IndexError:
         c = "y"
     if res.lower().startswith(c):
