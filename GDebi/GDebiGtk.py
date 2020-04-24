@@ -35,13 +35,6 @@ import threading
 
 import mintcommon.aptdaemon
 
-# py3 compat
-try:
-    from urllib import url2pathname
-    url2pathname  # pyflakes
-except ImportError:
-    from urllib.request import url2pathname
-
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
@@ -64,19 +57,9 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
 
         SimpleGtkbuilderApp.__init__(self, path=os.path.join(datadir, "gdebi.ui"), domain="gdebi")
 
-        # setup status
-        self.context=self.statusbar_main.get_context_id("context_main_window")
-        self.statusbar_main.push(self.context,_("Loading..."))
-
         # show what we have
         self.window_main.realize()
         self.window_main.show()
-
-        # setup drag'n'drop
-        # FIXME: this seems to have no effect, droping in nautilus does nothing
-        target_entry = Gtk.TargetEntry().new('text/uri-list',0,0)
-        self.window_main.drag_dest_set(Gtk.DestDefaults.ALL, [target_entry], Gdk.DragAction.COPY)
-        self.window_main.connect("drag_data_received", self.on_window_main_drag_data_received)
 
         # Check file with gio
         file = self.gio_copy_in_place(file)
@@ -84,7 +67,6 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
         if not self.openCache():
             self.show_alert(Gtk.MessageType.ERROR, self.error_header, self.error_body)
             sys.exit(1)
-        self.statusbar_main.push(self.context, "")
 
         # setup the details treeview
         self.details_list = Gtk.ListStore(GObject.TYPE_STRING)
@@ -160,36 +142,12 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
             sys.exit(1)
         return file
 
-    def _get_file_path_from_dnd_dropped_uri(self, uri):
-        """ helper to get a useful path from a drop uri"""
-        path = url2pathname(uri) # escape special chars
-        path = path.strip('\r\n\x00') # remove \r\n and NULL
-        # get the path to file
-        if path.startswith('file:\\\\\\'): # windows
-            path = path[8:] # 8 is len('file:///')
-        elif path.startswith('file://'): # nautilus, rox
-            path = path[7:] # 7 is len('file://')
-        elif path.startswith('file:'): # xffm
-            path = path[5:] # 5 is len('file:')
-        return path
-
     def on_menuitem_quit_activate(self, widget):
         try:
             Gtk.main_quit()
         except:
             # if we are outside of the main loop, just exit
             sys.exit(0)
-
-    def on_window_main_drag_data_received(self, widget, context, x, y,
-                                          selection, target_type, timestamp):
-        """ call when we got a drop event """
-        uri = selection.data.strip()
-        uri_splitted = uri.split() # we may have more than one file dropped
-        for uri in uri_splitted:
-            path = self._get_file_path_from_dnd_dropped_uri(uri)
-            #print 'path to open', path
-            if path.endswith(".deb"):
-                self.open(path)
 
     def open(self, filename, downloaded=False):
         self._show_busy_cursor(True)
@@ -200,14 +158,11 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
                 Gtk.MessageType.ERROR, self.error_header, self.error_body)
             return False
 
-        self.statusbar_main.push(self.context, "")
-
         # set window title
-        self.window_main.set_title(_("Package Installer"))
-
-        # set name and ungrey some widgets
-        self.label_name.set_markup("<b><big>%s</big></b>" % self._deb.pkgname)
-        self.notebook_details.set_sensitive(True)
+        self.window_main.set_title(self._deb.pkgname)
+        self.headerbar.set_title(self._deb.pkgname)
+        self.headerbar.set_subtitle(self._deb["Version"])
+        self.button_install.get_style_context().remove_class("suggested-action")
 
         # set description
         buf = self.textview_description.get_buffer()
@@ -249,10 +204,7 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
             buf.set_text("No description is available")
 
         # set various status bits
-        self.label_version.set_text(self._deb["Version"])
         self.label_maintainer.set_text(utf8(self._deb["Maintainer"]))
-        self.label_priority.set_text(self._deb["Priority"])
-        self.label_section.set_text(utf8(self._deb["Section"]))
         self.label_size.set_text(self._deb["Installed-Size"] + " KiB")
 
         # set file list
@@ -287,7 +239,6 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
             self.infobar1.set_message_type(Gtk.MessageType.ERROR)
             self.infobar1.show()
             self.button_install.set_label(_("_Install Package"))
-
             self.button_install.set_sensitive(False)
             self.button_details.hide()
             return
@@ -338,9 +289,7 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
         # load changes into (self.install, self.remove, self.unauthenticated)
         if len(self.remove) == len(self.install) == 0:
             self.button_details.hide()
-            self.label_status.set_markup(self.deps)
-            self.infobar1.set_message_type(Gtk.MessageType.INFO)
-            self.infobar1.show()
+            self.infobar1.hide()
         else:
             self.button_details.show()
             self.label_status.set_markup(self.deps)
@@ -348,6 +297,7 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
             self.infobar1.show()
 
         self.button_install.set_label(_("_Install Package"))
+        self.button_install.get_style_context().add_class("suggested-action")
         self.button_install.set_sensitive(True)
         self.button_install.grab_default()
 
@@ -502,6 +452,12 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
 
     def on_button_install_clicked(self, widget):
         self.dpkg_action(widget, True)
+
+    def on_button_content_toggled(self, widget):
+        if widget.get_active():
+            self.stack.set_visible_child(self.hpaned2)
+        else:
+            self.stack.set_visible_child(self.scrolledwindow1)
 
     def on_button_download_clicked(self, widget):
         if self.download_package():
