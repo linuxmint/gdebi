@@ -1,3 +1,13 @@
+gdebi (0.9.5.7xmint10) ulyana; urgency=medium
+
+  [ Adam Roussel ]
+  * Updated regex to prevent warning about nested sets
+
+  [ Clement Lefebvre ]
+  * Revamp the user interface
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 25 Apr 2020 10:42:00 +0100
+
 gdebi (0.9.5.7xmint9) tina; urgency=medium
 
   [ Clement Lefebvre ]
