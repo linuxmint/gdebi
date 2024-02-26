@@ -14,7 +14,6 @@ Build-Depends: debhelper (>= 9),
                intltool,
                xvfb,
                xauth,
-               lintian,
 X-Python3-Version: >= 3.3
 Standards-Version: 3.9.7
 
@@ -44,13 +43,12 @@ Depends: ${python3:Depends},
          gir1.2-gtk-3.0,
          python3-gi,
          gnome-icon-theme
-Recommends: libgtk2-perl, shared-mime-info, lintian
+Recommends: libgtk2-perl, shared-mime-info
 Description: simple tool to view and install deb files - GNOME GUI
  gdebi lets you install local deb packages resolving and installing
  its dependencies. apt does the same, but only for remote (http, ftp)
  located packages.
  .
- The package is also scanned via lintian before the install and its
- possible to inspect the control and data members of the packages.
+ It is possible to inspect the control and data members of the packages.
  .
  This package contains the graphical user interface.

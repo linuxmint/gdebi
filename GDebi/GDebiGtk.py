@@ -225,11 +225,6 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
         # and the file content textview
         font_desc = Pango.FontDescription('monospace')
         self.textview_file_content.modify_font(font_desc)
-        # self.textview_lintian_output.modify_font(font_desc)
-
-        # run lintian async
-        # if self._options and self._options.non_interactive is False:
-        #     self._run_lintian(filename)
 
         # check the deps
         if not self._deb.check():
@@ -300,52 +295,6 @@ class GDebiGtk(SimpleGtkbuilderApp, GDebiCommon):
         self.button_install.get_style_context().add_class("suggested-action")
         self.button_install.set_sensitive(True)
         self.button_install.grab_default()
-
-    def _run_lintian(self, filename):
-        buf = self.textview_lintian_output.get_buffer()
-        if not os.path.exists("/usr/bin/lintian"):
-            buf.set_text(
-                _("No lintian available.\n"
-                  "Please install using sudo apt-get install lintian"))
-            return
-        buf.set_text(_("Running lintian..."))
-        self._lintian_output = ""
-        self._lintian_exit_status = None
-        self._lintian_exit_status_gathered = None
-        cmd = ["/usr/bin/lintian", filename]
-        (pid, stdin, stdout, stderr) = GLib.spawn_async(
-            cmd, flags=GObject.SPAWN_DO_NOT_REAP_CHILD,
-            standard_output=True, standard_error=True)
-        for fd in [stdout, stderr]:
-            channel = GLib.IOChannel(filedes=fd)
-            channel.set_flags(GLib.IOFlags.NONBLOCK)
-            GLib.io_add_watch(channel, GLib.PRIORITY_DEFAULT,
-                              GLib.IOCondition.IN | GLib.IO_ERR | GLib.IO_HUP,
-                              self._on_lintian_output)
-        GLib.child_watch_add(GLib.PRIORITY_DEFAULT, pid,
-                             self._on_lintian_finished)
-
-    def _on_lintian_finished(self, pid, condition):
-        exit_status = os.WEXITSTATUS(condition)
-        self._lintian_exit_status = exit_status
-        if not self._lintian_exit_status_gathered:
-            self._lintian_exit_status_gathered = True
-            text = _("\nLintian finished with exit status %s") % exit_status
-            self._lintian_output += text
-        buf = self.textview_lintian_output.get_buffer()
-        buf.set_text(self._lintian_output)
-
-    def _on_lintian_output(self, gio_file, condition):
-        if condition & GLib.IOCondition.IN:
-            # we get bytes from gio
-            content = gio_file.read().decode("utf-8")
-            if content:
-                self._lintian_output += content
-                buf = self.textview_lintian_output.get_buffer()
-                buf.set_text(self._lintian_output)
-            return True
-        gio_file.close()
-        return False
 
     def on_treeview_files_cursor_changed(self, treeview):
         " the selection in the files list chanaged "
